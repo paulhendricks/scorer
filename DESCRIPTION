@@ -1,0 +1,16 @@
+Package: scorer
+Title: An R package For Quickly Scoring Models
+Version: 0.0.0.9000
+Description: An R package for quickly scoring models.
+Authors@R: c(
+    person("Paul", "Hendricks", , "paul@farsitegroup.com", c("aut", "cre")),
+    person("Farsite", role = "cph")
+    )
+URL: https://github.com/paulhendricks/scorer
+BugReports: https://github.com/paulhendricks/scorer/issues
+Depends: R (>= 3.1.2)
+License: MIT + file LICENSE
+LazyData: true
+Suggests: testthat,
+    knitr
+VignetteBuilder: knitr
