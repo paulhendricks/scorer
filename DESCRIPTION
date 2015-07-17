@@ -1,6 +1,6 @@
 Package: scorer
 Title: An R package For Quickly Scoring Models
-Version: 0.0.0.9000
+Version: 0.0.1
 Description: An R package for quickly scoring models.
 Authors@R: c(
     person("Paul", "Hendricks", , "paul@farsitegroup.com", c("aut", "cre")),
