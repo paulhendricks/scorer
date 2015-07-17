@@ -2,6 +2,8 @@
 scorer
 ======
 
+[![Build Status](https://travis-ci.org/paulhendricks/scorer.png?branch=master)](https://travis-ci.org/paulhendricks/scorer)
+
 scorer is an R package for quickly scoring models.
 
 scorer has three main goals:
