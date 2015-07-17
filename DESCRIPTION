@@ -3,7 +3,7 @@ Title: An R Package for Quickly Scoring Models
 Version: 0.0.1
 Description: An R package for quickly scoring models.
 Authors@R: c(
-    person("Paul", "Hendricks", "paul@farsitegroup.com", c("aut", "cre")),
+    person("Paul", "Hendricks", , "paul@farsitegroup.com", c("aut", "cre")),
     person("Farsite", role = "cph")
     )
 URL: https://github.com/paulhendricks/scorer
