@@ -1,4 +1,4 @@
-#' scorer: An R package for quickly scoring models.
+#' scorer: An R Package for Quickly Scoring Models.
 #'
 #' The scorer package provides conveneince functions for
 #' quickly scoring models.
