@@ -6,14 +6,6 @@ scorer
 
 scorer is an R package for quickly scoring models.
 
-scorer has three main goals:
-
--   goal 1
-
--   goal 2
-
--   goal 3
-
 You can install the latest development version from github with:
 
 ``` r
