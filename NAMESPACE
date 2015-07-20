@@ -3,6 +3,7 @@
 export(ae)
 export(ape)
 export(e)
+export(mae)
 export(mape)
 export(pe)
 export(rmse)
