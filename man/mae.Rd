@@ -19,7 +19,7 @@ mae(actual, forecast, na.rm = TRUE, ...)
 a numeric vector of length one representing the mean of absolute errors.
 }
 \description{
-\code{ae} takes actual and forecast numeric vectors and returns a
+\code{mae} takes actual and forecast numeric vectors and returns a
 numeric vector where forecast is subtracted from the actual, the
 absolute value is taken of those errors, and lastly, the mean is
 taken of those absolute erros.

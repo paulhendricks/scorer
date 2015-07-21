@@ -34,10 +34,3 @@ If you encounter a clear bug, please file a minimal reproducible example on [git
 ## Learning scorer
 
 To get started, read the notes below, then read the intro vignette: `vignette("introduction", package = "scorer")`.
-
-## Examples
-
-```{r}
-library(scorer)
-1 + 1
-```

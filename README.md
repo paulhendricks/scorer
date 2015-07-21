@@ -21,12 +21,3 @@ Learning scorer
 ---------------
 
 To get started, read the notes below, then read the intro vignette: `vignette("introduction", package = "scorer")`.
-
-Examples
---------
-
-``` r
-library(scorer)
-1 + 1
-#> [1] 2
-```

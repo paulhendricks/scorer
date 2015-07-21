@@ -29,7 +29,7 @@ ae <- function(actual, forecast) return(abs(e(actual, forecast)))
 
 #' Calculate mean absolute error between actual and forecast.
 #'
-#' \code{ae} takes actual and forecast numeric vectors and returns a
+#' \code{mae} takes actual and forecast numeric vectors and returns a
 #' numeric vector where forecast is subtracted from the actual, the
 #' absolute value is taken of those errors, and lastly, the mean is
 #' taken of those absolute erros.
