@@ -2,9 +2,10 @@
 
 ## Improvements
 
-* Example.
+* Implemented several functions for estimating errors.
+* First minor version release!
   
 ## Bug fixes
 
-* Example.
+* Fixed minor error in passing multiple arguments to `mae()`.
 
