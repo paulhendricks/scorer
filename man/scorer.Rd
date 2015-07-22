@@ -4,9 +4,9 @@
 \name{scorer}
 \alias{scorer}
 \alias{scorer-package}
-\title{scorer: An R Package for Quickly Scoring Models.}
+\title{scorer: Quickly Score Models.}
 \description{
-The scorer package provides conveneince functions for
+The scorer package provides convenience functions for
 quickly scoring models.
 }
 \details{
