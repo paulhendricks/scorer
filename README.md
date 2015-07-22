@@ -16,8 +16,3 @@ devtools::install_github("paulhendricks/scorer")
 ```
 
 If you encounter a clear bug, please file a minimal reproducible example on [github](https://github.com/paulhendricks/scorer/issues).
-
-Learning scorer
----------------
-
-To get started, read the notes below, then read the intro vignette: `vignette("introduction", package = "scorer")`.
