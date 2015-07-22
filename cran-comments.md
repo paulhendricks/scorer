@@ -11,9 +11,9 @@ There was 2 NOTEs:
 * checking for hidden files and directories ... NOTE
 Found the following hidden files and directories:
   .travis.yml
-These were most likely included in error. See section ‘Package
-structure’ in the ‘Writing R Extensions’ manual.
+These were most likely included in error. See section 'Package
+structure' in the 'Writing R Extensions' manual.
 
 * checking top-level files ... NOTE
 Non-standard files/directories found at top level:
-  ‘README.Rmd’ ‘cran-comments.md’
+  'README.Rmd' 'cran-comments.md'
