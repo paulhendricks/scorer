@@ -1,6 +1,6 @@
 Package: scorer
 Title: Quickly Score Models
-Version: 0.1.0
+Version: 0.1.0.9000
 Description: A set of tools to quickly score models commonly used to data
     analysis and data science using uncommon scoring metrics. For example,
     you might want to use a weighted absolute percent error instead of

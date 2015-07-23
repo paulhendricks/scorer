@@ -2,17 +2,25 @@
 scorer
 ======
 
-[![Build Status](https://travis-ci.org/paulhendricks/scorer.png?branch=master)](https://travis-ci.org/paulhendricks/scorer)
+[![Build Status](https://travis-ci.org/paulhendricks/scorer.png?branch=master)](https://travis-ci.org/paulhendricks/scorer) [![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/scorer)](http://cran.r-project.org/package=scorer)
 
 scorer is an R package for quickly scoring models.
 
-You can install the latest development version from github with:
+You can install:
 
-``` r
-if (packageVersion("devtools") < 1.6) {
-  install.packages("devtools")
-}
-devtools::install_github("paulhendricks/scorer")
-```
+-   the latest released version from CRAN with
+
+    ``` r
+    install.packages("scorer")
+    ```
+
+-   the latest development version from github with
+
+    ``` r
+    if (packageVersion("devtools") < 1.6) {
+      install.packages("devtools")
+    }
+    devtools::install_github("paulhendricks/scorer")
+    ```
 
 If you encounter a clear bug, please file a minimal reproducible example on [github](https://github.com/paulhendricks/scorer/issues).
