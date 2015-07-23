@@ -1,10 +1,9 @@
 Package: scorer
 Title: Quickly Score Models
 Version: 0.1.0.9000
-Description: A set of tools to quickly score models commonly used to data
-    analysis and data science using uncommon scoring metrics. For example,
-    you might want to use a weighted absolute percent error instead of
-    a root mean square deviation to score that regression model.
+Description: A set of tools for quickly scoring models commonly used in data
+    analysis and data science. This toolset includes uncommon scoring metrics
+    writtin in C++ for blazing fast performance.
 Authors@R: person("Paul", "Hendricks", , "paul.hendricks.2013@owu.edu", c("aut", "cre"))
 URL: https://github.com/paulhendricks/scorer
 BugReports: https://github.com/paulhendricks/scorer/issues
