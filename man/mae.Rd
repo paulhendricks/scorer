@@ -7,12 +7,12 @@
 mae(actual, forecast)
 }
 \arguments{
-\item{actual}{a numeric vector of actuals.}
+\item{actual}{A numeric vector of actuals.}
 
-\item{forecast}{a numeric vector of forecasts.}
+\item{forecast}{A numeric vector of forecasts.}
 }
 \value{
-a numeric vector of length one representing the mean of absolute errors.
+A numeric vector of length one representing the mean of absolute errors.
 }
 \description{
 \code{mae} takes actual and forecast numeric vectors and returns a

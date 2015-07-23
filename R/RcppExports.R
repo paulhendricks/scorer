@@ -76,14 +76,33 @@ ape <- function(actual, forecast) {
 #' absolute value is taken of those errors, and lastly, the mean is
 #' taken of those absolute erros.
 #'
-#' @param actual a numeric vector of actuals.
-#' @param forecast a numeric vector of forecasts.
-#' @return  a numeric vector of length one representing the mean of absolute errors.
+#' @param actual A numeric vector of actuals.
+#' @param forecast A numeric vector of forecasts.
+#' @return  A numeric vector of length one representing the mean of absolute errors.
 #' @examples
 #' # Examples
 #' mae(1:100, 100:1)
 #' @export
 mae <- function(actual, forecast) {
     .Call('scorer_mae', PACKAGE = 'scorer', actual, forecast)
+}
+
+#' Calculate mean absolute percent error between actual and forecast.
+#'
+#' \code{mape} takes actual and forecast numeric vectors and returns a
+#' numeric vector where forecast is subtracted from the actual and
+#' then those errors are divided by the actuals, the
+#' absolute value of those percent errors are then taken, and lastly,
+#' the mean of those absolute percent errors are taken.
+#'
+#' @param actual A numeric vector of actuals.
+#' @param forecast A numeric vector of forecasts.
+#' @return  A numeric vector of length one: the mean of of absolute percent errors.
+#' @examples
+#' # Examples
+#' mape(1:100, 100:1)
+#' @export
+mape <- function(actual, forecast) {
+    .Call('scorer_mape', PACKAGE = 'scorer', actual, forecast)
 }
 

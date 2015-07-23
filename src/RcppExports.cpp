@@ -65,3 +65,15 @@ BEGIN_RCPP
     return __result;
 END_RCPP
 }
+// mape
+double mape(NumericVector actual, NumericVector forecast);
+RcppExport SEXP scorer_mape(SEXP actualSEXP, SEXP forecastSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject __result;
+    Rcpp::RNGScope __rngScope;
+    Rcpp::traits::input_parameter< NumericVector >::type actual(actualSEXP);
+    Rcpp::traits::input_parameter< NumericVector >::type forecast(forecastSEXP);
+    __result = Rcpp::wrap(mape(actual, forecast));
+    return __result;
+END_RCPP
+}
