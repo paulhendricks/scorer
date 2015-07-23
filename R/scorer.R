@@ -8,4 +8,6 @@
 #'
 #' @docType package
 #' @name scorer
+#' @useDynLib scorer
+#' @importFrom Rcpp sourceCpp
 NULL
