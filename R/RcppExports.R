@@ -51,6 +51,24 @@ pe <- function(actual, forecast) {
     .Call('scorer_pe', PACKAGE = 'scorer', actual, forecast)
 }
 
+#' Calculate absolute percent error between actual and forecast.
+#'
+#' \code{pe} takes actual and forecast numeric vectors and returns a
+#' numeric vector where forecast is subtracted from the actual and
+#' then those errors are divided by the actuals. Lastly, the
+#' absolute value of those percent errors are taken.
+#'
+#' @param actual A numeric vector of actuals.
+#' @param forecast A numeric vector of forecasts.
+#' @return  A numeric vector of absolute percent errors.
+#' @examples
+#' # Examples
+#' ape(1:100, 100:1)
+#' @export
+ape <- function(actual, forecast) {
+    .Call('scorer_ape', PACKAGE = 'scorer', actual, forecast)
+}
+
 #' Calculate mean absolute error between actual and forecast.
 #'
 #' \code{mae} takes actual and forecast numeric vectors and returns a

@@ -1,19 +1,3 @@
-#' Calculate absolute percent error between actual and forecast.
-#'
-#' \code{pe} takes actual and forecast numeric vectors and returns a
-#' numeric vector where forecast is subtracted from the actual and
-#' then those errors are divided by the actuals. Lastly, the
-#' absolute value of those percent errors are taken.
-#'
-#' @param actual a numeric vector of actuals.
-#' @param forecast a numeric vector of forecasts.
-#' @return  a numeric vector of absolute percent errors.
-#' @examples
-#' # Examples
-#' ape(1:100, 100:1)
-#' @export
-ape <- function(actual, forecast) return(abs(pe(actual, forecast)))
-
 #' Calculate mean absolute percent error between actual and forecast.
 #'
 #' \code{mape} takes actual and forecast numeric vectors and returns a

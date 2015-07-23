@@ -54,6 +54,25 @@ NumericVector pe(NumericVector actual, NumericVector forecast) {
    return e(actual, forecast) / actual;
 }
 
+//' Calculate absolute percent error between actual and forecast.
+//'
+//' \code{pe} takes actual and forecast numeric vectors and returns a
+//' numeric vector where forecast is subtracted from the actual and
+//' then those errors are divided by the actuals. Lastly, the
+//' absolute value of those percent errors are taken.
+//'
+//' @param actual A numeric vector of actuals.
+//' @param forecast A numeric vector of forecasts.
+//' @return  A numeric vector of absolute percent errors.
+//' @examples
+//' # Examples
+//' ape(1:100, 100:1)
+//' @export
+// [[Rcpp::export]]
+NumericVector ape(NumericVector actual, NumericVector forecast) {
+   return abs(pe(actual, forecast));
+}
+
 //' Calculate mean absolute error between actual and forecast.
 //'
 //' \code{mae} takes actual and forecast numeric vectors and returns a
