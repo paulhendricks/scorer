@@ -7,12 +7,12 @@
 ae(actual, forecast)
 }
 \arguments{
-\item{actual}{a numeric vector of actuals.}
+\item{actual}{A numeric vector of actuals.}
 
-\item{forecast}{a numeric vector of forecasts.}
+\item{forecast}{A numeric vector of forecasts.}
 }
 \value{
-a numeric vector of absolute errors.
+A numeric vector of absolute errors.
 }
 \description{
 \code{ae} takes actual and forecast numeric vectors and returns a
