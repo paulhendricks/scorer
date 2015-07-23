@@ -77,3 +77,15 @@ BEGIN_RCPP
     return __result;
 END_RCPP
 }
+// rmse
+double rmse(NumericVector actual, NumericVector forecast);
+RcppExport SEXP scorer_rmse(SEXP actualSEXP, SEXP forecastSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject __result;
+    Rcpp::RNGScope __rngScope;
+    Rcpp::traits::input_parameter< NumericVector >::type actual(actualSEXP);
+    Rcpp::traits::input_parameter< NumericVector >::type forecast(forecastSEXP);
+    __result = Rcpp::wrap(rmse(actual, forecast));
+    return __result;
+END_RCPP
+}

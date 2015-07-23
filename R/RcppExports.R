@@ -106,3 +106,20 @@ mape <- function(actual, forecast) {
     .Call('scorer_mape', PACKAGE = 'scorer', actual, forecast)
 }
 
+#' Calculate root mean squared error.
+#'
+#' \code{rmse} takes actual and forecast numeric vectors and returns a
+#' numeric vector where forecast is subtracted from the actual,
+#' the errors are then squared, the average of those squared error is
+#' taken, and lastly, the root taken of that mean squared error value.
+#'
+#' @param actual A numeric vector of actuals.
+#' @param forecast A numeric vector of forecasts.
+#' @return  A numeric vector of length one: the root mean square of errors.
+#' # Examples
+#' rmse(1:100, 100:1)
+#' @export
+rmse <- function(actual, forecast) {
+    .Call('scorer_rmse', PACKAGE = 'scorer', actual, forecast)
+}
+
