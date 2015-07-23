@@ -1,18 +1,3 @@
-#' Calculate absolute error between actual and forecast.
-#'
-#' \code{ae} takes actual and forecast numeric vectors and returns a
-#' numeric vector where forecast is subtracted from the actual and
-#' then the absolute value is taken of those errors.
-#'
-#' @param actual a numeric vector of actuals.
-#' @param forecast a numeric vector of forecasts.
-#' @return  a numeric vector of absolute errors.
-#' @examples
-#' # Examples
-#' ae(1:100, 100:1)
-#' @export
-ae <- function(actual, forecast) return(abs(e(actual, forecast)))
-
 #' Calculate percent error between actual and forecast.
 #'
 #' \code{pe} takes actual and forecast numeric vectors and returns a

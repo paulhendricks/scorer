@@ -18,6 +18,24 @@ NumericVector e(NumericVector actual, NumericVector forecast) {
    return actual - forecast;
 }
 
+//' Calculate absolute error between actual and forecast.
+//'
+//' \code{ae} takes actual and forecast numeric vectors and returns a
+//' numeric vector where forecast is subtracted from the actual and
+//' then the absolute value is taken of those errors.
+//'
+//' @param actual a numeric vector of actuals.
+//' @param forecast a numeric vector of forecasts.
+//' @return  a numeric vector of absolute errors.
+//' @examples
+//' # Examples
+//' ae(1:100, 100:1)
+//' @export
+// [[Rcpp::export]]
+NumericVector ae(NumericVector actual, NumericVector forecast) {
+   return abs(e(actual, forecast));
+}
+
 //' Calculate mean absolute error between actual and forecast.
 //'
 //' \code{mae} takes actual and forecast numeric vectors and returns a
