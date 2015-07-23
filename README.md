@@ -4,7 +4,7 @@ scorer
 
 [![Build Status](https://travis-ci.org/paulhendricks/scorer.png?branch=master)](https://travis-ci.org/paulhendricks/scorer) [![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/scorer)](http://cran.r-project.org/package=scorer)
 
-scorer is an R package for quickly scoring models.
+scorer is a set of tools for quickly scoring models in data analysis and data science. This toolset is written in C++ for blazing fast performance.
 
 You can install:
 
