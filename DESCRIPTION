@@ -1,8 +1,8 @@
 Package: scorer
 Title: Quickly Score Models
-Version: 0.2.0
-Description: A set of tools for quickly scoring models in data analysis and
-    data science. This toolset is written in C++ for blazing fast performance.
+Version: 0.1.0.9000
+Description: A set of tools for quickly scoring models in data science and 
+    machine learning. This toolset is written in C++ for blazing fast performance.
 Authors@R: person("Paul", "Hendricks", , "paul.hendricks.2013@owu.edu", c("aut", "cre"))
 URL: https://github.com/paulhendricks/scorer
 BugReports: https://github.com/paulhendricks/scorer/issues
