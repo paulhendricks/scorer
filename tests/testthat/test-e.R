@@ -1,6 +1,13 @@
 library(scorer)
 context("e()")
 
-test_that("copy", {
-  expect_equal(1 +1, 2)
+n <- 10000
+x <- 1:n
+test_that("e() produces correct output.", {
+  expect_equal(e(x, x), rep(0, n))
+  expect_equal(e(1, 2), -1)
+})
+
+test_that("e() produces correct output types.", {
+  expect_is(e(runif(n), runif(n)), "numeric")
 })
