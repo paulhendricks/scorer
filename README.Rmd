@@ -21,7 +21,7 @@ knitr::opts_chunk$set(
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/scorer)](http://cran.r-project.org/package=scorer)
 [![Downloads from the RStudio CRAN mirror](http://cranlogs.r-pkg.org/badges/scorer)](http://cran.rstudio.com/package=scorer)
 
-scorer is a set of tools for quickly scoring models in data analysis and data science. This toolset is written in C++ for blazing fast performance.
+scorer is a set of tools for quickly scoring models in data science and machine learning. This toolset is written in C++ for blazing fast performance.
 
 You can install:
 

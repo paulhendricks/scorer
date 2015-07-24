@@ -1,10 +1,7 @@
 #' scorer: Quickly Score Models.
 #'
-#' The scorer package provides convenience functions for
-#' quickly scoring models.
-#'
-#' To learn more about scorer, start with the vignettes:
-#' \code{browseVignettes(package = "scorer")}
+#' A set of tools for quickly scoring models in data science and machine
+#' learning. This toolset is written in C++ for blazing fast performance.
 #'
 #' @docType package
 #' @name scorer
