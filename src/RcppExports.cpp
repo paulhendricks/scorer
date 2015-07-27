@@ -17,6 +17,18 @@ BEGIN_RCPP
     return __result;
 END_RCPP
 }
+// ce
+double ce(NumericVector actual, NumericVector forecast);
+RcppExport SEXP scorer_ce(SEXP actualSEXP, SEXP forecastSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject __result;
+    Rcpp::RNGScope __rngScope;
+    Rcpp::traits::input_parameter< NumericVector >::type actual(actualSEXP);
+    Rcpp::traits::input_parameter< NumericVector >::type forecast(forecastSEXP);
+    __result = Rcpp::wrap(ce(actual, forecast));
+    return __result;
+END_RCPP
+}
 // ae
 NumericVector ae(NumericVector actual, NumericVector forecast);
 RcppExport SEXP scorer_ae(SEXP actualSEXP, SEXP forecastSEXP) {

@@ -17,6 +17,22 @@ e <- function(actual, forecast) {
     .Call('scorer_e', PACKAGE = 'scorer', actual, forecast)
 }
 
+#' Calculate classification error between actual and forecast.
+#'
+#' \code{e} takes actual and forecast numeric vectors and returns the
+#' classification error.
+#'
+#' @param actual A numeric vector of actuals.
+#' @param forecast A numeric vector of forecasts.
+#' @return  A numeric vector of errors.
+#' @examples
+#' # Examples
+#' ce(1:100, 100:1)
+#' @export
+ce <- function(actual, forecast) {
+    .Call('scorer_ce', PACKAGE = 'scorer', actual, forecast)
+}
+
 #' Calculate absolute error between actual and forecast.
 #'
 #' \code{ae} takes actual and forecast numeric vectors and returns a

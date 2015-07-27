@@ -2,6 +2,7 @@
 
 export(ae)
 export(ape)
+export(ce)
 export(e)
 export(mae)
 export(mape)

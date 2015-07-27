@@ -18,6 +18,23 @@ NumericVector e(NumericVector actual, NumericVector forecast) {
    return actual - forecast;
 }
 
+//' Calculate classification error between actual and forecast.
+//'
+//' \code{e} takes actual and forecast numeric vectors and returns the
+//' classification error.
+//'
+//' @param actual A numeric vector of actuals.
+//' @param forecast A numeric vector of forecasts.
+//' @return  A numeric vector of errors.
+//' @examples
+//' # Examples
+//' ce(1:100, 100:1)
+//' @export
+// [[Rcpp::export]]
+double ce(NumericVector actual, NumericVector forecast) {
+   return sum(actual == forecast) / actual.size();
+}
+
 //' Calculate absolute error between actual and forecast.
 //'
 //' \code{ae} takes actual and forecast numeric vectors and returns a
