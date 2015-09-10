@@ -38,3 +38,10 @@ library(scorer)
 e(1:10, 10:1)
 #>  [1] -9 -7 -5 -3 -1  1  3  5  7  9
 ```
+
+Author
+------
+
+The original author of `scorer` is [Paul Hendricks](https://github.com/paulhendricks).
+
+[![Support via Gratipay](https://cdn.rawgit.com/gratipay/gratipay-badge/2.3.0/dist/gratipay.png)](https://gratipay.com/paulhendricks/)
