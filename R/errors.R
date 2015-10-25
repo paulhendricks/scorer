@@ -17,4 +17,3 @@ auc <- function(actual, forecast) {
   auc <- (sum(r[actual == 1]) - n_pos * (n_pos + 1) / 2) / (n_pos * n_neg)
   auc
 }
-
