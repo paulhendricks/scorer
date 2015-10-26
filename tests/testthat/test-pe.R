@@ -18,4 +18,3 @@ test_that("pe() produces correct output types.", {
 test_that("pe() raises correct errors.", {
   expect_error(pe("a", "b"))
 })
-
