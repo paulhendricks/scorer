@@ -30,6 +30,7 @@ auc <- function(actual, forecast) {
 #'
 #' @export
 mse <- function(actual, forecast) {
+  warning("This function is still under development.")
   return(1L)
 }
 
@@ -45,6 +46,7 @@ mse <- function(actual, forecast) {
 #'
 #' @export
 msle <- function(actual, forecast) {
+  warning("This function is still under development.")
   return(1L)
 }
 
@@ -60,6 +62,7 @@ msle <- function(actual, forecast) {
 #'
 #' @export
 rmsle <- function(actual, forecast) {
+  warning("This function is still under development.")
   return(1L)
 }
 
@@ -75,6 +78,7 @@ rmsle <- function(actual, forecast) {
 #'
 #' @export
 se <- function(actual, forecast) {
+  warning("This function is still under development.")
   return(1L)
 }
 
@@ -90,6 +94,7 @@ se <- function(actual, forecast) {
 #'
 #' @export
 sle <- function(actual, forecast) {
+  warning("This function is still under development.")
   return(1L)
 }
 
@@ -105,6 +110,7 @@ sle <- function(actual, forecast) {
 #'
 #' @export
 smape <- function(actual, forecast) {
+  warning("This function is still under development.")
   return(1L)
 }
 
@@ -120,6 +126,7 @@ smape <- function(actual, forecast) {
 #'
 #' @export
 mase <- function(actual, forecast) {
+  warning("This function is still under development.")
   return(1L)
 }
 
@@ -135,5 +142,6 @@ mase <- function(actual, forecast) {
 #'
 #' @export
 score <- function(actual, forecast) {
+  warning("This function is still under development.")
   return(1L)
 }
