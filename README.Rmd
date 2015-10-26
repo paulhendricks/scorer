@@ -57,7 +57,6 @@ If you encounter a clear bug, please file a minimal reproducible example on [git
 ## API
 
 ```{r}
-library(dplyr, warn.conflicts = FALSE)
 library(scorer)
 
 e(1:10, 10:1)

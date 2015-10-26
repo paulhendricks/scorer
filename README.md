@@ -42,7 +42,6 @@ API
 ---
 
 ``` r
-library(dplyr, warn.conflicts = FALSE)
 library(scorer)
 
 e(1:10, 10:1)
