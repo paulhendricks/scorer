@@ -17,3 +17,123 @@ auc <- function(actual, forecast) {
   auc <- (sum(r[actual == 1]) - n_pos * (n_pos + 1) / 2) / (n_pos * n_neg)
   auc
 }
+
+#' Title.
+#'
+#' \code{function_name} does something.
+#'
+#' @param actual A numeric vector of actuals.
+#' @param forecast A numeric vector of forecasts.
+#' @return  A numeric vector of length one.
+#' @examples
+#' # Examples
+#'
+#' @export
+mse <- function(actual, forecast) {
+  return(1L)
+}
+
+#' Title.
+#'
+#' \code{function_name} does something.
+#'
+#' @param actual A numeric vector of actuals.
+#' @param forecast A numeric vector of forecasts.
+#' @return  A numeric vector of length one.
+#' @examples
+#' # Examples
+#'
+#' @export
+msle <- function(actual, forecast) {
+  return(1L)
+}
+
+#' Title.
+#'
+#' \code{function_name} does something.
+#'
+#' @param actual A numeric vector of actuals.
+#' @param forecast A numeric vector of forecasts.
+#' @return  A numeric vector of length one.
+#' @examples
+#' # Examples
+#'
+#' @export
+rmsle <- function(actual, forecast) {
+  return(1L)
+}
+
+#' Title.
+#'
+#' \code{function_name} does something.
+#'
+#' @param actual A numeric vector of actuals.
+#' @param forecast A numeric vector of forecasts.
+#' @return  A numeric vector of length one.
+#' @examples
+#' # Examples
+#'
+#' @export
+se <- function(actual, forecast) {
+  return(1L)
+}
+
+#' Title.
+#'
+#' \code{function_name} does something.
+#'
+#' @param actual A numeric vector of actuals.
+#' @param forecast A numeric vector of forecasts.
+#' @return  A numeric vector of length one.
+#' @examples
+#' # Examples
+#'
+#' @export
+sle <- function(actual, forecast) {
+  return(1L)
+}
+
+#' Title.
+#'
+#' \code{function_name} does something.
+#'
+#' @param actual A numeric vector of actuals.
+#' @param forecast A numeric vector of forecasts.
+#' @return  A numeric vector of length one.
+#' @examples
+#' # Examples
+#'
+#' @export
+smape <- function(actual, forecast) {
+  return(1L)
+}
+
+#' Title.
+#'
+#' \code{function_name} does something.
+#'
+#' @param actual A numeric vector of actuals.
+#' @param forecast A numeric vector of forecasts.
+#' @return  A numeric vector of length one.
+#' @examples
+#' # Examples
+#'
+#' @export
+mase <- function(actual, forecast) {
+  return(1L)
+}
+
+#' Title.
+#'
+#' \code{function_name} does something.
+#'
+#' @param actual A numeric vector of actuals.
+#' @param forecast A numeric vector of forecasts.
+#' @return  A numeric vector of length one.
+#' @examples
+#' # Examples
+#'
+#' @export
+score <- function(actual, forecast) {
+  return(1L)
+}
