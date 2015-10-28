@@ -65,20 +65,19 @@ mse <- function(actual, forecast) {
   return(mean((actual - forecast) ^ 2))
 }
 
-#' Title.
+#' Calculate mean log squared errors between actual and forecast.
 #'
-#' \code{function_name} does something.
+#' Calculate mean log squared errors between actual and forecast.
 #'
 #' @param actual A numeric vector of actuals.
 #' @param forecast A numeric vector of forecasts.
 #' @return  A numeric vector of length one.
 #' @examples
 #' # Examples
-#'
+#' msle(1:100, 100:1)
 #' @export
-msle <- function(actual, forecast) {
-  warning("This function is still under development.")
-  return(1L)
+mlse <- function(actual, forecast) {
+  return(mean(log((actual - forecast) ^ 2)))
 }
 
 #' Title.
