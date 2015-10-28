@@ -15,7 +15,7 @@ auc(actual, forecast)
 A numeric vector of length one.
 }
 \description{
-\code{auc} does something.
+\code{auc} calculates the area under the curve.
 }
 \examples{
 # Examples
