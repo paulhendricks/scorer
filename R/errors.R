@@ -35,6 +35,21 @@ se <- function(actual, forecast) {
   return((actual - forecast) ^ 2)
 }
 
+#' Calculate log squared errors between actual and forecast.
+#'
+#' Calculate log squared errors between actual and forecast.
+#'
+#' @param actual A numeric vector of actuals.
+#' @param forecast A numeric vector of forecasts.
+#' @return  A numeric vector.
+#' @examples
+#' # Examples
+#' lse(1:100, 100:1)
+#' @export
+lse <- function(actual, forecast) {
+  return(log((actual - forecast) ^ 2))
+}
+
 #' Calculate mean squared errors between actual and forecast.
 #'
 #' \code{mse} calculates the mean squared errors between actual and forecast.
