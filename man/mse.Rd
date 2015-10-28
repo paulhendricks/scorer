@@ -2,7 +2,7 @@
 % Please edit documentation in R/errors.R
 \name{mse}
 \alias{mse}
-\title{Calculate mean squared error between actual and forecast.}
+\title{Calculate mean squared errors between actual and forecast.}
 \usage{
 mse(actual, forecast)
 }
@@ -15,7 +15,7 @@ mse(actual, forecast)
 A numeric vector of length one.
 }
 \description{
-\code{mse} calculates the mean squared error between actual and forecast.
+\code{mse} calculates the mean squared errors between actual and forecast.
 }
 \examples{
 # Examples

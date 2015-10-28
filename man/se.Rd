@@ -2,7 +2,7 @@
 % Please edit documentation in R/errors.R
 \name{se}
 \alias{se}
-\title{Title.}
+\title{Calculate squared errors between actual and forecast.}
 \usage{
 se(actual, forecast)
 }
@@ -12,12 +12,13 @@ se(actual, forecast)
 \item{forecast}{A numeric vector of forecasts.}
 }
 \value{
-A numeric vector of length one.
+A numeric vector.
 }
 \description{
-\code{function_name} does something.
+Calculate squared errors between actual and forecast.
 }
 \examples{
 # Examples
+se(1:100, 100:1)
 }
 

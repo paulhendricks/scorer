@@ -20,9 +20,24 @@ auc <- function(actual, forecast) {
   auc
 }
 
-#' Calculate mean squared error between actual and forecast.
+#' Calculate squared errors between actual and forecast.
 #'
-#' \code{mse} calculates the mean squared error between actual and forecast.
+#' Calculate squared errors between actual and forecast.
+#'
+#' @param actual A numeric vector of actuals.
+#' @param forecast A numeric vector of forecasts.
+#' @return  A numeric vector.
+#' @examples
+#' # Examples
+#' se(1:100, 100:1)
+#' @export
+se <- function(actual, forecast) {
+  return((actual - forecast) ^ 2)
+}
+
+#' Calculate mean squared errors between actual and forecast.
+#'
+#' \code{mse} calculates the mean squared errors between actual and forecast.
 #'
 #' @param actual A numeric vector of actuals.
 #' @param forecast A numeric vector of forecasts.
@@ -63,22 +78,6 @@ msle <- function(actual, forecast) {
 #'
 #' @export
 rmsle <- function(actual, forecast) {
-  warning("This function is still under development.")
-  return(1L)
-}
-
-#' Title.
-#'
-#' \code{function_name} does something.
-#'
-#' @param actual A numeric vector of actuals.
-#' @param forecast A numeric vector of forecasts.
-#' @return  A numeric vector of length one.
-#' @examples
-#' # Examples
-#'
-#' @export
-se <- function(actual, forecast) {
   warning("This function is still under development.")
   return(1L)
 }
