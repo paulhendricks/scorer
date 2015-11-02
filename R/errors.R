@@ -74,7 +74,7 @@ mse <- function(actual, forecast) {
 #' @return  A numeric vector of length one.
 #' @examples
 #' # Examples
-#' msle(1:100, 100:1)
+#' mlse(1:100, 100:1)
 #' @export
 mlse <- function(actual, forecast) {
   return(mean(log((actual - forecast) ^ 2)))

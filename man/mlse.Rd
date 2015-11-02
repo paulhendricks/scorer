@@ -19,6 +19,6 @@ Calculate mean log squared errors between actual and forecast.
 }
 \examples{
 # Examples
-msle(1:100, 100:1)
+mlse(1:100, 100:1)
 }
 
