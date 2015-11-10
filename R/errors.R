@@ -159,3 +159,18 @@ score <- function(actual, forecast) {
   warning("This function is still under development.")
   return(1L)
 }
+
+#' Title.
+#'
+#' \code{function_name} does something.
+#'
+#' @param actual A numeric vector of actuals.
+#' @param forecast A numeric vector of forecasts.
+#' @return  A numeric vector of length one.
+#' @examples
+#' # Examples
+#'
+#' @export
+rmspe <- function(actual, forecast) {
+  return(sqrt(mean(pe(actual, forecast) ^ 2)))
+}
