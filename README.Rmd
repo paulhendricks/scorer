@@ -24,13 +24,14 @@ knitr::opts_chunk$set(
 [![Build status](https://ci.appveyor.com/api/projects/status/vuumrc0607xa44q9/branch/master?svg=true)](https://ci.appveyor.com/project/paulhendricks/scorer/branch/master)
 [![codecov.io](http://codecov.io/github/paulhendricks/scorer/coverage.svg?branch=master)](http://codecov.io/github/paulhendricks/scorer?branch=master)
 
-`scorer` is a set of tools for quickly scoring models in data science and machine learning. This toolset is written in C++, where possible, for blazing fast performance. The following scoring metrics are implemented in `scorer`:
+`scorer` is a set of tools for quickly scoring models in data science and machine learning. This toolset is written in C++, where possible, for blazing fast performance. The API follows that of [scklearn.metrics](http://scikit-learn.org/stable/modules/classes.html#module-sklearn.metrics) as much as possible. The following scoring types of metrics are implemented in `scorer`:
 
-* MAPE
-* sMAPE
-* AUC
-* RMSE
-* More...
+* Regression metrics
+* Classification metrics
+* Multilabel ranking metrics
+* Clustering metrics
+* Biclustering metrics
+* Pairwise metrics
 
 ## Installation
 
@@ -45,7 +46,7 @@ You can install:
 
 * the latest development version from github with
     
-    [![GitHub version](https://badge.fury.io/gh/paulhendricks%2Fscorer.svg)](http://badge.fury.io/gh/paulhendricks%2Fscorer)
+    [![Github_Status_Badge](https://img.shields.io/badge/Github-0.2.0.9000-blue.svg)](https://img.shields.io/badge/Github-0.2.0.9000-blue.svg)
     ```R
     if (packageVersion("devtools") < 1.6) {
       install.packages("devtools")
@@ -60,12 +61,13 @@ If you encounter a clear bug, please file a minimal reproducible example on [git
 ### Load library and data
 
 ```{r}
-library(scorer)
+library("scorer")
+packageVersion("scorer")
 data(mtcars)
 set.seed(1)
 ```
 
-### Partition data into train and test datasets
+### Partition data into train and test sets
 
 ```{r}
 mask <- (runif(nrow(mtcars), 0, 1) <= 0.8)
@@ -88,9 +90,10 @@ test_mtcars[, "forecasted_mpg"] <- predict(model, newdata = test_mtcars)
 ### Score model using various metrics
 
 ```{r}
-test_mtcars[, "error"] <- scorer::e(actual = test_mtcars[, "mpg"], forecast = test_mtcars[, "forecasted_mpg"])
-scorer::rmse(actual = test_mtcars[, "mpg"], forecast = test_mtcars[, "forecasted_mpg"])
-scorer::mape(actual = test_mtcars[, "mpg"], forecast = test_mtcars[, "forecasted_mpg"])
+scorer::mean_absolute_error(test_mtcars[, "mpg"], test_mtcars[, "forecasted_mpg"])
+scorer::mean_squared_error(test_mtcars[, "mpg"], test_mtcars[, "forecasted_mpg"])
+scorer::explained_variance_score(test_mtcars[, "mpg"], test_mtcars[, "forecasted_mpg"])
+scorer::r2_score(test_mtcars[, "mpg"], test_mtcars[, "forecasted_mpg"])
 ```
 
 ## People
@@ -102,3 +105,9 @@ scorer::mape(actual = test_mtcars[, "mpg"], forecast = test_mtcars[, "forecasted
 ## License
 
 [![License](http://img.shields.io/:license-mit-blue.svg)](https://github.com/paulhendricks/scorer/blob/master/LICENSE)
+
+## Session Information
+
+```{r}
+sessionInfo()
+```
