@@ -49,7 +49,7 @@ data(mtcars)
 set.seed(1)
 ```
 
-### Partition data into train and test sets
+### Partition data into train and test datasets
 
 ``` r
 mask <- (runif(nrow(mtcars), 0, 1) <= 0.8)
