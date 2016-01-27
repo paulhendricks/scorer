@@ -94,7 +94,7 @@ test_mtcars <- mtcars[!mask, ]
 model <- lm(mpg ~ wt, data = train_mtcars)
 ```
 
-### Forecast model using the test data set
+### Predict model using the test data set
 
 ```{r}
 test_mtcars[, "predicted_mpg"] <- predict(model, newdata = test_mtcars)
