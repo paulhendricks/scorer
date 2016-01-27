@@ -52,7 +52,17 @@ data(mtcars)
 set.seed(1)
 ```
 
-### Partition data into train and test sets
+### Visualize data
+
+``` r
+library("ggplot2")
+ggplot(mtcars, aes(x = wt, y = mpg)) + 
+  geom_point() + 
+  geom_smooth(method = 'lm')
+```
+
+![](inst/imgs/README-unnamed-chunk-3-1.png)
+ \#\#\# Partition data into train and test sets
 
 ``` r
 mask <- (runif(nrow(mtcars), 0, 1) <= 0.8)
@@ -63,7 +73,7 @@ test_mtcars <- mtcars[!mask, ]
 ### Build model on train data set
 
 ``` r
-model <- lm(mpg ~ wt + am, data = train_mtcars)
+model <- lm(mpg ~ wt, data = train_mtcars)
 ```
 
 ### Forecast model using the test data set
@@ -76,9 +86,9 @@ test_mtcars[, "predicted_mpg"] <- predict(model, newdata = test_mtcars)
 
 ``` r
 scorer::mean_absolute_error(test_mtcars[, "mpg"], test_mtcars[, "predicted_mpg"])
-#> [1] 3.453762
+#> [1] 3.393153
 scorer::mean_squared_error(test_mtcars[, "mpg"], test_mtcars[, "predicted_mpg"])
-#> [1] 16.43394
+#> [1] 15.99442
 scorer::explained_variance_score(test_mtcars[, "mpg"], test_mtcars[, "predicted_mpg"])
 #> Function not implemented yet.
 #> [1] 1
@@ -115,10 +125,12 @@ sessionInfo()
 #> [1] stats     graphics  grDevices utils     datasets  methods   base     
 #> 
 #> other attached packages:
-#> [1] scorer_0.2.0.9000
+#> [1] ggplot2_2.0.0     scorer_0.2.0.9000
 #> 
 #> loaded via a namespace (and not attached):
-#>  [1] magrittr_1.5    formatR_1.2.1   tools_3.2.3     htmltools_0.2.6
-#>  [5] yaml_2.1.13     Rcpp_0.12.3     stringi_1.0-1   rmarkdown_0.8.1
-#>  [9] knitr_1.12      stringr_1.0.0   digest_0.6.9    evaluate_0.8
+#>  [1] Rcpp_0.12.3      digest_0.6.9     plyr_1.8.3       grid_3.2.3      
+#>  [5] gtable_0.1.2     formatR_1.2.1    magrittr_1.5     evaluate_0.8    
+#>  [9] scales_0.3.0     stringi_1.0-1    rmarkdown_0.8.1  labeling_0.3    
+#> [13] tools_3.2.3      stringr_1.0.0    munsell_0.4.2    yaml_2.1.13     
+#> [17] colorspace_1.2-6 htmltools_0.2.6  knitr_1.12
 ```

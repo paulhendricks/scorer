@@ -10,7 +10,7 @@ output:
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
-  fig.path = "README-"
+  fig.path = "inst/imgs/README-"
 )
 ```
 
@@ -67,6 +67,15 @@ data(mtcars)
 set.seed(1)
 ```
 
+### Visualize data
+
+```{r}
+library("ggplot2")
+ggplot(mtcars, aes(x = wt, y = mpg)) + 
+  geom_point() + 
+  geom_smooth(method = 'lm')
+```
+
 ### Partition data into train and test sets
 
 ```{r}
@@ -78,7 +87,7 @@ test_mtcars <- mtcars[!mask, ]
 ### Build model on train data set
 
 ```{r}
-model <- lm(mpg ~ wt + am, data = train_mtcars)
+model <- lm(mpg ~ wt, data = train_mtcars)
 ```
 
 ### Forecast model using the test data set
