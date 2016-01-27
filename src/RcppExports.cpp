@@ -5,99 +5,75 @@
 
 using namespace Rcpp;
 
-// e
-NumericVector e(NumericVector actual, NumericVector forecast);
-RcppExport SEXP scorer_e(SEXP actualSEXP, SEXP forecastSEXP) {
+// absolute_error
+NumericVector absolute_error(NumericVector y_true, NumericVector y_pred);
+RcppExport SEXP scorer_absolute_error(SEXP y_trueSEXP, SEXP y_predSEXP) {
 BEGIN_RCPP
     Rcpp::RObject __result;
     Rcpp::RNGScope __rngScope;
-    Rcpp::traits::input_parameter< NumericVector >::type actual(actualSEXP);
-    Rcpp::traits::input_parameter< NumericVector >::type forecast(forecastSEXP);
-    __result = Rcpp::wrap(e(actual, forecast));
+    Rcpp::traits::input_parameter< NumericVector >::type y_true(y_trueSEXP);
+    Rcpp::traits::input_parameter< NumericVector >::type y_pred(y_predSEXP);
+    __result = Rcpp::wrap(absolute_error(y_true, y_pred));
     return __result;
 END_RCPP
 }
-// ce
-double ce(NumericVector actual, NumericVector forecast);
-RcppExport SEXP scorer_ce(SEXP actualSEXP, SEXP forecastSEXP) {
+// percent_error
+NumericVector percent_error(NumericVector y_true, NumericVector y_pred);
+RcppExport SEXP scorer_percent_error(SEXP y_trueSEXP, SEXP y_predSEXP) {
 BEGIN_RCPP
     Rcpp::RObject __result;
     Rcpp::RNGScope __rngScope;
-    Rcpp::traits::input_parameter< NumericVector >::type actual(actualSEXP);
-    Rcpp::traits::input_parameter< NumericVector >::type forecast(forecastSEXP);
-    __result = Rcpp::wrap(ce(actual, forecast));
+    Rcpp::traits::input_parameter< NumericVector >::type y_true(y_trueSEXP);
+    Rcpp::traits::input_parameter< NumericVector >::type y_pred(y_predSEXP);
+    __result = Rcpp::wrap(percent_error(y_true, y_pred));
     return __result;
 END_RCPP
 }
-// ae
-NumericVector ae(NumericVector actual, NumericVector forecast);
-RcppExport SEXP scorer_ae(SEXP actualSEXP, SEXP forecastSEXP) {
+// absolute_percent_error
+NumericVector absolute_percent_error(NumericVector y_true, NumericVector y_pred);
+RcppExport SEXP scorer_absolute_percent_error(SEXP y_trueSEXP, SEXP y_predSEXP) {
 BEGIN_RCPP
     Rcpp::RObject __result;
     Rcpp::RNGScope __rngScope;
-    Rcpp::traits::input_parameter< NumericVector >::type actual(actualSEXP);
-    Rcpp::traits::input_parameter< NumericVector >::type forecast(forecastSEXP);
-    __result = Rcpp::wrap(ae(actual, forecast));
+    Rcpp::traits::input_parameter< NumericVector >::type y_true(y_trueSEXP);
+    Rcpp::traits::input_parameter< NumericVector >::type y_pred(y_predSEXP);
+    __result = Rcpp::wrap(absolute_percent_error(y_true, y_pred));
     return __result;
 END_RCPP
 }
-// pe
-NumericVector pe(NumericVector actual, NumericVector forecast);
-RcppExport SEXP scorer_pe(SEXP actualSEXP, SEXP forecastSEXP) {
+// squared_error
+NumericVector squared_error(NumericVector y_true, NumericVector y_pred);
+RcppExport SEXP scorer_squared_error(SEXP y_trueSEXP, SEXP y_predSEXP) {
 BEGIN_RCPP
     Rcpp::RObject __result;
     Rcpp::RNGScope __rngScope;
-    Rcpp::traits::input_parameter< NumericVector >::type actual(actualSEXP);
-    Rcpp::traits::input_parameter< NumericVector >::type forecast(forecastSEXP);
-    __result = Rcpp::wrap(pe(actual, forecast));
+    Rcpp::traits::input_parameter< NumericVector >::type y_true(y_trueSEXP);
+    Rcpp::traits::input_parameter< NumericVector >::type y_pred(y_predSEXP);
+    __result = Rcpp::wrap(squared_error(y_true, y_pred));
     return __result;
 END_RCPP
 }
-// ape
-NumericVector ape(NumericVector actual, NumericVector forecast);
-RcppExport SEXP scorer_ape(SEXP actualSEXP, SEXP forecastSEXP) {
+// mean_error
+double mean_error(NumericVector y_true, NumericVector y_pred);
+RcppExport SEXP scorer_mean_error(SEXP y_trueSEXP, SEXP y_predSEXP) {
 BEGIN_RCPP
     Rcpp::RObject __result;
     Rcpp::RNGScope __rngScope;
-    Rcpp::traits::input_parameter< NumericVector >::type actual(actualSEXP);
-    Rcpp::traits::input_parameter< NumericVector >::type forecast(forecastSEXP);
-    __result = Rcpp::wrap(ape(actual, forecast));
+    Rcpp::traits::input_parameter< NumericVector >::type y_true(y_trueSEXP);
+    Rcpp::traits::input_parameter< NumericVector >::type y_pred(y_predSEXP);
+    __result = Rcpp::wrap(mean_error(y_true, y_pred));
     return __result;
 END_RCPP
 }
-// mae
-double mae(NumericVector actual, NumericVector forecast);
-RcppExport SEXP scorer_mae(SEXP actualSEXP, SEXP forecastSEXP) {
+// mean_absolute_error
+double mean_absolute_error(NumericVector y_true, NumericVector y_pred);
+RcppExport SEXP scorer_mean_absolute_error(SEXP y_trueSEXP, SEXP y_predSEXP) {
 BEGIN_RCPP
     Rcpp::RObject __result;
     Rcpp::RNGScope __rngScope;
-    Rcpp::traits::input_parameter< NumericVector >::type actual(actualSEXP);
-    Rcpp::traits::input_parameter< NumericVector >::type forecast(forecastSEXP);
-    __result = Rcpp::wrap(mae(actual, forecast));
-    return __result;
-END_RCPP
-}
-// mape
-double mape(NumericVector actual, NumericVector forecast);
-RcppExport SEXP scorer_mape(SEXP actualSEXP, SEXP forecastSEXP) {
-BEGIN_RCPP
-    Rcpp::RObject __result;
-    Rcpp::RNGScope __rngScope;
-    Rcpp::traits::input_parameter< NumericVector >::type actual(actualSEXP);
-    Rcpp::traits::input_parameter< NumericVector >::type forecast(forecastSEXP);
-    __result = Rcpp::wrap(mape(actual, forecast));
-    return __result;
-END_RCPP
-}
-// rmse
-double rmse(NumericVector actual, NumericVector forecast);
-RcppExport SEXP scorer_rmse(SEXP actualSEXP, SEXP forecastSEXP) {
-BEGIN_RCPP
-    Rcpp::RObject __result;
-    Rcpp::RNGScope __rngScope;
-    Rcpp::traits::input_parameter< NumericVector >::type actual(actualSEXP);
-    Rcpp::traits::input_parameter< NumericVector >::type forecast(forecastSEXP);
-    __result = Rcpp::wrap(rmse(actual, forecast));
+    Rcpp::traits::input_parameter< NumericVector >::type y_true(y_trueSEXP);
+    Rcpp::traits::input_parameter< NumericVector >::type y_pred(y_predSEXP);
+    __result = Rcpp::wrap(mean_absolute_error(y_true, y_pred));
     return __result;
 END_RCPP
 }

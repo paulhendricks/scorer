@@ -1,63 +1,3 @@
-#' Calculate absolute error regression loss.
-#'
-#' @param y_true Ground truth (correct) target values.
-#' @param y_pred Estimated target values.
-#' @return  A numeric vector of length equal to \code{max(length(y_true), length(y_pred))}.
-#' @export
-absolute_error <- function(y_true, y_pred) {
-  return(abs(y_true - y_pred))
-}
-
-#' Calculate percent error regression loss.
-#'
-#' @param y_true Ground truth (correct) target values.
-#' @param y_pred Estimated target values.
-#' @return  A numeric vector of length equal to \code{max(length(y_true), length(y_pred))}.
-#' @export
-percent_error <- function(y_true, y_pred) {
-  return((y_true - y_pred) / y_true)
-}
-
-#' Calculate absolute percent error regression loss.
-#'
-#' @param y_true Ground truth (correct) target values.
-#' @param y_pred Estimated target values.
-#' @return  A numeric vector of length equal to \code{max(length(y_true), length(y_pred))}.
-#' @export
-absolute_percent_error <- function(y_true, y_pred) {
-  return(abs(percent_error(y_true = y_true, y_pred = y_pred)))
-}
-
-#' Calculate squared error regression loss.
-#'
-#' @param y_true Ground truth (correct) target values.
-#' @param y_pred Estimated target values.
-#' @return  A numeric vector of length equal to \code{max(length(y_true), length(y_pred))}.
-#' @export
-squared_error <- function(y_true, y_pred) {
-  return((y_true - y_pred) ^ 2)
-}
-
-#' Calculate mean error regression loss.
-#'
-#' @param y_true Ground truth (correct) target values.
-#' @param y_pred Estimated target values.
-#' @return  A numeric vector of length one.
-#' @export
-mean_error <- function(y_true, y_pred) {
-  return(mean(y_true - y_pred))
-}
-
-#' Calculate mean absolute error regression loss.
-#'
-#' @param y_true Ground truth (correct) target values.
-#' @param y_pred Estimated target values.
-#' @return  A numeric vector of length one.
-#' @export
-mean_absolute_error <- function(y_true, y_pred) {
-  return(mean(absolute_error(y_true = y_true, y_pred = y_pred)))
-}
-
 #' Calculate median absolute error regression loss.
 #'
 #' @param y_true Ground truth (correct) target values.
@@ -65,6 +5,7 @@ mean_absolute_error <- function(y_true, y_pred) {
 #' @return  A numeric vector of length one.
 #' @export
 median_absolute_error <- function(y_true, y_pred) {
+  message("Function not implemented in C++ yet.")
   return(median(absolute_error(y_true = y_true, y_pred = y_pred)))
 }
 
