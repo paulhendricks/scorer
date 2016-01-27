@@ -76,18 +76,14 @@ test_mtcars[, "forecasted_mpg"] <- predict(model, newdata = test_mtcars)
 
 ``` r
 scorer::mean_absolute_error(test_mtcars[, "mpg"], test_mtcars[, "forecasted_mpg"])
-#> This function has still not been implemented in C++.
-#> This function has still not been implemented in C++.
 #> [1] 3.453762
 scorer::mean_squared_error(test_mtcars[, "mpg"], test_mtcars[, "forecasted_mpg"])
-#> This function has still not been implemented in C++.
-#> This function has still not been implemented in C++.
 #> [1] 16.43394
 scorer::explained_variance_score(test_mtcars[, "mpg"], test_mtcars[, "forecasted_mpg"])
-#> This function has still not been implemented.
+#> Function not implemented yet.
 #> [1] 1
 scorer::r2_score(test_mtcars[, "mpg"], test_mtcars[, "forecasted_mpg"])
-#> This function has still not been implemented.
+#> Function not implemented yet.
 #> [1] 1
 ```
 
