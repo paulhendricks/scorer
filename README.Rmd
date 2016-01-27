@@ -46,7 +46,7 @@ You can install:
 
 * the latest development version from github with
     
-    [![Github_Status_Badge](https://img.shields.io/badge/Github-0.2.0.9000-blue.svg)](https://img.shields.io/badge/Github-0.2.0.9000-blue.svg)
+    [![Github_Status_Badge](https://img.shields.io/badge/Github-0.2.0.9000-green.svg)](https://img.shields.io/badge/Github-0.2.0.9000-green.svg)
     ```R
     if (packageVersion("devtools") < 1.6) {
       install.packages("devtools")
