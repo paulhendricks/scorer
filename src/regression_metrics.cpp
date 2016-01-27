@@ -99,3 +99,47 @@ double mean_squared_error(NumericVector y_true, NumericVector y_pred) {
 double mean_absolute_percent_error(NumericVector y_true, NumericVector y_pred) {
   return mean(absolute_percent_error(y_true = y_true, y_pred = y_pred));
 }
+
+//' Calculate R^2 (coefficient of determination) regression score function.
+//'
+//' @param y_true Ground truth (correct) target values.
+//' @param y_pred Estimated target values.
+//' @return  A numeric vector of length one.
+//' @export
+// [[Rcpp::export]]
+double r2_score(NumericVector y_true, NumericVector y_pred) {
+  return sum(pow((y_pred - mean(y_true)), 2)) / sum(pow((y_true - mean(y_true)), 2));
+}
+
+//' Calculate total variance regression score function.
+//'
+//' @param y_true Ground truth (correct) target values.
+//' @param y_pred Estimated target values.
+//' @return  A numeric vector of length one.
+//' @export
+// [[Rcpp::export]]
+double total_variance_score(NumericVector y_true, NumericVector y_pred) {
+  return sum(pow((y_true - mean(y_true)), 2));
+}
+
+//' Calculate explained variance regression score function.
+//'
+//' @param y_true Ground truth (correct) target values.
+//' @param y_pred Estimated target values.
+//' @return  A numeric vector of length one.
+//' @export
+// [[Rcpp::export]]
+double explained_variance_score(NumericVector y_true, NumericVector y_pred) {
+  return sum(pow((y_pred - mean(y_true)), 2));
+}
+
+//' Calculate unexplained variance regression score function.
+//'
+//' @param y_true Ground truth (correct) target values.
+//' @param y_pred Estimated target values.
+//' @return  A numeric vector of length one.
+//' @export
+// [[Rcpp::export]]
+double unexplained_variance_score(NumericVector y_true, NumericVector y_pred) {
+  return sum(pow((y_true - y_pred), 2));
+}

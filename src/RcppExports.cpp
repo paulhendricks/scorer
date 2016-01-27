@@ -113,3 +113,51 @@ BEGIN_RCPP
     return __result;
 END_RCPP
 }
+// r2_score
+double r2_score(NumericVector y_true, NumericVector y_pred);
+RcppExport SEXP scorer_r2_score(SEXP y_trueSEXP, SEXP y_predSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject __result;
+    Rcpp::RNGScope __rngScope;
+    Rcpp::traits::input_parameter< NumericVector >::type y_true(y_trueSEXP);
+    Rcpp::traits::input_parameter< NumericVector >::type y_pred(y_predSEXP);
+    __result = Rcpp::wrap(r2_score(y_true, y_pred));
+    return __result;
+END_RCPP
+}
+// total_variance_score
+double total_variance_score(NumericVector y_true, NumericVector y_pred);
+RcppExport SEXP scorer_total_variance_score(SEXP y_trueSEXP, SEXP y_predSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject __result;
+    Rcpp::RNGScope __rngScope;
+    Rcpp::traits::input_parameter< NumericVector >::type y_true(y_trueSEXP);
+    Rcpp::traits::input_parameter< NumericVector >::type y_pred(y_predSEXP);
+    __result = Rcpp::wrap(total_variance_score(y_true, y_pred));
+    return __result;
+END_RCPP
+}
+// explained_variance_score
+double explained_variance_score(NumericVector y_true, NumericVector y_pred);
+RcppExport SEXP scorer_explained_variance_score(SEXP y_trueSEXP, SEXP y_predSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject __result;
+    Rcpp::RNGScope __rngScope;
+    Rcpp::traits::input_parameter< NumericVector >::type y_true(y_trueSEXP);
+    Rcpp::traits::input_parameter< NumericVector >::type y_pred(y_predSEXP);
+    __result = Rcpp::wrap(explained_variance_score(y_true, y_pred));
+    return __result;
+END_RCPP
+}
+// unexplained_variance_score
+double unexplained_variance_score(NumericVector y_true, NumericVector y_pred);
+RcppExport SEXP scorer_unexplained_variance_score(SEXP y_trueSEXP, SEXP y_predSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject __result;
+    Rcpp::RNGScope __rngScope;
+    Rcpp::traits::input_parameter< NumericVector >::type y_true(y_trueSEXP);
+    Rcpp::traits::input_parameter< NumericVector >::type y_pred(y_predSEXP);
+    __result = Rcpp::wrap(unexplained_variance_score(y_true, y_pred));
+    return __result;
+END_RCPP
+}
