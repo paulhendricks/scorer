@@ -45,7 +45,9 @@ If you encounter a clear bug, please file a minimal reproducible example on [git
 API
 ---
 
-### Load library and data
+### Regression metrics
+
+#### Load library and data
 
 ``` r
 library("scorer")
@@ -55,7 +57,7 @@ data(mtcars)
 set.seed(1)
 ```
 
-### Visualize data
+#### Visualize data
 
 ``` r
 library("ggplot2")
@@ -66,7 +68,7 @@ ggplot(mtcars, aes(x = wt, y = mpg)) +
 
 ![](inst/imgs/README-unnamed-chunk-3-1.png)
 
-### Partition data into train and test sets
+#### Partition data into train and test sets
 
 ``` r
 mask <- (runif(nrow(mtcars), 0, 1) <= 0.8)
@@ -74,19 +76,19 @@ train_mtcars <- mtcars[mask, ]
 test_mtcars <- mtcars[!mask, ]
 ```
 
-### Build model on train data set
+#### Build model on train data set
 
 ``` r
 model <- lm(mpg ~ wt, data = train_mtcars)
 ```
 
-### Predict model using the test data set
+#### Predict model using the test data set
 
 ``` r
 test_mtcars[, "predicted_mpg"] <- predict(model, newdata = test_mtcars)
 ```
 
-### Score model using various metrics
+#### Score model using various metrics
 
 ``` r
 scorer::mean_absolute_error(test_mtcars[, "mpg"], test_mtcars[, "predicted_mpg"])
@@ -101,6 +103,12 @@ scorer::explained_variance_score(test_mtcars[, "mpg"], test_mtcars[, "predicted_
 #> [1] 43.08409
 scorer::unexplained_variance_score(test_mtcars[, "mpg"], test_mtcars[, "predicted_mpg"])
 #> [1] 95.96655
+```
+
+### Classification metrics
+
+``` r
+# TO BE UPDATED
 ```
 
 People
