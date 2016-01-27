@@ -81,7 +81,8 @@ ggplot(mtcars, aes(x = wt, y = mpg, color = Type)) + geom_point()
 ```
 
 ![](inst/imgs/README-unnamed-chunk-4-1.png)
- \#\#\#\# Build model on train data set
+
+#### Build model on train data set
 
 ``` r
 model <- lm(mpg ~ wt, data = train_mtcars)

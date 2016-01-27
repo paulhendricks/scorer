@@ -94,6 +94,7 @@ test_mtcars <- mtcars[!mask, ]
 ggplot(mtcars, aes(x = wt, y = mpg, color = Type)) + geom_point()
 ```
 
+
 #### Build model on train data set
 
 ```{r}
