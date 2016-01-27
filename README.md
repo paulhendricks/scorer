@@ -90,10 +90,14 @@ scorer::mean_absolute_error(test_mtcars[, "mpg"], test_mtcars[, "predicted_mpg"]
 #> [1] 3.393153
 scorer::mean_squared_error(test_mtcars[, "mpg"], test_mtcars[, "predicted_mpg"])
 #> [1] 15.99442
-scorer::explained_variance_score(test_mtcars[, "mpg"], test_mtcars[, "predicted_mpg"])
-#> [1] 43.08409
 scorer::r2_score(test_mtcars[, "mpg"], test_mtcars[, "predicted_mpg"])
 #> [1] 0.2054869
+scorer::total_variance_score(test_mtcars[, "mpg"], test_mtcars[, "predicted_mpg"])
+#> [1] 209.6683
+scorer::explained_variance_score(test_mtcars[, "mpg"], test_mtcars[, "predicted_mpg"])
+#> [1] 43.08409
+scorer::unexplained_variance_score(test_mtcars[, "mpg"], test_mtcars[, "predicted_mpg"])
+#> [1] 95.96655
 ```
 
 People
