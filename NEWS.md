@@ -2,7 +2,7 @@
 
 ## Improvements
 
-* Implementing more functions!
+* Implementing more functions! This time, the functions are in the style of `sklearn.metrics`. More details to follow.
 
 # scorer 0.2.0
 
