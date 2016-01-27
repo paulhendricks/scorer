@@ -46,8 +46,7 @@ median_absolute_percent_error <- function(y_true, y_pred) {
 #' @return  A numeric vector of length one.
 #' @export
 r2_score <- function(y_true, y_pred) {
-  message("Function not implemented yet.")
-  return(1L)
+  return(sum((y_pred - mean(y_true)) ^ 2) / sum((y_true - mean(y_true)) ^ 2))
 }
 
 #' Calculate explained variance regression score function.

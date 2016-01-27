@@ -94,8 +94,7 @@ scorer::explained_variance_score(test_mtcars[, "mpg"], test_mtcars[, "predicted_
 #> Function not implemented yet.
 #> [1] 1
 scorer::r2_score(test_mtcars[, "mpg"], test_mtcars[, "predicted_mpg"])
-#> Function not implemented yet.
-#> [1] 1
+#> [1] 0.2054869
 ```
 
 People
