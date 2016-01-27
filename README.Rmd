@@ -76,6 +76,7 @@ ggplot(mtcars, aes(x = wt, y = mpg)) +
   geom_smooth(method = 'lm')
 ```
 
+
 ### Partition data into train and test sets
 
 ```{r}

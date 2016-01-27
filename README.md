@@ -62,7 +62,8 @@ ggplot(mtcars, aes(x = wt, y = mpg)) +
 ```
 
 ![](inst/imgs/README-unnamed-chunk-3-1.png)
- \#\#\# Partition data into train and test sets
+
+### Partition data into train and test sets
 
 ``` r
 mask <- (runif(nrow(mtcars), 0, 1) <= 0.8)
