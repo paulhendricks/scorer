@@ -20,4 +20,3 @@
 ## Bug fixes
 
 * Fixed minor error in passing multiple arguments to `mae()`.
-
