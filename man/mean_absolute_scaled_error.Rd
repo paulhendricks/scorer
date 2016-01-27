@@ -2,7 +2,7 @@
 % Please edit documentation in R/regression_metrics.R
 \name{mean_absolute_scaled_error}
 \alias{mean_absolute_scaled_error}
-\title{Calculate explained variance regression score function.}
+\title{Calculate mean absolute scaled error regression loss.}
 \usage{
 mean_absolute_scaled_error(y_true, y_pred)
 }
@@ -15,6 +15,6 @@ mean_absolute_scaled_error(y_true, y_pred)
 A numeric vector of length one.
 }
 \description{
-Calculate explained variance regression score function.
+Calculate mean absolute scaled error regression loss.
 }
 
