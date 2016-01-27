@@ -77,3 +77,39 @@ BEGIN_RCPP
     return __result;
 END_RCPP
 }
+// mean_percent_error
+double mean_percent_error(NumericVector y_true, NumericVector y_pred);
+RcppExport SEXP scorer_mean_percent_error(SEXP y_trueSEXP, SEXP y_predSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject __result;
+    Rcpp::RNGScope __rngScope;
+    Rcpp::traits::input_parameter< NumericVector >::type y_true(y_trueSEXP);
+    Rcpp::traits::input_parameter< NumericVector >::type y_pred(y_predSEXP);
+    __result = Rcpp::wrap(mean_percent_error(y_true, y_pred));
+    return __result;
+END_RCPP
+}
+// mean_squared_error
+double mean_squared_error(NumericVector y_true, NumericVector y_pred);
+RcppExport SEXP scorer_mean_squared_error(SEXP y_trueSEXP, SEXP y_predSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject __result;
+    Rcpp::RNGScope __rngScope;
+    Rcpp::traits::input_parameter< NumericVector >::type y_true(y_trueSEXP);
+    Rcpp::traits::input_parameter< NumericVector >::type y_pred(y_predSEXP);
+    __result = Rcpp::wrap(mean_squared_error(y_true, y_pred));
+    return __result;
+END_RCPP
+}
+// mean_absolute_percent_error
+double mean_absolute_percent_error(NumericVector y_true, NumericVector y_pred);
+RcppExport SEXP scorer_mean_absolute_percent_error(SEXP y_trueSEXP, SEXP y_predSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject __result;
+    Rcpp::RNGScope __rngScope;
+    Rcpp::traits::input_parameter< NumericVector >::type y_true(y_trueSEXP);
+    Rcpp::traits::input_parameter< NumericVector >::type y_pred(y_predSEXP);
+    __result = Rcpp::wrap(mean_absolute_percent_error(y_true, y_pred));
+    return __result;
+END_RCPP
+}

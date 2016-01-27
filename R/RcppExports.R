@@ -45,7 +45,7 @@ squared_error <- function(y_true, y_pred) {
 #'
 #' @param y_true Ground truth (correct) target values.
 #' @param y_pred Estimated target values.
-#' @return  A numeric vector of length equal to \code{max(length(y_true), length(y_pred))}.
+#' @return  A numeric vector of length one.
 #' @export
 mean_error <- function(y_true, y_pred) {
     .Call('scorer_mean_error', PACKAGE = 'scorer', y_true, y_pred)
@@ -55,9 +55,39 @@ mean_error <- function(y_true, y_pred) {
 #'
 #' @param y_true Ground truth (correct) target values.
 #' @param y_pred Estimated target values.
-#' @return  A numeric vector of length equal to \code{max(length(y_true), length(y_pred))}.
+#' @return  A numeric vector of length one.
 #' @export
 mean_absolute_error <- function(y_true, y_pred) {
     .Call('scorer_mean_absolute_error', PACKAGE = 'scorer', y_true, y_pred)
+}
+
+#' Calculate mean percent error regression loss.
+#'
+#' @param y_true Ground truth (correct) target values.
+#' @param y_pred Estimated target values.
+#' @return  A numeric vector of length one.
+#' @export
+mean_percent_error <- function(y_true, y_pred) {
+    .Call('scorer_mean_percent_error', PACKAGE = 'scorer', y_true, y_pred)
+}
+
+#' Calculate mean squared error regression loss.
+#'
+#' @param y_true Ground truth (correct) target values.
+#' @param y_pred Estimated target values.
+#' @return  A numeric vector of length one.
+#' @export
+mean_squared_error <- function(y_true, y_pred) {
+    .Call('scorer_mean_squared_error', PACKAGE = 'scorer', y_true, y_pred)
+}
+
+#' Calculate mean absolute percent error regression loss.
+#'
+#' @param y_true Ground truth (correct) target values.
+#' @param y_pred Estimated target values.
+#' @return  A numeric vector of length one.
+#' @export
+mean_absolute_percent_error <- function(y_true, y_pred) {
+    .Call('scorer_mean_absolute_percent_error', PACKAGE = 'scorer', y_true, y_pred)
 }
 

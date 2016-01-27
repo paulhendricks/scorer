@@ -49,7 +49,7 @@ NumericVector squared_error(NumericVector y_true, NumericVector y_pred) {
 //'
 //' @param y_true Ground truth (correct) target values.
 //' @param y_pred Estimated target values.
-//' @return  A numeric vector of length equal to \code{max(length(y_true), length(y_pred))}.
+//' @return  A numeric vector of length one.
 //' @export
 // [[Rcpp::export]]
 double mean_error(NumericVector y_true, NumericVector y_pred) {
@@ -60,9 +60,42 @@ double mean_error(NumericVector y_true, NumericVector y_pred) {
 //'
 //' @param y_true Ground truth (correct) target values.
 //' @param y_pred Estimated target values.
-//' @return  A numeric vector of length equal to \code{max(length(y_true), length(y_pred))}.
+//' @return  A numeric vector of length one.
 //' @export
 // [[Rcpp::export]]
 double mean_absolute_error(NumericVector y_true, NumericVector y_pred) {
+  return mean(absolute_error(y_true = y_true, y_pred = y_pred));
+}
+
+//' Calculate mean percent error regression loss.
+//'
+//' @param y_true Ground truth (correct) target values.
+//' @param y_pred Estimated target values.
+//' @return  A numeric vector of length one.
+//' @export
+// [[Rcpp::export]]
+double mean_percent_error(NumericVector y_true, NumericVector y_pred) {
+  return mean(percent_error(y_true = y_true, y_pred = y_pred));
+}
+
+//' Calculate mean squared error regression loss.
+//'
+//' @param y_true Ground truth (correct) target values.
+//' @param y_pred Estimated target values.
+//' @return  A numeric vector of length one.
+//' @export
+// [[Rcpp::export]]
+double mean_squared_error(NumericVector y_true, NumericVector y_pred) {
+  return mean(squared_error(y_true = y_true, y_pred = y_pred));
+}
+
+//' Calculate mean absolute percent error regression loss.
+//'
+//' @param y_true Ground truth (correct) target values.
+//' @param y_pred Estimated target values.
+//' @return  A numeric vector of length one.
+//' @export
+// [[Rcpp::export]]
+double mean_absolute_percent_error(NumericVector y_true, NumericVector y_pred) {
   return mean(absolute_percent_error(y_true = y_true, y_pred = y_pred));
 }

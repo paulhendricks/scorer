@@ -12,7 +12,7 @@ mean_error(y_true, y_pred)
 \item{y_pred}{Estimated target values.}
 }
 \value{
-A numeric vector of length equal to \code{max(length(y_true), length(y_pred))}.
+A numeric vector of length one.
 }
 \description{
 Calculate mean error regression loss.
