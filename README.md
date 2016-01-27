@@ -69,20 +69,20 @@ model <- lm(mpg ~ wt + am, data = train_mtcars)
 ### Forecast model using the test data set
 
 ``` r
-test_mtcars[, "forecasted_mpg"] <- predict(model, newdata = test_mtcars)
+test_mtcars[, "predicted_mpg"] <- predict(model, newdata = test_mtcars)
 ```
 
 ### Score model using various metrics
 
 ``` r
-scorer::mean_absolute_error(test_mtcars[, "mpg"], test_mtcars[, "forecasted_mpg"])
+scorer::mean_absolute_error(test_mtcars[, "mpg"], test_mtcars[, "predicted_mpg"])
 #> [1] 3.453762
-scorer::mean_squared_error(test_mtcars[, "mpg"], test_mtcars[, "forecasted_mpg"])
+scorer::mean_squared_error(test_mtcars[, "mpg"], test_mtcars[, "predicted_mpg"])
 #> [1] 16.43394
-scorer::explained_variance_score(test_mtcars[, "mpg"], test_mtcars[, "forecasted_mpg"])
+scorer::explained_variance_score(test_mtcars[, "mpg"], test_mtcars[, "predicted_mpg"])
 #> Function not implemented yet.
 #> [1] 1
-scorer::r2_score(test_mtcars[, "mpg"], test_mtcars[, "forecasted_mpg"])
+scorer::r2_score(test_mtcars[, "mpg"], test_mtcars[, "predicted_mpg"])
 #> Function not implemented yet.
 #> [1] 1
 ```
