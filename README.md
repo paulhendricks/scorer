@@ -91,8 +91,7 @@ scorer::mean_absolute_error(test_mtcars[, "mpg"], test_mtcars[, "predicted_mpg"]
 scorer::mean_squared_error(test_mtcars[, "mpg"], test_mtcars[, "predicted_mpg"])
 #> [1] 15.99442
 scorer::explained_variance_score(test_mtcars[, "mpg"], test_mtcars[, "predicted_mpg"])
-#> Function not implemented yet.
-#> [1] 1
+#> [1] 43.08409
 scorer::r2_score(test_mtcars[, "mpg"], test_mtcars[, "predicted_mpg"])
 #> [1] 0.2054869
 ```
