@@ -24,9 +24,12 @@ knitr::opts_chunk$set(
 [![Build status](https://ci.appveyor.com/api/projects/status/vuumrc0607xa44q9/branch/master?svg=true)](https://ci.appveyor.com/project/paulhendricks/scorer/branch/master)
 [![codecov.io](http://codecov.io/github/paulhendricks/scorer/coverage.svg?branch=master)](http://codecov.io/github/paulhendricks/scorer?branch=master)
 
-`scorer` is a set of tools for quickly scoring models in data science and machine learning. This toolset is written in C++, where possible, for blazing fast performance. The API follows that of [sklearn.metrics](http://scikit-learn.org/stable/modules/classes.html#sklearn-metrics-metrics) as much as possible. The following scoring types of metrics are implemented in `scorer`:
+`scorer` is a set of tools for quickly scoring models in data science and machine learning. This toolset is written in C++, where possible, for blazing fast performance. The API follows that of [sklearn.metrics](http://scikit-learn.org/stable/modules/classes.html#sklearn-metrics-metrics) as much as possible. The following types of metrics are implemented in `scorer`:
 
 * Regression metrics
+
+The following types of metrics are soon to be implemented in `scorer`:
+
 * Classification metrics
 * Multilabel ranking metrics
 * Clustering metrics
