@@ -69,7 +69,6 @@ If you encounter a clear bug, please file a minimal reproducible example on [git
 library("scorer")
 packageVersion("scorer")
 data(mtcars)
-set.seed(1)
 ```
 
 #### Visualize data
@@ -85,9 +84,14 @@ ggplot(mtcars, aes(x = wt, y = mpg)) +
 #### Partition data into train and test sets
 
 ```{r}
-mask <- (runif(nrow(mtcars), 0, 1) <= 0.8)
+set.seed(1)
+n_train <- floor(nrow(mtcars) * 0.60)
+n_test <- nrow(mtcars) - n_train
+mask <- sample(c(rep(x = TRUE, times = n_train), rep(x = FALSE, times = n_test)))
+mtcars[, "Type"] <- ifelse(mask, "Train", "Test")
 train_mtcars <- mtcars[mask, ]
 test_mtcars <- mtcars[!mask, ]
+ggplot(mtcars, aes(x = wt, y = mpg, color = Type)) + geom_point()
 ```
 
 #### Build model on train data set

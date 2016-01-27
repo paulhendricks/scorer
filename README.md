@@ -54,7 +54,6 @@ library("scorer")
 packageVersion("scorer")
 #> [1] '0.2.0.9000'
 data(mtcars)
-set.seed(1)
 ```
 
 #### Visualize data
@@ -71,12 +70,18 @@ ggplot(mtcars, aes(x = wt, y = mpg)) +
 #### Partition data into train and test sets
 
 ``` r
-mask <- (runif(nrow(mtcars), 0, 1) <= 0.8)
+set.seed(1)
+n_train <- floor(nrow(mtcars) * 0.60)
+n_test <- nrow(mtcars) - n_train
+mask <- sample(c(rep(x = TRUE, times = n_train), rep(x = FALSE, times = n_test)))
+mtcars[, "Type"] <- ifelse(mask, "Train", "Test")
 train_mtcars <- mtcars[mask, ]
 test_mtcars <- mtcars[!mask, ]
+ggplot(mtcars, aes(x = wt, y = mpg, color = Type)) + geom_point()
 ```
 
-#### Build model on train data set
+![](inst/imgs/README-unnamed-chunk-4-1.png)
+ \#\#\#\# Build model on train data set
 
 ``` r
 model <- lm(mpg ~ wt, data = train_mtcars)
@@ -92,17 +97,17 @@ test_mtcars[, "predicted_mpg"] <- predict(model, newdata = test_mtcars)
 
 ``` r
 scorer::mean_absolute_error(test_mtcars[, "mpg"], test_mtcars[, "predicted_mpg"])
-#> [1] 3.393153
+#> [1] 3.287805
 scorer::mean_squared_error(test_mtcars[, "mpg"], test_mtcars[, "predicted_mpg"])
-#> [1] 15.99442
+#> [1] 15.43932
 scorer::r2_score(test_mtcars[, "mpg"], test_mtcars[, "predicted_mpg"])
-#> [1] 0.2054869
+#> [1] 1.754141
 scorer::total_variance_score(test_mtcars[, "mpg"], test_mtcars[, "predicted_mpg"])
-#> [1] 209.6683
+#> [1] 510.1092
 scorer::explained_variance_score(test_mtcars[, "mpg"], test_mtcars[, "predicted_mpg"])
-#> [1] 43.08409
+#> [1] 894.8037
 scorer::unexplained_variance_score(test_mtcars[, "mpg"], test_mtcars[, "predicted_mpg"])
-#> [1] 95.96655
+#> [1] 200.7111
 ```
 
 ### Classification metrics
