@@ -78,7 +78,7 @@ double mean_error(NumericVector y_true, NumericVector y_pred) {
 //' @return  A numeric vector of length one.
 //' @export
 // [[Rcpp::export]]
-double mean_absolute_error_rcpp(NumericVector y_true, NumericVector y_pred) {
+double mean_absolute_error(NumericVector y_true, NumericVector y_pred) {
   return mean(absolute_error_rcpp(y_true = y_true, y_pred = y_pred));
 }
 
@@ -89,7 +89,7 @@ double mean_absolute_error_rcpp(NumericVector y_true, NumericVector y_pred) {
 //' @return  A numeric vector of length one.
 //' @export
 // [[Rcpp::export]]
-double median_absolute_error_rcpp(NumericVector y_true, NumericVector y_pred) {
+double median_absolute_error(NumericVector y_true, NumericVector y_pred) {
   return median_rcpp(absolute_error_rcpp(y_true = y_true, y_pred = y_pred));
 }
 
