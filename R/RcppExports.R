@@ -33,63 +33,27 @@ median_absolute_error_rcpp <- function(y_true, y_pred) {
     .Call('scorer_median_absolute_error_rcpp', PACKAGE = 'scorer', y_true, y_pred)
 }
 
-#' Calculate mean percent error regression loss.
-#'
-#' @param y_true Ground truth (correct) target values.
-#' @param y_pred Estimated target values.
-#' @return  A numeric vector of length one.
-#' @export
-mean_percent_error <- function(y_true, y_pred) {
-    .Call('scorer_mean_percent_error', PACKAGE = 'scorer', y_true, y_pred)
+mean_percent_error_rcpp <- function(y_true, y_pred) {
+    .Call('scorer_mean_percent_error_rcpp', PACKAGE = 'scorer', y_true, y_pred)
 }
 
-#' Calculate median percent error regression loss.
-#'
-#' @param y_true Ground truth (correct) target values.
-#' @param y_pred Estimated target values.
-#' @return  A numeric vector of length one.
-#' @export
-median_percent_error <- function(y_true, y_pred) {
-    .Call('scorer_median_percent_error', PACKAGE = 'scorer', y_true, y_pred)
+median_percent_error_rcpp <- function(y_true, y_pred) {
+    .Call('scorer_median_percent_error_rcpp', PACKAGE = 'scorer', y_true, y_pred)
 }
 
-#' Calculate mean squared error regression loss.
-#'
-#' @param y_true Ground truth (correct) target values.
-#' @param y_pred Estimated target values.
-#' @return  A numeric vector of length one.
-#' @export
-mean_squared_error <- function(y_true, y_pred) {
-    .Call('scorer_mean_squared_error', PACKAGE = 'scorer', y_true, y_pred)
+mean_squared_error_rcpp <- function(y_true, y_pred) {
+    .Call('scorer_mean_squared_error_rcpp', PACKAGE = 'scorer', y_true, y_pred)
 }
 
-#' Calculate median squared error regression loss.
-#'
-#' @param y_true Ground truth (correct) target values.
-#' @param y_pred Estimated target values.
-#' @return  A numeric vector of length one.
-#' @export
-median_squared_error <- function(y_true, y_pred) {
-    .Call('scorer_median_squared_error', PACKAGE = 'scorer', y_true, y_pred)
+median_squared_error_rcpp <- function(y_true, y_pred) {
+    .Call('scorer_median_squared_error_rcpp', PACKAGE = 'scorer', y_true, y_pred)
 }
 
-#' Calculate mean absolute percent error regression loss.
-#'
-#' @param y_true Ground truth (correct) target values.
-#' @param y_pred Estimated target values.
-#' @return  A numeric vector of length one.
-#' @export
-mean_absolute_percent_error <- function(y_true, y_pred) {
-    .Call('scorer_mean_absolute_percent_error', PACKAGE = 'scorer', y_true, y_pred)
+mean_absolute_percent_error_rcpp <- function(y_true, y_pred) {
+    .Call('scorer_mean_absolute_percent_error_rcpp', PACKAGE = 'scorer', y_true, y_pred)
 }
 
-#' Calculate median absolute percent error regression loss.
-#'
-#' @param y_true Ground truth (correct) target values.
-#' @param y_pred Estimated target values.
-#' @return  A numeric vector of length one.
-#' @export
-median_absolute_percent_error <- function(y_true, y_pred) {
-    .Call('scorer_median_absolute_percent_error', PACKAGE = 'scorer', y_true, y_pred)
+median_absolute_percent_error_rcpp <- function(y_true, y_pred) {
+    .Call('scorer_median_absolute_percent_error_rcpp', PACKAGE = 'scorer', y_true, y_pred)
 }
 
