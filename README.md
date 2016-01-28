@@ -85,30 +85,47 @@ ggplot(mtcars, aes(x = wt, y = mpg, color = Type)) + geom_point()
 #### Build model on train data set
 
 ``` r
-model <- lm(mpg ~ wt, data = train_mtcars)
+test_model <- lm(mpg ~ wt, data = train_mtcars)
 ```
 
 #### Predict model using the test data set
 
 ``` r
-test_mtcars[, "predicted_mpg"] <- predict(model, newdata = test_mtcars)
+test_mtcars[, "predicted_mpg"] <- predict(test_model, newdata = test_mtcars)
 ```
 
-#### Score model using various metrics
+#### Score test model using various metrics
 
 ``` r
 scorer::mean_absolute_error(test_mtcars[, "mpg"], test_mtcars[, "predicted_mpg"])
 #> [1] 3.287805
 scorer::mean_squared_error(test_mtcars[, "mpg"], test_mtcars[, "predicted_mpg"])
 #> [1] 15.43932
-scorer::r2_score(test_mtcars[, "mpg"], test_mtcars[, "predicted_mpg"])
-#> [1] 1.754141
-scorer::total_variance_score(test_mtcars[, "mpg"], test_mtcars[, "predicted_mpg"])
-#> [1] 510.1092
-scorer::explained_variance_score(test_mtcars[, "mpg"], test_mtcars[, "predicted_mpg"])
-#> [1] 894.8037
-scorer::unexplained_variance_score(test_mtcars[, "mpg"], test_mtcars[, "predicted_mpg"])
-#> [1] 200.7111
+```
+
+#### Build final model on all the data
+
+``` r
+final_model <- lm(mpg ~ wt, data = mtcars)
+```
+
+#### Predict final model using the original data set
+
+``` r
+mtcars[, "predicted_mpg"] <- predict(final_model, newdata = mtcars)
+```
+
+#### Score final model using various metrics
+
+``` r
+scorer::explained_variance_score(mtcars[, "mpg"], mtcars[, "predicted_mpg"])
+#> [1] 847.7252
+scorer::unexplained_variance_score(mtcars[, "mpg"], mtcars[, "predicted_mpg"])
+#> [1] 278.3219
+scorer::total_variance_score(mtcars[, "mpg"], mtcars[, "predicted_mpg"])
+#> [1] 1126.047
+scorer::r2_score(mtcars[, "mpg"], mtcars[, "predicted_mpg"])
+#> [1] 0.7528328
 ```
 
 ### Classification metrics
