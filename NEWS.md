@@ -1,8 +1,8 @@
-# scorer 0.2.0.9000
+# scorer 0.3.0
 
 ## Improvements
 
-* Implementing more functions! This time, the functions are in the style of `sklearn.metrics`. More details to follow.
+* Implementing more functions! This time, the functions are in the style of `sklearn.metrics`. All regression metrics from [sklearn.metrics](http://scikit-learn.org/stable/modules/classes.html#sklearn-metrics-metrics) have been implemented. There are still some features that can be implemented such as sample weighting for the error metrics. For now, however, it's fine for a release to CRAN. 
 
 # scorer 0.2.0
 
