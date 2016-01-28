@@ -17,14 +17,8 @@ absolute_percent_error_rcpp <- function(y_true, y_pred) {
     .Call('scorer_absolute_percent_error_rcpp', PACKAGE = 'scorer', y_true, y_pred)
 }
 
-#' Calculate squared error regression loss.
-#'
-#' @param y_true Ground truth (correct) target values.
-#' @param y_pred Estimated target values.
-#' @return  A numeric vector of length equal to \code{max(length(y_true), length(y_pred))}.
-#' @export
-squared_error <- function(y_true, y_pred) {
-    .Call('scorer_squared_error', PACKAGE = 'scorer', y_true, y_pred)
+squared_error_rcpp <- function(y_true, y_pred) {
+    .Call('scorer_squared_error_rcpp', PACKAGE = 'scorer', y_true, y_pred)
 }
 
 #' Calculate mean error regression loss.

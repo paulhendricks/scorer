@@ -37,14 +37,8 @@ NumericVector absolute_percent_error_rcpp(NumericVector y_true, NumericVector y_
   return abs(percent_error_rcpp(y_true = y_true, y_pred = y_pred));
 }
 
-//' Calculate squared error regression loss.
-//'
-//' @param y_true Ground truth (correct) target values.
-//' @param y_pred Estimated target values.
-//' @return  A numeric vector of length equal to \code{max(length(y_true), length(y_pred))}.
-//' @export
 // [[Rcpp::export]]
-NumericVector squared_error(NumericVector y_true, NumericVector y_pred) {
+NumericVector squared_error_rcpp(NumericVector y_true, NumericVector y_pred) {
   return pow((y_true - y_pred), 2);
 }
 
@@ -111,7 +105,7 @@ double median_percent_error(NumericVector y_true, NumericVector y_pred) {
 //' @export
 // [[Rcpp::export]]
 double mean_squared_error(NumericVector y_true, NumericVector y_pred) {
-  return mean(squared_error(y_true = y_true, y_pred = y_pred));
+  return mean(squared_error_rcpp(y_true = y_true, y_pred = y_pred));
 }
 
 //' Calculate median squared error regression loss.
@@ -122,7 +116,7 @@ double mean_squared_error(NumericVector y_true, NumericVector y_pred) {
 //' @export
 // [[Rcpp::export]]
 double median_squared_error(NumericVector y_true, NumericVector y_pred) {
-  return median_rcpp(squared_error(y_true = y_true, y_pred = y_pred));
+  return median_rcpp(squared_error_rcpp(y_true = y_true, y_pred = y_pred));
 }
 
 //' Calculate mean absolute percent error regression loss.

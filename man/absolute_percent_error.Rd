@@ -18,6 +18,6 @@ A numeric vector of length equal to \code{max(length(y_true), length(y_pred))}.
 Calculate absolute percent error regression loss.
 }
 \examples{
-percent_error(1:10, 10:1)
+absolute_percent_error(1:10, 10:1)
 }
 

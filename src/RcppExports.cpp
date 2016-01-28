@@ -52,15 +52,15 @@ BEGIN_RCPP
     return __result;
 END_RCPP
 }
-// squared_error
-NumericVector squared_error(NumericVector y_true, NumericVector y_pred);
-RcppExport SEXP scorer_squared_error(SEXP y_trueSEXP, SEXP y_predSEXP) {
+// squared_error_rcpp
+NumericVector squared_error_rcpp(NumericVector y_true, NumericVector y_pred);
+RcppExport SEXP scorer_squared_error_rcpp(SEXP y_trueSEXP, SEXP y_predSEXP) {
 BEGIN_RCPP
     Rcpp::RObject __result;
     Rcpp::RNGScope __rngScope;
     Rcpp::traits::input_parameter< NumericVector >::type y_true(y_trueSEXP);
     Rcpp::traits::input_parameter< NumericVector >::type y_pred(y_predSEXP);
-    __result = Rcpp::wrap(squared_error(y_true, y_pred));
+    __result = Rcpp::wrap(squared_error_rcpp(y_true, y_pred));
     return __result;
 END_RCPP
 }

@@ -28,13 +28,23 @@ percent_error <- function(y_true, y_pred) {
 #' @param y_pred Estimated target values.
 #' @return  A numeric vector of length equal to \code{max(length(y_true), length(y_pred))}.
 #' @examples
-#' percent_error(1:10, 10:1)
+#' absolute_percent_error(1:10, 10:1)
 #' @export
 absolute_percent_error <- function(y_true, y_pred) {
   absolute_percent_error_rcpp(y_true, y_pred)
 }
 
-
+#' Calculate squared error regression loss.
+#'
+#' @param y_true Ground truth (correct) target values.
+#' @param y_pred Estimated target values.
+#' @return  A numeric vector of length equal to \code{max(length(y_true), length(y_pred))}.
+#' @examples
+#' squared_error(1:10, 10:1)
+#' @export
+squared_error <- function(y_true, y_pred) {
+  squared_error_rcpp(y_true, y_pred)
+}
 
 
 
