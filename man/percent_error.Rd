@@ -39,6 +39,8 @@ Other regression.metrics: \code{\link{absolute_error}},
   \code{\link{median_squared_log_error}},
   \code{\link{r2_score}}, \code{\link{squared_error}},
   \code{\link{squared_log_error}},
+  \code{\link{symmetric_mean_absolute_percent_error}},
+  \code{\link{symmetric_median_absolute_percent_error}},
   \code{\link{total_variance_score}},
   \code{\link{unexplained_variance_score}}
 }

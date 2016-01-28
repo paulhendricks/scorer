@@ -18,7 +18,7 @@ A numeric vector of length one.
 Calculate mean absolute percent error regression loss.
 }
 \examples{
-mean_percent_error(1:10, 10:1)
+mean_absolute_percent_error(1:10, 10:1)
 }
 \seealso{
 Other regression.metrics: \code{\link{absolute_error}},
@@ -39,6 +39,8 @@ Other regression.metrics: \code{\link{absolute_error}},
   \code{\link{percent_error}}, \code{\link{r2_score}},
   \code{\link{squared_error}},
   \code{\link{squared_log_error}},
+  \code{\link{symmetric_mean_absolute_percent_error}},
+  \code{\link{symmetric_median_absolute_percent_error}},
   \code{\link{total_variance_score}},
   \code{\link{unexplained_variance_score}}
 }
