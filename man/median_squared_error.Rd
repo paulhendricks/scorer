@@ -24,6 +24,7 @@ median_squared_error(1:10, 10:1)
 Other regression.metrics: \code{\link{absolute_error}},
   \code{\link{absolute_percent_error}},
   \code{\link{explained_variance_score}},
+  \code{\link{log_error}},
   \code{\link{mean_absolute_error}},
   \code{\link{mean_absolute_percent_error}},
   \code{\link{mean_absolute_scaled_error}},

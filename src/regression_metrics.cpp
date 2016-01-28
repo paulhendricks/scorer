@@ -33,13 +33,18 @@ NumericVector percent_error_rcpp(NumericVector y_true, NumericVector y_pred) {
 }
 
 // [[Rcpp::export]]
-NumericVector absolute_percent_error_rcpp(NumericVector y_true, NumericVector y_pred) {
-  return abs(percent_error_rcpp(y_true = y_true, y_pred = y_pred));
+NumericVector log_error_rcpp(NumericVector y_true, NumericVector y_pred) {
+  return log(y_true - y_pred);
 }
 
 // [[Rcpp::export]]
 NumericVector squared_error_rcpp(NumericVector y_true, NumericVector y_pred) {
   return pow((y_true - y_pred), 2);
+}
+
+// [[Rcpp::export]]
+NumericVector absolute_percent_error_rcpp(NumericVector y_true, NumericVector y_pred) {
+  return abs(percent_error_rcpp(y_true = y_true, y_pred = y_pred));
 }
 
 // [[Rcpp::export]]

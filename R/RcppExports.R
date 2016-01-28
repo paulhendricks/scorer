@@ -13,12 +13,16 @@ percent_error_rcpp <- function(y_true, y_pred) {
     .Call('scorer_percent_error_rcpp', PACKAGE = 'scorer', y_true, y_pred)
 }
 
-absolute_percent_error_rcpp <- function(y_true, y_pred) {
-    .Call('scorer_absolute_percent_error_rcpp', PACKAGE = 'scorer', y_true, y_pred)
+log_error_rcpp <- function(y_true, y_pred) {
+    .Call('scorer_log_error_rcpp', PACKAGE = 'scorer', y_true, y_pred)
 }
 
 squared_error_rcpp <- function(y_true, y_pred) {
     .Call('scorer_squared_error_rcpp', PACKAGE = 'scorer', y_true, y_pred)
+}
+
+absolute_percent_error_rcpp <- function(y_true, y_pred) {
+    .Call('scorer_absolute_percent_error_rcpp', PACKAGE = 'scorer', y_true, y_pred)
 }
 
 mean_error_rcpp <- function(y_true, y_pred) {
