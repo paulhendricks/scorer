@@ -1,5 +1,5 @@
 Package: scorer
-Title: Quickly Score Models
+Title: Quickly Score Models in Data Science and Machine Learning
 Version: 0.2.0
 Description: A set of tools for quickly scoring models in data science and
     machine learning. This toolset is written in C++ for blazing fast performance.
