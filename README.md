@@ -29,7 +29,7 @@ You can install:
     install.packages("scorer")
     ```
 
--   the latest development version from github with
+-   the latest development version from Github with
 
     [![Github\_Status\_Badge](https://img.shields.io/badge/Github-0.2.0-brightgreen.svg)](https://img.shields.io/badge/Github-0.2.0-brightgreen.svg)
 
