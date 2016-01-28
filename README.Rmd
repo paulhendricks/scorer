@@ -138,7 +138,6 @@ scorer::total_variance_score(mtcars[, "mpg"], mtcars[, "predicted_mpg"])
 scorer::r2_score(mtcars[, "mpg"], mtcars[, "predicted_mpg"])
 ```
 
-
 ### Classification metrics
 
 ```{r}
