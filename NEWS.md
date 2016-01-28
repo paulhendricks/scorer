@@ -2,8 +2,10 @@
 
 ## Improvements
 
-* Implementing more functions! This time, the functions are in the style of `sklearn.metrics`. All regression metrics from [sklearn.metrics](http://scikit-learn.org/stable/modules/classes.html#sklearn-metrics-metrics) have been implemented. There are still some features that can be implemented such as sample weighting for the error metrics. For now, however, it's fine for a release to CRAN. 
+* All functions from scorer 0.1.0 have been deprecated in favor of a new API that mirrors the API of [sklearn.metrics](http://scikit-learn.org/stable/modules/classes.html#sklearn-metrics-metrics). These functions will be removed in 1.0.0.
+* Added more functions!
 * Nearly all functions implemented in C++ for blazing fast speed!
+* Additional features such as sample weighting for some error metrics have been identified and placed on a backburner for future releases.
 
 # scorer 0.1.0
 
