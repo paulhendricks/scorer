@@ -17,4 +17,7 @@ A numeric vector of length one.
 \description{
 Calculate mean absolute scaled error regression loss.
 }
+\examples{
+mean_absolute_scaled_error(1:10, 10:1)
+}
 

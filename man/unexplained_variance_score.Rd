@@ -17,4 +17,7 @@ A numeric vector of length one.
 \description{
 Calculate unexplained variance regression score function.
 }
+\examples{
+unexplained_variance_score(1:10, 10:1)
+}
 

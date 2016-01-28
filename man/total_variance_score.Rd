@@ -17,4 +17,7 @@ A numeric vector of length one.
 \description{
 Calculate total variance regression score function.
 }
+\examples{
+total_variance_score(1:10, 10:1)
+}
 

@@ -100,6 +100,8 @@ median_absolute_error <- function(y_true, y_pred) {
 #' @param y_true Ground truth (correct) target values.
 #' @param y_pred Estimated target values.
 #' @return  A numeric vector of length one.
+#' @examples
+#' mean_absolute_scaled_error(1:10, 10:1)
 #' @export
 mean_absolute_scaled_error <- function(y_true, y_pred) {
   n <- max(length(y_true), length(y_pred))
@@ -113,6 +115,8 @@ mean_absolute_scaled_error <- function(y_true, y_pred) {
 #' @param y_true Ground truth (correct) target values.
 #' @param y_pred Estimated target values.
 #' @return  A numeric vector of length one.
+#' @examples
+#' total_variance_score(1:10, 10:1)
 #' @export
 total_variance_score <- function(y_true, y_pred) {
   return(sum((y_true - mean(y_true)) ^ 2))
@@ -123,6 +127,8 @@ total_variance_score <- function(y_true, y_pred) {
 #' @param y_true Ground truth (correct) target values.
 #' @param y_pred Estimated target values.
 #' @return  A numeric vector of length one.
+#' @examples
+#' explained_variance_score(1:10, 10:1)
 #' @export
 explained_variance_score <- function(y_true, y_pred) {
   return(sum((y_pred - mean(y_true)) ^ 2))
@@ -133,6 +139,8 @@ explained_variance_score <- function(y_true, y_pred) {
 #' @param y_true Ground truth (correct) target values.
 #' @param y_pred Estimated target values.
 #' @return  A numeric vector of length one.
+#' @examples
+#' unexplained_variance_score(1:10, 10:1)
 #' @export
 unexplained_variance_score <- function(y_true, y_pred) {
   return(sum((y_true - y_pred) ^ 2))
@@ -143,6 +151,8 @@ unexplained_variance_score <- function(y_true, y_pred) {
 #' @param y_true Ground truth (correct) target values.
 #' @param y_pred Estimated target values.
 #' @return  A numeric vector of length one.
+#' @examples
+#' r2_score(1:10, 10:1)
 #' @export
 r2_score <- function(y_true, y_pred) {
   return(explained_variance_score(y_true, y_pred) / total_variance_score(y_true, y_pred))

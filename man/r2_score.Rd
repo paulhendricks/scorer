@@ -17,4 +17,7 @@ A numeric vector of length one.
 \description{
 Calculate R^2 (coefficient of determination) regression score function.
 }
+\examples{
+r2_score(1:10, 10:1)
+}
 
