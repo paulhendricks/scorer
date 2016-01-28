@@ -4,12 +4,16 @@
 \alias{ae}
 \title{Calculate absolute error between actual and forecast.}
 \usage{
-ae(actual, forecast)
+ae(actual, forecast, y_true = actual, y_pred = forecast)
 }
 \arguments{
 \item{actual}{a numeric vector of actuals.}
 
 \item{forecast}{a numeric vector of forecasts.}
+
+\item{y_true}{Ground truth (correct) target values.}
+
+\item{y_pred}{Estimated target values.}
 }
 \value{
 a numeric vector of absolute errors.

@@ -5,13 +5,15 @@
 #'
 #' @param actual a numeric vector of actuals.
 #' @param forecast a numeric vector of forecasts.
+#' @param y_true Ground truth (correct) target values.
+#' @param y_pred Estimated target values.
 #' @return  a numeric vector of errors.
 #' @examples
 #' # Examples
 #' e(1:100, 100:1)
 #' @export
-e <- function(actual, forecast) {
-  warning("This function is being deprecated in 0.2.0 and will be removed in 1.0.0")
+e <- function(actual, forecast, y_true = actual, y_pred = forecast) {
+  warning("This function is being deprecated in 0.2.0 and will be removed in 1.0.0. Also, as of 0.2.0, please use y_true instead of actual and y_pred instead of forecast as function arguments.")
   return(actual - forecast)
 }
 #' Calculate absolute error between actual and forecast.
@@ -22,13 +24,15 @@ e <- function(actual, forecast) {
 #'
 #' @param actual a numeric vector of actuals.
 #' @param forecast a numeric vector of forecasts.
+#' @param y_true Ground truth (correct) target values.
+#' @param y_pred Estimated target values.
 #' @return  a numeric vector of absolute errors.
 #' @examples
 #' # Examples
 #' ae(1:100, 100:1)
 #' @export
-ae <- function(actual, forecast) {
-  warning("This function is being deprecated in 0.2.0 and will be removed in 1.0.0")
+ae <- function(actual, forecast, y_true = actual, y_pred = forecast) {
+  warning("This function is being deprecated in 0.2.0 and will be removed in 1.0.0. Also, as of 0.2.0, please use y_true instead of actual and y_pred instead of forecast as function arguments.")
   return(abs(e(actual, forecast)))
 }
 
@@ -40,13 +44,15 @@ ae <- function(actual, forecast) {
 #'
 #' @param actual a numeric vector of actuals.
 #' @param forecast a numeric vector of forecasts.
+#' @param y_true Ground truth (correct) target values.
+#' @param y_pred Estimated target values.
 #' @return  a numeric vector of percent errors.
 #' @examples
 #' # Examples
 #' pe(1:100, 100:1)
 #' @export
-pe <- function(actual, forecast) {
-  warning("This function is being deprecated in 0.2.0 and will be removed in 1.0.0")
+pe <- function(actual, forecast, y_true = actual, y_pred = forecast) {
+  warning("This function is being deprecated in 0.2.0 and will be removed in 1.0.0. Also, as of 0.2.0, please use y_true instead of actual and y_pred instead of forecast as function arguments.")
   return(e(actual, forecast) / actual)
 }
 
@@ -59,12 +65,14 @@ pe <- function(actual, forecast) {
 #'
 #' @param actual a numeric vector of actuals.
 #' @param forecast a numeric vector of forecasts.
+#' @param y_true Ground truth (correct) target values.
+#' @param y_pred Estimated target values.
 #' @return  a numeric vector of absolute percent errors.
 #' @examples
 #' # Examples
 #' ape(1:100, 100:1)
 #' @export
-ape <- function(actual, forecast) {
+ape <- function(actual, forecast, y_true = actual, y_pred = forecast) {
   return(abs(pe(actual, forecast)))
 }
 
@@ -77,16 +85,18 @@ ape <- function(actual, forecast) {
 #' the mean of those absolute percent errors are taken.
 #'
 #' @param actual a numeric vector of actuals.
+#' @param forecast a numeric vector of forecasts.
+#' @param y_true Ground truth (correct) target values.
+#' @param y_pred Estimated target values.
 #' @param na.rm a logical value indicating whether \code{NA} values should be stripped before the computation proceeds.
 #' @param ... additional arguments to be passed to mean()
-#' @param forecast a numeric vector of forecasts.
 #' @return  a numeric vector of length one: the mean of of absolute percent errors.
 #' @examples
 #' # Examples
 #' mape(1:100, 100:1)
 #' @export
-mape <- function(actual, forecast, na.rm = TRUE, ...) {
-  warning("This function is being deprecated in 0.2.0 and will be removed in 1.0.0")
+mape <- function(actual, forecast, na.rm = TRUE, y_true = actual, y_pred = forecast, ...) {
+  warning("This function is being deprecated in 0.2.0 and will be removed in 1.0.0. Also, as of 0.2.0, please use y_true instead of actual and y_pred instead of forecast as function arguments.")
   return(mean(ape(actual, forecast), na.rm = na.rm, ...))
 }
 
@@ -98,15 +108,17 @@ mape <- function(actual, forecast, na.rm = TRUE, ...) {
 #' taken, and lastly, the root taken of that mean squared error value.
 #'
 #' @param actual a numeric vector of actuals.
+#' @param forecast a numeric vector of forecasts.
+#' @param y_true Ground truth (correct) target values.
+#' @param y_pred Estimated target values.
 #' @param na.rm a logical value indicating whether \code{NA} values should be stripped before the computation proceeds.
 #' @param ... additional arguments to be passed to mean()
-#' @param forecast a numeric vector of forecasts.
 #' @return  a numeric vector of length one: the mean of of absolute percent errors.
 #' @examples
 #' # Examples
 #' rmse(1:100, 100:1)
 #' @export
-rmse <- function(actual, forecast, na.rm = TRUE, ...) {
-  warning("This function is being deprecated in 0.2.0 and will be removed in 1.0.0")
+rmse <- function(actual, forecast, na.rm = TRUE, y_true = actual, y_pred = forecast, ...) {
+  warning("This function is being deprecated in 0.2.0 and will be removed in 1.0.0. Also, as of 0.2.0, please use y_true instead of actual and y_pred instead of forecast as function arguments.")
   return(sqrt(mean(e(actual, forecast) ^ 2, na.rm = na.rm, ...)))
 }

@@ -4,7 +4,8 @@
 \alias{rmse}
 \title{Calculate root mean squared error.}
 \usage{
-rmse(actual, forecast, na.rm = TRUE, ...)
+rmse(actual, forecast, na.rm = TRUE, y_true = actual, y_pred = forecast,
+  ...)
 }
 \arguments{
 \item{actual}{a numeric vector of actuals.}
@@ -12,6 +13,10 @@ rmse(actual, forecast, na.rm = TRUE, ...)
 \item{forecast}{a numeric vector of forecasts.}
 
 \item{na.rm}{a logical value indicating whether \code{NA} values should be stripped before the computation proceeds.}
+
+\item{y_true}{Ground truth (correct) target values.}
+
+\item{y_pred}{Estimated target values.}
 
 \item{...}{additional arguments to be passed to mean()}
 }
