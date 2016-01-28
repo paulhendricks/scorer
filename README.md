@@ -62,7 +62,8 @@ data(mtcars)
 library("ggplot2")
 ggplot(mtcars, aes(x = wt, y = mpg)) + 
   geom_point() + 
-  geom_smooth(method = 'lm')
+  geom_smooth(method = 'lm') + 
+  expand_limits(x = c(0, 6), y = c(0, 40))
 ```
 
 ![](inst/imgs/README-unnamed-chunk-3-1.png)
@@ -77,7 +78,9 @@ mask <- sample(c(rep(x = TRUE, times = n_train), rep(x = FALSE, times = n_test))
 mtcars[, "Type"] <- ifelse(mask, "Train", "Test")
 train_mtcars <- mtcars[mask, ]
 test_mtcars <- mtcars[!mask, ]
-ggplot(mtcars, aes(x = wt, y = mpg, color = Type)) + geom_point()
+ggplot(mtcars, aes(x = wt, y = mpg, color = Type)) + 
+  geom_point() + 
+  expand_limits(x = c(0, 6), y = c(0, 40))
 ```
 
 ![](inst/imgs/README-unnamed-chunk-4-1.png)
