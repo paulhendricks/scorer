@@ -10,6 +10,18 @@ absolute_error <- function(y_true, y_pred) {
   absolute_error_rcpp(y_true, y_pred)
 }
 
+#' Calculate percent error regression loss.
+#'
+#' @param y_true Ground truth (correct) target values.
+#' @param y_pred Estimated target values.
+#' @return  A numeric vector of length equal to \code{max(length(y_true), length(y_pred))}.
+#' @examples
+#' percent_error(1:10, 10:1)
+#' @export
+percent_error <- function(y_true, y_pred) {
+  percent_error_rcpp(y_true, y_pred)
+}
+
 #' Calculate mean absolute scaled error regression loss.
 #'
 #' @param y_true Ground truth (correct) target values.
