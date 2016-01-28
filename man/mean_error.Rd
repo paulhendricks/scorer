@@ -20,4 +20,22 @@ Calculate mean error regression loss.
 \examples{
 mean_error(1:10, 10:1)
 }
+\seealso{
+Other regression.metrics: \code{\link{absolute_error}},
+  \code{\link{absolute_percent_error}},
+  \code{\link{explained_variance_score}},
+  \code{\link{mean_absolute_error}},
+  \code{\link{mean_absolute_percent_error}},
+  \code{\link{mean_absolute_scaled_error}},
+  \code{\link{mean_percent_error}},
+  \code{\link{mean_squared_error}},
+  \code{\link{median_absolute_error}},
+  \code{\link{median_absolute_percent_error}},
+  \code{\link{median_percent_error}},
+  \code{\link{median_squared_error}},
+  \code{\link{percent_error}}, \code{\link{r2_score}},
+  \code{\link{squared_error}},
+  \code{\link{total_variance_score}},
+  \code{\link{unexplained_variance_score}}
+}
 

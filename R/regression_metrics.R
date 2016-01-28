@@ -3,6 +3,7 @@
 #' @param y_true Ground truth (correct) target values.
 #' @param y_pred Estimated target values.
 #' @return  A numeric vector of length equal to \code{max(length(y_true), length(y_pred))}.
+#' @family regression metrics
 #' @examples
 #' absolute_error(1:10, 10:1)
 #' @export
@@ -15,6 +16,7 @@ absolute_error <- function(y_true, y_pred) {
 #' @param y_true Ground truth (correct) target values.
 #' @param y_pred Estimated target values.
 #' @return  A numeric vector of length equal to \code{max(length(y_true), length(y_pred))}.
+#' @family regression metrics
 #' @examples
 #' percent_error(1:10, 10:1)
 #' @export
@@ -27,6 +29,7 @@ percent_error <- function(y_true, y_pred) {
 #' @param y_true Ground truth (correct) target values.
 #' @param y_pred Estimated target values.
 #' @return  A numeric vector of length equal to \code{max(length(y_true), length(y_pred))}.
+#' @family regression metrics
 #' @examples
 #' absolute_percent_error(1:10, 10:1)
 #' @export
@@ -39,6 +42,7 @@ absolute_percent_error <- function(y_true, y_pred) {
 #' @param y_true Ground truth (correct) target values.
 #' @param y_pred Estimated target values.
 #' @return  A numeric vector of length equal to \code{max(length(y_true), length(y_pred))}.
+#' @family regression metrics
 #' @examples
 #' squared_error(1:10, 10:1)
 #' @export
@@ -51,6 +55,7 @@ squared_error <- function(y_true, y_pred) {
 #' @param y_true Ground truth (correct) target values.
 #' @param y_pred Estimated target values.
 #' @return  A numeric vector of length one.
+#' @family regression metrics
 #' @examples
 #' mean_error(1:10, 10:1)
 #' @export
@@ -63,6 +68,7 @@ mean_error <- function(y_true, y_pred) {
 #' @param y_true Ground truth (correct) target values.
 #' @param y_pred Estimated target values.
 #' @return  A numeric vector of length one.
+#' @family regression metrics
 #' @examples
 #' mean_absolute_error(1:10, 10:1)
 #' @export
@@ -75,6 +81,7 @@ mean_absolute_error <- function(y_true, y_pred) {
 #' @param y_true Ground truth (correct) target values.
 #' @param y_pred Estimated target values.
 #' @return  A numeric vector of length one.
+#' @family regression metrics
 #' @examples
 #' median_absolute_error(1:10, 10:1)
 #' @export
@@ -87,6 +94,7 @@ median_absolute_error <- function(y_true, y_pred) {
 #' @param y_true Ground truth (correct) target values.
 #' @param y_pred Estimated target values.
 #' @return  A numeric vector of length one.
+#' @family regression metrics
 #' @examples
 #' mean_percent_error(1:10, 10:1)
 #' @export
@@ -99,6 +107,7 @@ mean_percent_error <- function(y_true, y_pred) {
 #' @param y_true Ground truth (correct) target values.
 #' @param y_pred Estimated target values.
 #' @return  A numeric vector of length one.
+#' @family regression metrics
 #' @examples
 #' median_percent_error(1:10, 10:1)
 #' @export
@@ -111,6 +120,7 @@ median_percent_error <- function(y_true, y_pred) {
 #' @param y_true Ground truth (correct) target values.
 #' @param y_pred Estimated target values.
 #' @return  A numeric vector of length one.
+#' @family regression metrics
 #' @examples
 #' mean_squared_error(1:10, 10:1)
 #' @export
@@ -123,6 +133,7 @@ mean_squared_error <- function(y_true, y_pred) {
 #' @param y_true Ground truth (correct) target values.
 #' @param y_pred Estimated target values.
 #' @return  A numeric vector of length one.
+#' @family regression metrics
 #' @examples
 #' median_squared_error(1:10, 10:1)
 #' @export
@@ -135,6 +146,7 @@ median_squared_error <- function(y_true, y_pred) {
 #' @param y_true Ground truth (correct) target values.
 #' @param y_pred Estimated target values.
 #' @return  A numeric vector of length one.
+#' @family regression metrics
 #' @examples
 #' mean_percent_error(1:10, 10:1)
 #' @export
@@ -147,6 +159,7 @@ mean_absolute_percent_error <- function(y_true, y_pred) {
 #' @param y_true Ground truth (correct) target values.
 #' @param y_pred Estimated target values.
 #' @return  A numeric vector of length one.
+#' @family regression metrics
 #' @examples
 #' median_percent_error(1:10, 10:1)
 #' @export
@@ -159,6 +172,7 @@ median_absolute_percent_error <- function(y_true, y_pred) {
 #' @param y_true Ground truth (correct) target values.
 #' @param y_pred Estimated target values.
 #' @return  A numeric vector of length one.
+#' @family regression metrics
 #' @examples
 #' mean_absolute_scaled_error(1:10, 10:1)
 #' @export
@@ -174,6 +188,7 @@ mean_absolute_scaled_error <- function(y_true, y_pred) {
 #' @param y_true Ground truth (correct) target values.
 #' @param y_pred Estimated target values.
 #' @return  A numeric vector of length one.
+#' @family regression metrics
 #' @examples
 #' total_variance_score(1:10, 10:1)
 #' @export
@@ -186,6 +201,7 @@ total_variance_score <- function(y_true, y_pred) {
 #' @param y_true Ground truth (correct) target values.
 #' @param y_pred Estimated target values.
 #' @return  A numeric vector of length one.
+#' @family regression metrics
 #' @examples
 #' explained_variance_score(1:10, 10:1)
 #' @export
@@ -198,6 +214,7 @@ explained_variance_score <- function(y_true, y_pred) {
 #' @param y_true Ground truth (correct) target values.
 #' @param y_pred Estimated target values.
 #' @return  A numeric vector of length one.
+#' @family regression metrics
 #' @examples
 #' unexplained_variance_score(1:10, 10:1)
 #' @export
@@ -210,6 +227,7 @@ unexplained_variance_score <- function(y_true, y_pred) {
 #' @param y_true Ground truth (correct) target values.
 #' @param y_pred Estimated target values.
 #' @return  A numeric vector of length one.
+#' @family regression metrics
 #' @examples
 #' r2_score(1:10, 10:1)
 #' @export
