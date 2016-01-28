@@ -27,9 +27,6 @@
 #' @param actual A binary numeric vector of actuals.
 #' @param forecast A binary numeric vector of forecasts.
 #' @return  A numeric vector of length one.
-#' @examples
-#' # Examples
-#' auc(1:100, 100:1)
 #' @export
 auc <- function(actual, forecast) {
   message("This function has still not been implemented in C++.")

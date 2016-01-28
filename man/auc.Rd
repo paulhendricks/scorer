@@ -17,8 +17,4 @@ A numeric vector of length one.
 \description{
 \code{auc} calculates the area under the curve.
 }
-\examples{
-# Examples
-auc(1:100, 100:1)
-}
 
