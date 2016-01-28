@@ -11,7 +11,7 @@
 #' e(1:100, 100:1)
 #' @export
 e <- function(actual, forecast) {
-  warning("This function is being deprecated in 0.2.0 and will be removed in 0.3.0.")
+  warning("This function is being deprecated in 0.2.0 and will be removed in 1.0.0")
   return(actual - forecast)
 }
 #' Calculate absolute error between actual and forecast.
@@ -28,7 +28,7 @@ e <- function(actual, forecast) {
 #' ae(1:100, 100:1)
 #' @export
 ae <- function(actual, forecast) {
-  warning("This function is being deprecated in 0.2.0 and will be removed in 0.3.0.")
+  warning("This function is being deprecated in 0.2.0 and will be removed in 1.0.0")
   return(abs(e(actual, forecast)))
 }
 
@@ -46,7 +46,7 @@ ae <- function(actual, forecast) {
 #' pe(1:100, 100:1)
 #' @export
 pe <- function(actual, forecast) {
-  warning("This function is being deprecated in 0.2.0 and will be removed in 0.3.0.")
+  warning("This function is being deprecated in 0.2.0 and will be removed in 1.0.0")
   return(e(actual, forecast) / actual)
 }
 
@@ -86,7 +86,7 @@ ape <- function(actual, forecast) {
 #' mape(1:100, 100:1)
 #' @export
 mape <- function(actual, forecast, na.rm = TRUE, ...) {
-  warning("This function is being deprecated in 0.2.0 and will be removed in 0.3.0.")
+  warning("This function is being deprecated in 0.2.0 and will be removed in 1.0.0")
   return(mean(ape(actual, forecast), na.rm = na.rm, ...))
 }
 
@@ -107,6 +107,6 @@ mape <- function(actual, forecast, na.rm = TRUE, ...) {
 #' rmse(1:100, 100:1)
 #' @export
 rmse <- function(actual, forecast, na.rm = TRUE, ...) {
-  warning("This function is being deprecated in 0.2.0 and will be removed in 0.3.0.")
+  warning("This function is being deprecated in 0.2.0 and will be removed in 1.0.0")
   return(sqrt(mean(e(actual, forecast) ^ 2, na.rm = na.rm, ...)))
 }
