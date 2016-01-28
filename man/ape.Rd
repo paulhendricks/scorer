@@ -4,7 +4,7 @@
 \alias{ape}
 \title{Calculate absolute percent error between actual and forecast.}
 \usage{
-ape(y_true, y_pred, actual = y_true, forecast = y_pred)
+ape(y_true = NULL, y_pred = NULL, actual = NULL, forecast = NULL)
 }
 \arguments{
 \item{y_true}{Ground truth (correct) target values.}

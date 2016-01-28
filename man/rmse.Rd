@@ -4,8 +4,8 @@
 \alias{rmse}
 \title{Calculate root mean squared error.}
 \usage{
-rmse(y_true, y_pred, actual = y_true, forecast = y_pred, na.rm = TRUE,
-  ...)
+rmse(y_true = NULL, y_pred = NULL, actual = NULL, forecast = NULL,
+  na.rm = TRUE, ...)
 }
 \arguments{
 \item{y_true}{Ground truth (correct) target values.}

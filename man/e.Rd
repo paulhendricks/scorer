@@ -4,7 +4,7 @@
 \alias{e}
 \title{Calculate error between actual and forecast.}
 \usage{
-e(y_true, y_pred, actual = y_true, forecast = y_pred)
+e(y_true = NULL, y_pred = NULL, actual = NULL, forecast = NULL)
 }
 \arguments{
 \item{y_true}{Ground truth (correct) target values.}

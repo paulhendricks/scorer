@@ -4,7 +4,7 @@
 \alias{pe}
 \title{Calculate percent error between actual and forecast.}
 \usage{
-pe(y_true, y_pred, actual = y_true, forecast = y_pred)
+pe(y_true = NULL, y_pred = NULL, actual = NULL, forecast = NULL)
 }
 \arguments{
 \item{y_true}{Ground truth (correct) target values.}

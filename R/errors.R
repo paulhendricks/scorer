@@ -12,8 +12,10 @@
 #' # Examples
 #' e(1:100, 100:1)
 #' @export
-e <- function(y_true, y_pred, actual = y_true, forecast = y_pred) {
+e <- function(y_true = NULL, y_pred = NULL, actual = NULL, forecast = NULL) {
   warning("This function is deprecated as of 0.2.0 and will be removed in 1.0.0. Also, as of 0.2.0, please use y_true instead of actual and y_pred instead of forecast as function arguments.")
+  if(!is.null(y_true)) actual <- y_true
+  if(!is.null(y_pred)) forecast <- y_pred
   return(actual - forecast)
 }
 #' Calculate absolute error between actual and forecast.
@@ -31,8 +33,10 @@ e <- function(y_true, y_pred, actual = y_true, forecast = y_pred) {
 #' # Examples
 #' ae(1:100, 100:1)
 #' @export
-ae <- function(y_true, y_pred, actual = y_true, forecast = y_pred) {
+ae <- function(y_true = NULL, y_pred = NULL, actual = NULL, forecast = NULL) {
   warning("This function is deprecated as of 0.2.0 and will be removed in 1.0.0. Also, as of 0.2.0, please use y_true instead of actual and y_pred instead of forecast as function arguments.")
+  if(!is.null(y_true)) actual <- y_true
+  if(!is.null(y_pred)) forecast <- y_pred
   return(abs(e(actual, forecast)))
 }
 
@@ -51,8 +55,10 @@ ae <- function(y_true, y_pred, actual = y_true, forecast = y_pred) {
 #' # Examples
 #' pe(1:100, 100:1)
 #' @export
-pe <- function(y_true, y_pred, actual = y_true, forecast = y_pred) {
+pe <- function(y_true = NULL, y_pred = NULL, actual = NULL, forecast = NULL) {
   warning("This function is deprecated as of 0.2.0 and will be removed in 1.0.0. Also, as of 0.2.0, please use y_true instead of actual and y_pred instead of forecast as function arguments.")
+  if(!is.null(y_true)) actual <- y_true
+  if(!is.null(y_pred)) forecast <- y_pred
   return(e(actual, forecast) / actual)
 }
 
@@ -72,7 +78,10 @@ pe <- function(y_true, y_pred, actual = y_true, forecast = y_pred) {
 #' # Examples
 #' ape(1:100, 100:1)
 #' @export
-ape <- function(y_true, y_pred, actual = y_true, forecast = y_pred) {
+ape <- function(y_true = NULL, y_pred = NULL, actual = NULL, forecast = NULL) {
+  warning("This function is deprecated as of 0.2.0 and will be removed in 1.0.0. Also, as of 0.2.0, please use y_true instead of actual and y_pred instead of forecast as function arguments.")
+  if(!is.null(y_true)) actual <- y_true
+  if(!is.null(y_pred)) forecast <- y_pred
   return(abs(pe(actual, forecast)))
 }
 
@@ -95,8 +104,10 @@ ape <- function(y_true, y_pred, actual = y_true, forecast = y_pred) {
 #' # Examples
 #' mape(1:100, 100:1)
 #' @export
-mape <- function(y_true, y_pred, actual = y_true, forecast = y_pred, na.rm = TRUE, ...) {
+mape <- function(y_true = NULL, y_pred = NULL, actual = NULL, forecast = NULL, na.rm = TRUE, ...) {
   warning("This function is deprecated as of 0.2.0 and will be removed in 1.0.0. Also, as of 0.2.0, please use y_true instead of actual and y_pred instead of forecast as function arguments.")
+  if(!is.null(y_true)) actual <- y_true
+  if(!is.null(y_pred)) forecast <- y_pred
   return(mean(ape(actual, forecast), na.rm = na.rm, ...))
 }
 
@@ -118,7 +129,9 @@ mape <- function(y_true, y_pred, actual = y_true, forecast = y_pred, na.rm = TRU
 #' # Examples
 #' rmse(1:100, 100:1)
 #' @export
-rmse <- function(y_true, y_pred, actual = y_true, forecast = y_pred, na.rm = TRUE, ...) {
+rmse <- function(y_true = NULL, y_pred = NULL, actual = NULL, forecast = NULL, na.rm = TRUE, ...) {
   warning("This function is deprecated as of 0.2.0 and will be removed in 1.0.0. Also, as of 0.2.0, please use y_true instead of actual and y_pred instead of forecast as function arguments.")
+  if(!is.null(y_true)) actual <- y_true
+  if(!is.null(y_pred)) forecast <- y_pred
   return(sqrt(mean(e(actual, forecast) ^ 2, na.rm = na.rm, ...)))
 }
