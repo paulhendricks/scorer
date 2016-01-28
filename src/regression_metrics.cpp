@@ -47,14 +47,8 @@ double mean_error_rcpp(NumericVector y_true, NumericVector y_pred) {
   return mean((y_true - y_pred));
 }
 
-//' Calculate mean absolute error regression loss.
-//'
-//' @param y_true Ground truth (correct) target values.
-//' @param y_pred Estimated target values.
-//' @return  A numeric vector of length one.
-//' @export
 // [[Rcpp::export]]
-double mean_absolute_error(NumericVector y_true, NumericVector y_pred) {
+double mean_absolute_error_rcpp(NumericVector y_true, NumericVector y_pred) {
   return mean(absolute_error_rcpp(y_true = y_true, y_pred = y_pred));
 }
 

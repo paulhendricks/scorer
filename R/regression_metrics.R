@@ -58,7 +58,17 @@ mean_error <- function(y_true, y_pred) {
   mean_error_rcpp(y_true, y_pred)
 }
 
-
+#' Calculate mean absolute error regression loss.
+#'
+#' @param y_true Ground truth (correct) target values.
+#' @param y_pred Estimated target values.
+#' @return  A numeric vector of length one.
+#' @examples
+#' mean_absolute_error(1:10, 10:1)
+#' @export
+mean_absolute_error <- function(y_true, y_pred) {
+  mean_absolute_error_rcpp(y_true, y_pred)
+}
 
 
 
