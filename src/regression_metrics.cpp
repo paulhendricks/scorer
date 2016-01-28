@@ -42,14 +42,8 @@ NumericVector squared_error_rcpp(NumericVector y_true, NumericVector y_pred) {
   return pow((y_true - y_pred), 2);
 }
 
-//' Calculate mean error regression loss.
-//'
-//' @param y_true Ground truth (correct) target values.
-//' @param y_pred Estimated target values.
-//' @return  A numeric vector of length one.
-//' @export
 // [[Rcpp::export]]
-double mean_error(NumericVector y_true, NumericVector y_pred) {
+double mean_error_rcpp(NumericVector y_true, NumericVector y_pred) {
   return mean((y_true - y_pred));
 }
 
