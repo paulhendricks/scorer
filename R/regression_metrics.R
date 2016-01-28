@@ -8,7 +8,7 @@
 #' absolute_error(1:10, 10:1)
 #' @export
 absolute_error <- function(y_true, y_pred) {
-  absolute_error_rcpp(y_true, y_pred)
+  return(absolute_error_rcpp(y_true = y_true, y_pred = y_pred))
 }
 
 #' Calculate percent error regression loss.
@@ -21,7 +21,7 @@ absolute_error <- function(y_true, y_pred) {
 #' percent_error(1:10, 10:1)
 #' @export
 percent_error <- function(y_true, y_pred) {
-  percent_error_rcpp(y_true, y_pred)
+  return(percent_error_rcpp(y_true = y_true, y_pred = y_pred))
 }
 
 #' Calculate log error regression loss.
@@ -34,7 +34,7 @@ percent_error <- function(y_true, y_pred) {
 #' log_error(1:10, 10:1)
 #' @export
 log_error <- function(y_true, y_pred) {
-  log_error_rcpp(y_true, y_pred)
+  return(log_error_rcpp(y_true = y_true, y_pred = y_pred))
 }
 
 #' Calculate squared error regression loss.
@@ -47,7 +47,7 @@ log_error <- function(y_true, y_pred) {
 #' squared_error(1:10, 10:1)
 #' @export
 squared_error <- function(y_true, y_pred) {
-  squared_error_rcpp(y_true, y_pred)
+  return(squared_error_rcpp(y_true = y_true, y_pred = y_pred))
 }
 
 #' Calculate squared log_error regression loss.
@@ -60,7 +60,7 @@ squared_error <- function(y_true, y_pred) {
 #' squared_log_error(1:10, 10:1)
 #' @export
 squared_log_error <- function(y_true, y_pred) {
-  squared_log_error_rcpp(y_true, y_pred)
+  return(squared_log_error_rcpp(y_true = y_true, y_pred = y_pred))
 }
 
 #' Calculate absolute percent error regression loss.
@@ -73,7 +73,7 @@ squared_log_error <- function(y_true, y_pred) {
 #' absolute_percent_error(1:10, 10:1)
 #' @export
 absolute_percent_error <- function(y_true, y_pred) {
-  absolute_percent_error_rcpp(y_true, y_pred)
+  return(absolute_percent_error_rcpp(y_true = y_true, y_pred = y_pred))
 }
 
 #' Calculate mean error regression loss.
@@ -86,7 +86,7 @@ absolute_percent_error <- function(y_true, y_pred) {
 #' mean_error(1:10, 10:1)
 #' @export
 mean_error <- function(y_true, y_pred) {
-  mean_error_rcpp(y_true, y_pred)
+  return(mean_error_rcpp(y_true = y_true, y_pred = y_pred))
 }
 
 #' Calculate mean absolute error regression loss.
@@ -99,7 +99,7 @@ mean_error <- function(y_true, y_pred) {
 #' mean_absolute_error(1:10, 10:1)
 #' @export
 mean_absolute_error <- function(y_true, y_pred) {
-  mean_absolute_error_rcpp(y_true, y_pred)
+  return(mean_absolute_error_rcpp(y_true = y_true, y_pred = y_pred))
 }
 
 #' Calculate median absolute error regression loss.
@@ -112,7 +112,7 @@ mean_absolute_error <- function(y_true, y_pred) {
 #' median_absolute_error(1:10, 10:1)
 #' @export
 median_absolute_error <- function(y_true, y_pred) {
-  median_absolute_error_rcpp(y_true, y_pred)
+  return(median_absolute_error_rcpp(y_true = y_true, y_pred = y_pred))
 }
 
 #' Calculate mean percent error regression loss.
@@ -125,7 +125,7 @@ median_absolute_error <- function(y_true, y_pred) {
 #' mean_percent_error(1:10, 10:1)
 #' @export
 mean_percent_error <- function(y_true, y_pred) {
-  mean_percent_error_rcpp(y_true, y_pred)
+  return(mean_percent_error_rcpp(y_true = y_true, y_pred = y_pred))
 }
 
 #' Calculate median percent error regression loss.
@@ -138,7 +138,7 @@ mean_percent_error <- function(y_true, y_pred) {
 #' median_percent_error(1:10, 10:1)
 #' @export
 median_percent_error <- function(y_true, y_pred) {
-  median_percent_error_rcpp(y_true, y_pred)
+  return(median_percent_error_rcpp(y_true = y_true, y_pred = y_pred))
 }
 
 #' Calculate mean squared error regression loss.
@@ -151,7 +151,7 @@ median_percent_error <- function(y_true, y_pred) {
 #' mean_squared_error(1:10, 10:1)
 #' @export
 mean_squared_error <- function(y_true, y_pred) {
-  mean_squared_error_rcpp(y_true, y_pred)
+  return(mean_squared_error_rcpp(y_true = y_true, y_pred = y_pred))
 }
 
 #' Calculate median squared error regression loss.
@@ -164,7 +164,7 @@ mean_squared_error <- function(y_true, y_pred) {
 #' median_squared_error(1:10, 10:1)
 #' @export
 median_squared_error <- function(y_true, y_pred) {
-  median_squared_error_rcpp(y_true, y_pred)
+  return(median_squared_error_rcpp(y_true = y_true, y_pred = y_pred))
 }
 
 #' Calculate mean squared log error regression loss.
@@ -177,7 +177,7 @@ median_squared_error <- function(y_true, y_pred) {
 #' mean_squared_log_error(1:10, 10:1)
 #' @export
 mean_squared_log_error <- function(y_true, y_pred) {
-  mean_squared_log_error_rcpp(y_true, y_pred)
+  return(mean_squared_log_error_rcpp(y_true = y_true, y_pred = y_pred))
 }
 
 #' Calculate median squared log error regression loss.
@@ -190,7 +190,7 @@ mean_squared_log_error <- function(y_true, y_pred) {
 #' median_squared_log_error(1:10, 10:1)
 #' @export
 median_squared_log_error <- function(y_true, y_pred) {
-  median_squared_log_error_rcpp(y_true, y_pred)
+  return(median_squared_log_error_rcpp(y_true = y_true, y_pred = y_pred))
 }
 
 #' Calculate mean absolute percent error regression loss.
@@ -203,7 +203,7 @@ median_squared_log_error <- function(y_true, y_pred) {
 #' mean_absolute_percent_error(1:10, 10:1)
 #' @export
 mean_absolute_percent_error <- function(y_true, y_pred) {
-  mean_absolute_percent_error_rcpp(y_true, y_pred)
+  return(mean_absolute_percent_error_rcpp(y_true = y_true, y_pred = y_pred))
 }
 
 #' Calculate median absolute percent error regression loss.
@@ -216,7 +216,7 @@ mean_absolute_percent_error <- function(y_true, y_pred) {
 #' median_absolute_percent_error(1:10, 10:1)
 #' @export
 median_absolute_percent_error <- function(y_true, y_pred) {
-  median_absolute_percent_error_rcpp(y_true, y_pred)
+  return(median_absolute_percent_error_rcpp(y_true = y_true, y_pred = y_pred))
 }
 
 #' Calculate symmetric mean absolute percent error regression loss.
@@ -229,7 +229,8 @@ median_absolute_percent_error <- function(y_true, y_pred) {
 #' symmetric_mean_absolute_percent_error(1:10, 10:1)
 #' @export
 symmetric_mean_absolute_percent_error <- function(y_true, y_pred) {
-  mean_absolute_percent_error_rcpp(y_true, y_pred)
+
+  return(mean_absolute_percent_error_rcpp(y_true = y_true, y_pred = y_pred))
 }
 
 #' Calculate symmetric median absolute percent error regression loss.
@@ -242,7 +243,7 @@ symmetric_mean_absolute_percent_error <- function(y_true, y_pred) {
 #' symmetric_median_absolute_percent_error(1:10, 10:1)
 #' @export
 symmetric_median_absolute_percent_error <- function(y_true, y_pred) {
-  median_absolute_percent_error_rcpp(y_true, y_pred)
+  return(median_absolute_percent_error_rcpp(y_true = y_true, y_pred = y_pred))
 }
 
 #' Calculate mean absolute scaled error regression loss.
