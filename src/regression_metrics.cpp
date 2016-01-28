@@ -43,6 +43,11 @@ NumericVector squared_error_rcpp(NumericVector y_true, NumericVector y_pred) {
 }
 
 // [[Rcpp::export]]
+NumericVector squared_log_error_rcpp(NumericVector y_true, NumericVector y_pred) {
+  return pow(log_error_rcpp(y_true = y_true, y_pred = y_pred), 2);
+}
+
+// [[Rcpp::export]]
 NumericVector absolute_percent_error_rcpp(NumericVector y_true, NumericVector y_pred) {
   return abs(percent_error_rcpp(y_true = y_true, y_pred = y_pred));
 }
@@ -75,6 +80,16 @@ double median_percent_error_rcpp(NumericVector y_true, NumericVector y_pred) {
 // [[Rcpp::export]]
 double mean_squared_error_rcpp(NumericVector y_true, NumericVector y_pred) {
   return mean(squared_error_rcpp(y_true = y_true, y_pred = y_pred));
+}
+
+// [[Rcpp::export]]
+double median_squared_log_error_rcpp(NumericVector y_true, NumericVector y_pred) {
+  return median_rcpp(squared_log_error_rcpp(y_true = y_true, y_pred = y_pred));
+}
+
+// [[Rcpp::export]]
+double mean_squared_log_error_rcpp(NumericVector y_true, NumericVector y_pred) {
+  return mean(squared_log_error_rcpp(y_true = y_true, y_pred = y_pred));
 }
 
 // [[Rcpp::export]]

@@ -50,6 +50,19 @@ squared_error <- function(y_true, y_pred) {
   squared_error_rcpp(y_true, y_pred)
 }
 
+#' Calculate squared log_error regression loss.
+#'
+#' @param y_true Ground truth (correct) target values.
+#' @param y_pred Estimated target values.
+#' @return  A numeric vector of length equal to \code{max(length(y_true), length(y_pred))}.
+#' @family regression metrics
+#' @examples
+#' squared_log_error(1:10, 10:1)
+#' @export
+squared_log_error <- function(y_true, y_pred) {
+  squared_log_error_rcpp(y_true, y_pred)
+}
+
 #' Calculate absolute percent error regression loss.
 #'
 #' @param y_true Ground truth (correct) target values.
@@ -152,6 +165,32 @@ mean_squared_error <- function(y_true, y_pred) {
 #' @export
 median_squared_error <- function(y_true, y_pred) {
   median_squared_error_rcpp(y_true, y_pred)
+}
+
+#' Calculate mean squared log error regression loss.
+#'
+#' @param y_true Ground truth (correct) target values.
+#' @param y_pred Estimated target values.
+#' @return  A numeric vector of length one.
+#' @family regression metrics
+#' @examples
+#' mean_squared_log_error(1:10, 10:1)
+#' @export
+mean_squared_log_error <- function(y_true, y_pred) {
+  mean_squared_log_error_rcpp(y_true, y_pred)
+}
+
+#' Calculate median squared log error regression loss.
+#'
+#' @param y_true Ground truth (correct) target values.
+#' @param y_pred Estimated target values.
+#' @return  A numeric vector of length one.
+#' @family regression metrics
+#' @examples
+#' median_squared_log_error(1:10, 10:1)
+#' @export
+median_squared_log_error <- function(y_true, y_pred) {
+  median_squared_log_error_rcpp(y_true, y_pred)
 }
 
 #' Calculate mean absolute percent error regression loss.

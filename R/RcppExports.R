@@ -21,6 +21,10 @@ squared_error_rcpp <- function(y_true, y_pred) {
     .Call('scorer_squared_error_rcpp', PACKAGE = 'scorer', y_true, y_pred)
 }
 
+squared_log_error_rcpp <- function(y_true, y_pred) {
+    .Call('scorer_squared_log_error_rcpp', PACKAGE = 'scorer', y_true, y_pred)
+}
+
 absolute_percent_error_rcpp <- function(y_true, y_pred) {
     .Call('scorer_absolute_percent_error_rcpp', PACKAGE = 'scorer', y_true, y_pred)
 }
@@ -47,6 +51,14 @@ median_percent_error_rcpp <- function(y_true, y_pred) {
 
 mean_squared_error_rcpp <- function(y_true, y_pred) {
     .Call('scorer_mean_squared_error_rcpp', PACKAGE = 'scorer', y_true, y_pred)
+}
+
+median_squared_log_error_rcpp <- function(y_true, y_pred) {
+    .Call('scorer_median_squared_log_error_rcpp', PACKAGE = 'scorer', y_true, y_pred)
+}
+
+mean_squared_log_error_rcpp <- function(y_true, y_pred) {
+    .Call('scorer_mean_squared_log_error_rcpp', PACKAGE = 'scorer', y_true, y_pred)
 }
 
 median_squared_error_rcpp <- function(y_true, y_pred) {

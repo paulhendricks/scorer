@@ -64,6 +64,18 @@ BEGIN_RCPP
     return __result;
 END_RCPP
 }
+// squared_log_error_rcpp
+NumericVector squared_log_error_rcpp(NumericVector y_true, NumericVector y_pred);
+RcppExport SEXP scorer_squared_log_error_rcpp(SEXP y_trueSEXP, SEXP y_predSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject __result;
+    Rcpp::RNGScope __rngScope;
+    Rcpp::traits::input_parameter< NumericVector >::type y_true(y_trueSEXP);
+    Rcpp::traits::input_parameter< NumericVector >::type y_pred(y_predSEXP);
+    __result = Rcpp::wrap(squared_log_error_rcpp(y_true, y_pred));
+    return __result;
+END_RCPP
+}
 // absolute_percent_error_rcpp
 NumericVector absolute_percent_error_rcpp(NumericVector y_true, NumericVector y_pred);
 RcppExport SEXP scorer_absolute_percent_error_rcpp(SEXP y_trueSEXP, SEXP y_predSEXP) {
@@ -145,6 +157,30 @@ BEGIN_RCPP
     Rcpp::traits::input_parameter< NumericVector >::type y_true(y_trueSEXP);
     Rcpp::traits::input_parameter< NumericVector >::type y_pred(y_predSEXP);
     __result = Rcpp::wrap(mean_squared_error_rcpp(y_true, y_pred));
+    return __result;
+END_RCPP
+}
+// median_squared_log_error_rcpp
+double median_squared_log_error_rcpp(NumericVector y_true, NumericVector y_pred);
+RcppExport SEXP scorer_median_squared_log_error_rcpp(SEXP y_trueSEXP, SEXP y_predSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject __result;
+    Rcpp::RNGScope __rngScope;
+    Rcpp::traits::input_parameter< NumericVector >::type y_true(y_trueSEXP);
+    Rcpp::traits::input_parameter< NumericVector >::type y_pred(y_predSEXP);
+    __result = Rcpp::wrap(median_squared_log_error_rcpp(y_true, y_pred));
+    return __result;
+END_RCPP
+}
+// mean_squared_log_error_rcpp
+double mean_squared_log_error_rcpp(NumericVector y_true, NumericVector y_pred);
+RcppExport SEXP scorer_mean_squared_log_error_rcpp(SEXP y_trueSEXP, SEXP y_predSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject __result;
+    Rcpp::RNGScope __rngScope;
+    Rcpp::traits::input_parameter< NumericVector >::type y_true(y_trueSEXP);
+    Rcpp::traits::input_parameter< NumericVector >::type y_pred(y_predSEXP);
+    __result = Rcpp::wrap(mean_squared_log_error_rcpp(y_true, y_pred));
     return __result;
 END_RCPP
 }
