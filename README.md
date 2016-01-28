@@ -82,19 +82,19 @@ ggplot(mtcars, aes(x = wt, y = mpg, color = Type)) + geom_point()
 
 ![](inst/imgs/README-unnamed-chunk-4-1.png)
 
-#### Build a test model on train data set
+#### Build a model on train data set
 
 ``` r
-test_model <- lm(mpg ~ wt, data = train_mtcars)
+model <- lm(mpg ~ wt, data = train_mtcars)
 ```
 
-#### Predict test model using the test data set
+#### Predict model using the test data set
 
 ``` r
-test_mtcars[, "predicted_mpg"] <- predict(test_model, newdata = test_mtcars)
+test_mtcars[, "predicted_mpg"] <- predict(model, newdata = test_mtcars)
 ```
 
-#### Score test model using various metrics
+#### Score model using various metrics
 
 ``` r
 scorer::mean_absolute_error(test_mtcars[, "mpg"], test_mtcars[, "predicted_mpg"])
