@@ -6,15 +6,15 @@ scorer
 
 `scorer` is a set of tools for quickly scoring models in data science and machine learning. This toolset is written in C++, where possible, for blazing fast performance. This toolset's API follows that of [sklearn.metrics](http://scikit-learn.org/stable/modules/classes.html#sklearn-metrics-metrics) as closely as possible so one can easily switch back and forth between the two languages without too much cognitive dissonance. The following types of metrics are currently implemented in `scorer`:
 
--   Regression metrics
+-   Regression metrics (implemented in 0.2.0)
 
 The following types of metrics are soon to be implemented in `scorer`:
 
--   Classification metrics
--   Multilabel ranking metrics
--   Clustering metrics
--   Biclustering metrics
--   Pairwise metrics
+-   Classification metrics (to be implemented in 0.3.0)
+-   Multilabel ranking metrics (to be implemented in 0.3.0)
+-   Clustering metrics (to be implemented in 0.3.0)
+-   Biclustering metrics (to be implemented in 0.3.0)
+-   Pairwise metrics (to be implemented in 0.3.0)
 
 Installation
 ------------
