@@ -95,13 +95,13 @@ ggplot(mtcars, aes(x = wt, y = mpg, color = Type)) + geom_point()
 ```
 
 
-#### Build model on train data set
+#### Build a test model on train data set
 
 ```{r}
 test_model <- lm(mpg ~ wt, data = train_mtcars)
 ```
 
-#### Predict model using the test data set
+#### Predict test model using the test data set
 
 ```{r}
 test_mtcars[, "predicted_mpg"] <- predict(test_model, newdata = test_mtcars)
@@ -114,7 +114,7 @@ scorer::mean_absolute_error(test_mtcars[, "mpg"], test_mtcars[, "predicted_mpg"]
 scorer::mean_squared_error(test_mtcars[, "mpg"], test_mtcars[, "predicted_mpg"])
 ```
 
-#### Build final model on all the data
+#### Build a final model on all the data
 
 ```{r}
 final_model <- lm(mpg ~ wt, data = mtcars)
