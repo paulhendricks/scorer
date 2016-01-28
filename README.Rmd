@@ -152,7 +152,7 @@ scorer::r2_score(mtcars[, "mpg"], mtcars[, "predicted_mpg"])
 
 ## License
 
-[![License](http://img.shields.io/:license-mit-blue.svg)](https://github.com/paulhendricks/scorer/blob/master/LICENSE)
+[![License](http://img.shields.io/:license-MIT-blue.svg)](https://github.com/paulhendricks/scorer/blob/master/LICENSE)
 
 ## Session Information
 
