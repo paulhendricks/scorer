@@ -36,6 +36,29 @@ The following types of metrics are soon to be implemented in `scorer`:
 * Biclustering metrics (to be implemented in 0.3.0)
 * Pairwise metrics (to be implemented in 0.3.0)
 
+## Installation
+
+You can install:
+
+* the latest released version from CRAN with
+
+    [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/scorer)](http://cran.r-project.org/package=scorer)
+    ```R
+    install.packages("scorer")
+    ````
+
+* the latest development version from Github with
+    
+    [![Github_Status_Badge](https://img.shields.io/badge/Github-0.2.0-brightgreen.svg)](https://img.shields.io/badge/Github-0.2.0-brightgreen.svg)
+    ```R
+    if (packageVersion("devtools") < 1.6) {
+      install.packages("devtools")
+    }
+    devtools::install_github("paulhendricks/scorer")
+    ```
+
+If you encounter a clear bug, please file a minimal reproducible example on [github](https://github.com/paulhendricks/scorer/issues).
+
 ## News
 
 ### scorer 0.2.0
@@ -59,29 +82,6 @@ The following types of metrics are soon to be implemented in `scorer`:
 #### Bug fixes
 
 * Fixed minor error in passing multiple arguments to `mae()`.
-
-## Installation
-
-You can install:
-
-* the latest released version from CRAN with
-
-    [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/scorer)](http://cran.r-project.org/package=scorer)
-    ```R
-    install.packages("scorer")
-    ````
-
-* the latest development version from Github with
-    
-    [![Github_Status_Badge](https://img.shields.io/badge/Github-0.2.0-brightgreen.svg)](https://img.shields.io/badge/Github-0.2.0-brightgreen.svg)
-    ```R
-    if (packageVersion("devtools") < 1.6) {
-      install.packages("devtools")
-    }
-    devtools::install_github("paulhendricks/scorer")
-    ```
-
-If you encounter a clear bug, please file a minimal reproducible example on [github](https://github.com/paulhendricks/scorer/issues).
 
 ## API
 
