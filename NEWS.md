@@ -12,7 +12,7 @@
 ## Improvements
 
 * Implemented several functions for estimating errors.
-* First minor version release!
+* First minor version release to CRAN!
   
 ## Bug fixes
 
