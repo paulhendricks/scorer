@@ -13,9 +13,17 @@
 #' e(1:100, 100:1)
 #' @export
 e <- function(y_true = NULL, y_pred = NULL, actual = NULL, forecast = NULL) {
-  warning("This function is deprecated as of 0.2.0 and will be removed in 1.0.0. Also, as of 0.2.0, please use y_true instead of actual and y_pred instead of forecast as function arguments.")
-  if(!is.null(y_true)) actual <- y_true
-  if(!is.null(y_pred)) forecast <- y_pred
+  .Deprecated("absolute_error")
+  if (is.null(actual)) {
+    actual <- y_true
+  } else {
+    warning("Argument actual is deprecated; please use y_true instead.", call. = FALSE)
+  }
+  if (is.null(forecast)) {
+    forecast <- y_pred
+  } else {
+    warning("Argument forecast is deprecated; please use y_pred instead.", call. = FALSE)
+  }
   return(actual - forecast)
 }
 #' Calculate absolute error between actual and forecast.
@@ -34,9 +42,17 @@ e <- function(y_true = NULL, y_pred = NULL, actual = NULL, forecast = NULL) {
 #' ae(1:100, 100:1)
 #' @export
 ae <- function(y_true = NULL, y_pred = NULL, actual = NULL, forecast = NULL) {
-  warning("This function is deprecated as of 0.2.0 and will be removed in 1.0.0. Also, as of 0.2.0, please use y_true instead of actual and y_pred instead of forecast as function arguments.")
-  if(!is.null(y_true)) actual <- y_true
-  if(!is.null(y_pred)) forecast <- y_pred
+  .Deprecated("absolute_error")
+  if (is.null(actual)) {
+    actual <- y_true
+  } else {
+    warning("Argument actual is deprecated; please use y_true instead.", call. = FALSE)
+  }
+  if (is.null(forecast)) {
+    forecast <- y_pred
+  } else {
+    warning("Argument forecast is deprecated; please use y_pred instead.", call. = FALSE)
+  }
   return(abs(e(actual, forecast)))
 }
 
@@ -56,9 +72,17 @@ ae <- function(y_true = NULL, y_pred = NULL, actual = NULL, forecast = NULL) {
 #' pe(1:100, 100:1)
 #' @export
 pe <- function(y_true = NULL, y_pred = NULL, actual = NULL, forecast = NULL) {
-  warning("This function is deprecated as of 0.2.0 and will be removed in 1.0.0. Also, as of 0.2.0, please use y_true instead of actual and y_pred instead of forecast as function arguments.")
-  if(!is.null(y_true)) actual <- y_true
-  if(!is.null(y_pred)) forecast <- y_pred
+  .Deprecated("percent_error")
+  if (is.null(actual)) {
+    actual <- y_true
+  } else {
+    warning("Argument actual is deprecated; please use y_true instead.", call. = FALSE)
+  }
+  if (is.null(forecast)) {
+    forecast <- y_pred
+  } else {
+    warning("Argument forecast is deprecated; please use y_pred instead.", call. = FALSE)
+  }
   return(e(actual, forecast) / actual)
 }
 
@@ -79,9 +103,17 @@ pe <- function(y_true = NULL, y_pred = NULL, actual = NULL, forecast = NULL) {
 #' ape(1:100, 100:1)
 #' @export
 ape <- function(y_true = NULL, y_pred = NULL, actual = NULL, forecast = NULL) {
-  warning("This function is deprecated as of 0.2.0 and will be removed in 1.0.0. Also, as of 0.2.0, please use y_true instead of actual and y_pred instead of forecast as function arguments.")
-  if(!is.null(y_true)) actual <- y_true
-  if(!is.null(y_pred)) forecast <- y_pred
+  .Deprecated("absolute_percent_error")
+  if (is.null(actual)) {
+    actual <- y_true
+  } else {
+    warning("Argument actual is deprecated; please use y_true instead.", call. = FALSE)
+  }
+  if (is.null(forecast)) {
+    forecast <- y_pred
+  } else {
+    warning("Argument forecast is deprecated; please use y_pred instead.", call. = FALSE)
+  }
   return(abs(pe(actual, forecast)))
 }
 
@@ -105,9 +137,17 @@ ape <- function(y_true = NULL, y_pred = NULL, actual = NULL, forecast = NULL) {
 #' mape(1:100, 100:1)
 #' @export
 mape <- function(y_true = NULL, y_pred = NULL, actual = NULL, forecast = NULL, na.rm = TRUE, ...) {
-  warning("This function is deprecated as of 0.2.0 and will be removed in 1.0.0. Also, as of 0.2.0, please use y_true instead of actual and y_pred instead of forecast as function arguments.")
-  if(!is.null(y_true)) actual <- y_true
-  if(!is.null(y_pred)) forecast <- y_pred
+  .Deprecated("mean_absolute_percent_error")
+  if (is.null(actual)) {
+    actual <- y_true
+  } else {
+    warning("Argument actual is deprecated; please use y_true instead.", call. = FALSE)
+  }
+  if (is.null(forecast)) {
+    forecast <- y_pred
+  } else {
+    warning("Argument forecast is deprecated; please use y_pred instead.", call. = FALSE)
+  }
   return(mean(ape(actual, forecast), na.rm = na.rm, ...))
 }
 
@@ -130,8 +170,16 @@ mape <- function(y_true = NULL, y_pred = NULL, actual = NULL, forecast = NULL, n
 #' rmse(1:100, 100:1)
 #' @export
 rmse <- function(y_true = NULL, y_pred = NULL, actual = NULL, forecast = NULL, na.rm = TRUE, ...) {
-  warning("This function is deprecated as of 0.2.0 and will be removed in 1.0.0. Also, as of 0.2.0, please use y_true instead of actual and y_pred instead of forecast as function arguments.")
-  if(!is.null(y_true)) actual <- y_true
-  if(!is.null(y_pred)) forecast <- y_pred
+  .Deprecated("mean_squared_error")
+  if (is.null(actual)) {
+    actual <- y_true
+  } else {
+    warning("Argument actual is deprecated; please use y_true instead.", call. = FALSE)
+  }
+  if (is.null(forecast)) {
+    forecast <- y_pred
+  } else {
+    warning("Argument forecast is deprecated; please use y_pred instead.", call. = FALSE)
+  }
   return(sqrt(mean(e(actual, forecast) ^ 2, na.rm = na.rm, ...)))
 }
