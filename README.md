@@ -53,7 +53,7 @@ News
 -   Added more functions!
 -   Nearly all functions implemented in C++ for blazing fast speed!
 -   Additional features such as sample weighting for some error metrics have been identified and placed on a backburner for future releases.
--   Implemented unit tests for nearly all functions.
+-   Implemented unit tests for base functions.
 
 ### scorer 0.1.0
 
