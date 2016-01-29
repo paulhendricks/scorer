@@ -43,5 +43,3 @@ test_that("absolute_error() produces correct output types.", {
 test_that("absolute_error() raises correct messages, warnings, and errors.", {
   expect_error(absolute_error("a", "b"))
 })
-
-
