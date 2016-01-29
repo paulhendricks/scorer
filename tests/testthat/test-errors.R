@@ -11,7 +11,7 @@ test_that("e() produces correct output.", {
   expect_equal(e(TRUE, FALSE), 1)
 })
 
-test_that("e() produces correct output types.", {
+test_that("e() produces correct output classes and types.", {
   expect_is(e(runif(n), runif(n)), "numeric")
 })
 
@@ -28,7 +28,7 @@ test_that("ae() produces correct output.", {
   expect_equal(ae(TRUE, FALSE), 1)
 })
 
-test_that("ae() produces correct output types.", {
+test_that("ae() produces correct output classes and types.", {
   expect_is(ae(runif(n), runif(n)), "numeric")
 })
 
@@ -45,7 +45,7 @@ test_that("ape() produces correct output.", {
   expect_equal(ape(TRUE, FALSE), 1)
 })
 
-test_that("ape() produces correct output types.", {
+test_that("ape() produces correct output classes and types.", {
   expect_is(ape(runif(n), runif(n)), "numeric")
 })
 
@@ -62,7 +62,7 @@ test_that("mape() produces correct output.", {
   expect_equal(mape(TRUE, FALSE), 1)
 })
 
-test_that("mape() produces correct output types.", {
+test_that("mape() produces correct output classes and types.", {
   expect_is(mape(runif(n), runif(n)), "numeric")
 })
 
@@ -79,7 +79,7 @@ test_that("pe() produces correct output.", {
   expect_equal(pe(TRUE, FALSE), 1)
 })
 
-test_that("pe() produces correct output types.", {
+test_that("pe() produces correct output classes and types.", {
   expect_is(pe(runif(n), runif(n)), "numeric")
 })
 
@@ -99,7 +99,7 @@ test_that("rmse() produces correct output.", {
   expect_equal(rmse(TRUE, FALSE), 1)
 })
 
-test_that("rmse() produces correct output types.", {
+test_that("rmse() produces correct output classes and types.", {
   expect_is(rmse(runif(n), runif(n)), "numeric")
 })
 

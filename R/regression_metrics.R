@@ -310,5 +310,5 @@ unexplained_variance_score <- function(y_true, y_pred) {
 #' r2_score(1:10, 10:1)
 #' @export
 r2_score <- function(y_true, y_pred) {
-  return(explained_variance_score(y_true, y_pred) / total_variance_score(y_true, y_pred))
+  return(explained_variance_score(y_true = y_true, y_pred = y_pred) / total_variance_score(y_true = y_true, y_pred = y_pred))
 }
