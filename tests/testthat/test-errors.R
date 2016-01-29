@@ -15,7 +15,8 @@ test_that("e() produces correct output types.", {
   expect_is(e(runif(n), runif(n)), "numeric")
 })
 
-test_that("e() raises correct errors.", {
+test_that("e() raises correct messages, warnings, and errors.", {
+  expect_warning(e(x, x))
   expect_error(e("a", "b"))
 })
 
@@ -31,7 +32,8 @@ test_that("ae() produces correct output types.", {
   expect_is(ae(runif(n), runif(n)), "numeric")
 })
 
-test_that("ae() raises correct errors.", {
+test_that("ae() raises correct messages, warnings, and errors.", {
+  expect_warning(ae(x, x))
   expect_error(ae("a", "b"))
 })
 
@@ -47,7 +49,8 @@ test_that("ape() produces correct output types.", {
   expect_is(ape(runif(n), runif(n)), "numeric")
 })
 
-test_that("ape() raises correct errors.", {
+test_that("ape() raises correct messages, warnings, and errors.", {
+  expect_warning(ape(x, x))
   expect_error(ape("a", "b"))
 })
 
@@ -63,7 +66,8 @@ test_that("mape() produces correct output types.", {
   expect_is(mape(runif(n), runif(n)), "numeric")
 })
 
-test_that("mape() raises correct errors.", {
+test_that("mape() raises correct messages, warnings, and errors.", {
+  expect_warning(mape(x, x))
   expect_error(mape("a", "b"))
 })
 
@@ -79,7 +83,8 @@ test_that("pe() produces correct output types.", {
   expect_is(pe(runif(n), runif(n)), "numeric")
 })
 
-test_that("pe() raises correct errors.", {
+test_that("pe() raises correct messages, warnings, and errors.", {
+  expect_warning(pe(x, x))
   expect_error(pe("a", "b"))
 })
 
@@ -98,6 +103,7 @@ test_that("rmse() produces correct output types.", {
   expect_is(rmse(runif(n), runif(n)), "numeric")
 })
 
-test_that("rmse() raises correct errors.", {
+test_that("rmse() raises correct messages, warnings, and errors.", {
+  expect_warning(rmse(x, x))
   expect_error(rmse("a", "b"))
 })
