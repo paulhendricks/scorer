@@ -62,7 +62,11 @@ test_that("percent_error() raises correct messages, warnings, and errors.", {
 })
 
 test_that("log_error() produces correct output.", {
-  expect_equal(1L, 1L)
+  expect_equal(log_error(2 * exp(1), exp(1)), 1)
+  expect_equal(log_error(0, 1), NaN)
+  expect_equal(log_error(1, 0), 0)
+  expect_equal(log_error(FALSE, TRUE), NaN)
+  expect_equal(log_error(TRUE, FALSE), 0)
 })
 
 test_that("log_error() produces correct output classes and types.", {
