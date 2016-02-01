@@ -242,7 +242,7 @@ symmetric_mean_absolute_percent_error <- function(y_true, y_pred) {
 #' symmetric_median_absolute_percent_error(1:10, 10:1)
 #' @export
 symmetric_median_absolute_percent_error <- function(y_true, y_pred) {
-  return(median(abs(y_pred - y_true) / ((abs(y_true) + abs(y_pred)) / 2)))
+  return(stats::median(abs(y_pred - y_true) / ((abs(y_true) + abs(y_pred)) / 2)))
 }
 
 #' Calculate mean absolute scaled error regression loss.
