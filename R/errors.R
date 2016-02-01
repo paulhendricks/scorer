@@ -13,7 +13,7 @@
 #' e(1:100, 100:1)
 #' @export
 e <- function(y_true = NULL, y_pred = NULL, actual = NULL, forecast = NULL) {
-  .Deprecated("absolute_error")
+  warning("'e' is deprecated. Use 'absolute_error' instead.")
   if (is.null(actual)) {
     actual <- y_true
   } else {
@@ -42,7 +42,7 @@ e <- function(y_true = NULL, y_pred = NULL, actual = NULL, forecast = NULL) {
 #' ae(1:100, 100:1)
 #' @export
 ae <- function(y_true = NULL, y_pred = NULL, actual = NULL, forecast = NULL) {
-  .Deprecated("absolute_error")
+  warning("'ae' is deprecated. Use 'absolute_error' instead.")
   if (is.null(actual)) {
     actual <- y_true
   } else {
@@ -72,7 +72,7 @@ ae <- function(y_true = NULL, y_pred = NULL, actual = NULL, forecast = NULL) {
 #' pe(1:100, 100:1)
 #' @export
 pe <- function(y_true = NULL, y_pred = NULL, actual = NULL, forecast = NULL) {
-  .Deprecated("percent_error")
+  warning("'pe' is deprecated. Use 'percent_error' instead.")
   if (is.null(actual)) {
     actual <- y_true
   } else {
@@ -103,7 +103,7 @@ pe <- function(y_true = NULL, y_pred = NULL, actual = NULL, forecast = NULL) {
 #' ape(1:100, 100:1)
 #' @export
 ape <- function(y_true = NULL, y_pred = NULL, actual = NULL, forecast = NULL) {
-  .Deprecated("absolute_percent_error")
+  warning("'ape' is deprecated. Use 'absolute_percent_error' instead.")
   if (is.null(actual)) {
     actual <- y_true
   } else {
@@ -137,7 +137,7 @@ ape <- function(y_true = NULL, y_pred = NULL, actual = NULL, forecast = NULL) {
 #' mape(1:100, 100:1)
 #' @export
 mape <- function(y_true = NULL, y_pred = NULL, actual = NULL, forecast = NULL, na.rm = TRUE, ...) {
-  .Deprecated("mean_absolute_percent_error")
+  warning("'mape' is deprecated. Use 'mean_absolute_percent_error' instead.")
   if (is.null(actual)) {
     actual <- y_true
   } else {
@@ -170,7 +170,7 @@ mape <- function(y_true = NULL, y_pred = NULL, actual = NULL, forecast = NULL, n
 #' rmse(1:100, 100:1)
 #' @export
 rmse <- function(y_true = NULL, y_pred = NULL, actual = NULL, forecast = NULL, na.rm = TRUE, ...) {
-  .Deprecated("mean_squared_error")
+  warning("'rmse' is deprecated. Use 'mean_squared_error' instead.")
   if (is.null(actual)) {
     actual <- y_true
   } else {
