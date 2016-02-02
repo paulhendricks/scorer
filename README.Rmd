@@ -54,7 +54,7 @@ You can install:
     if (packageVersion("devtools") < 1.6) {
       install.packages("devtools")
     }
-    devtools::install_github("paulhendricks/scorer")
+    devtools::install_github("paulhendricks/scorer", ref = "dev")
     ```
 
 If you encounter a clear bug, please file a minimal reproducible example on [github](https://github.com/paulhendricks/scorer/issues).
