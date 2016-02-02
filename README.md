@@ -40,7 +40,7 @@ You can install:
     devtools::install_github("paulhendricks/scorer", ref = "dev")
     ```
 
-If you encounter a clear bug, please file a minimal reproducible example on [github](https://github.com/paulhendricks/scorer/issues).
+If you encounter a clear bug, please file a minimal reproducible example on [Github](https://github.com/paulhendricks/scorer/issues).
 
 News
 ----
