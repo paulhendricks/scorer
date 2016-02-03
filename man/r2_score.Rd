@@ -21,7 +21,7 @@ Calculate R^2 (coefficient of determination) regression score function.
 r2_score(1:10, 10:1)
 }
 \seealso{
-Other regression.metrics: \code{\link{absolute_error}},
+Other regression metrics: \code{\link{absolute_error}},
   \code{\link{absolute_percent_error}},
   \code{\link{explained_variance_score}},
   \code{\link{log_error}},
