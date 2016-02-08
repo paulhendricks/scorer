@@ -2,7 +2,11 @@
 
 export(absolute_error)
 export(absolute_percent_error)
-export(adjusted_mutual_info_score)
+export(ad)
+export(adju)
+export(adjus)
+export(adjust)
+export(adjuste)
 export(ae)
 export(ape)
 export(e)

@@ -5,6 +5,6 @@
 #' @return  A numeric vector of length equal to \code{max(length(y_true), length(y_pred))}.
 #' @family clustering metrics
 #' @export
-adjust <- function(y_true, y_pred) {
+adju <- function(y_true, y_pred) {
   return(1L)
 }
