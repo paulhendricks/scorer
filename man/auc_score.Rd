@@ -18,6 +18,19 @@ TO BE EDITED.
 Calculate area under the curve.
 }
 \seealso{
-Other classification metrics: \code{\link{accuracy_score}}
+Other classification metrics: \code{\link{accuracy_score}},
+  \code{\link{average_precision_score}},
+  \code{\link{brier_score}},
+  \code{\link{classification_report}},
+  \code{\link{confusion_matrix}}, \code{\link{f1_score}},
+  \code{\link{fbeta_score}}, \code{\link{hamming_loss}},
+  \code{\link{hinge_loss}},
+  \code{\link{jaccard_similarity_score}},
+  \code{\link{log_loss}}, \code{\link{matthews_corrcoef}},
+  \code{\link{precision_recall_curve}},
+  \code{\link{precision_recall_fscore_support}},
+  \code{\link{precision_score}},
+  \code{\link{recall_score}}, \code{\link{roc_auc_score}},
+  \code{\link{roc_curve}}, \code{\link{zero_one_loss}}
 }
 
