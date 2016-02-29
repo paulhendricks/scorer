@@ -19,6 +19,6 @@ Calculate absolute error regression loss.
 }
 \seealso{
 Other clustering metrics: \code{\link{adjust}},
-  \code{\link{adjus}}, \code{\link{adju}}, \code{\link{ad}}
+  \code{\link{adjus}}, \code{\link{ad}}
 }
 

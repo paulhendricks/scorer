@@ -1,10 +1,21 @@
-#' Calculate absolute error regression loss.
+#' Calculate area under the curve.
 #'
 #' @param y_true Ground truth (correct) target values.
 #' @param y_pred Estimated target values.
-#' @return  A numeric vector of length equal to \code{max(length(y_true), length(y_pred))}.
-#' @family clustering metrics
+#' @return  TO BE EDITED.
+#' @family classification metrics
 #' @export
-adju <- function(y_true, y_pred) {
+auc_score <- function(y_true, y_pred) {
   return(1L)
+}
+
+#' Calculate accuracy score.
+#'
+#' @param y_true Ground truth (correct) target values.
+#' @param y_pred Estimated target values.
+#' @return  TO BE EDITED.
+#' @family classification metrics
+#' @export
+accuracy_score <- function(y_true, y_pred) {
+  return((y_true == y_pred) / length(y_true))
 }
