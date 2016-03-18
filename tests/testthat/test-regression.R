@@ -1,5 +1,5 @@
 library(scorer)
-context("regression metrics")
+context("regression")
 
 # absolute_error
 # percent_error
