@@ -52,6 +52,7 @@ News
 -   Implemented functions for classification metrics.
 -   Implemented unit tests for regression metrics.
 -   Implemented unit tests for classification metrics.
+-   Changed base R dependency so it works with older versions of R.
 
 ### scorer 0.2.0
 
