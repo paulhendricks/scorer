@@ -69,6 +69,7 @@ If you encounter a clear bug, please file a minimal reproducible example on [Git
 * Implemented unit tests for regression metrics.
 * Implemented unit tests for classification metrics.
 * Changed base R dependency so it works with older versions of R.
+* Removed deprecated functions.
 
 ### scorer 0.2.0
 
