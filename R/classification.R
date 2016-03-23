@@ -2,7 +2,7 @@
 #'
 #' @param y_true Ground truth (correct) target values.
 #' @param y_pred Estimated target values.
-#' @  return  TO BE EDITED.
+#' @return  TO BE EDITED.
 #' @family classification metrics
 #' @export
 total_population <- function(y_true, y_pred) {
@@ -14,7 +14,7 @@ total_population <- function(y_true, y_pred) {
 #'
 #' @param y_true Ground truth (correct) target values.
 #' @param y_pred Estimated target values.
-#' @  return  TO BE EDITED.
+#' @return  TO BE EDITED.
 #' @family classification metrics
 #' @export
 true_positive <- function(y_true, y_pred) {
@@ -26,7 +26,7 @@ true_positive <- function(y_true, y_pred) {
 #'
 #' @param y_true Ground truth (correct) target values.
 #' @param y_pred Estimated target values.
-#' @  return  TO BE EDITED.
+#' @return  TO BE EDITED.
 #' @family classification metrics
 #' @export
 true_negative <- function(y_true, y_pred) {
@@ -38,7 +38,7 @@ true_negative <- function(y_true, y_pred) {
 #'
 #' @param y_true Ground truth (correct) target values.
 #' @param y_pred Estimated target values.
-#' @  return  TO BE EDITED.
+#' @return  TO BE EDITED.
 #' @family classification metrics
 #' @export
 false_positive <- function(y_true, y_pred) {
@@ -50,7 +50,7 @@ false_positive <- function(y_true, y_pred) {
 #'
 #' @param y_true Ground truth (correct) target values.
 #' @param y_pred Estimated target values.
-#' @  return  TO BE EDITED.
+#' @return  TO BE EDITED.
 #' @family classification metrics
 #' @export
 false_negative <- function(y_true, y_pred) {
@@ -62,7 +62,7 @@ false_negative <- function(y_true, y_pred) {
 #'
 #' @param y_true Ground truth (correct) target values.
 #' @param y_pred Estimated target values.
-#' @  return  TO BE EDITED.
+#' @return  TO BE EDITED.
 #' @family classification metrics
 #' @export
 condition_positive <- function(y_true, y_pred) {
@@ -74,7 +74,7 @@ condition_positive <- function(y_true, y_pred) {
 #'
 #' @param y_true Ground truth (correct) target values.
 #' @param y_pred Estimated target values.
-#' @  return  TO BE EDITED.
+#' @return  TO BE EDITED.
 #' @family classification metrics
 #' @export
 condition_negative <- function(y_true, y_pred) {
@@ -86,7 +86,7 @@ condition_negative <- function(y_true, y_pred) {
 #'
 #' @param y_true Ground truth (correct) target values.
 #' @param y_pred Estimated target values.
-#' @  return  TO BE EDITED.
+#' @return  TO BE EDITED.
 #' @family classification metrics
 #' @export
 predicted_condition_positive <- function(y_true, y_pred) {
@@ -98,7 +98,7 @@ predicted_condition_positive <- function(y_true, y_pred) {
 #'
 #' @param y_true Ground truth (correct) target values.
 #' @param y_pred Estimated target values.
-#' @  return  TO BE EDITED.
+#' @return  TO BE EDITED.
 #' @family classification metrics
 #' @export
 predicted_condition_negative <- function(y_true, y_pred) {
@@ -110,7 +110,7 @@ predicted_condition_negative <- function(y_true, y_pred) {
 #'
 #' @param y_true Ground truth (correct) target values.
 #' @param y_pred Estimated target values.
-#' @  return  TO BE EDITED.
+#' @return  TO BE EDITED.
 #' @family classification metrics
 #' @export
 accuracy_score <- function(y_true, y_pred) {
@@ -123,7 +123,7 @@ accuracy_score <- function(y_true, y_pred) {
 #'
 #' @param y_true Ground truth (correct) target values.
 #' @param y_pred Estimated target values.
-#' @  return  TO BE EDITED.
+#' @return  TO BE EDITED.
 #' @family classification metrics
 #' @export
 accuracy <- accuracy_score
@@ -132,7 +132,7 @@ accuracy <- accuracy_score
 #'
 #' @param y_true Ground truth (correct) target values.
 #' @param y_pred Estimated target values.
-#' @  return  TO BE EDITED.
+#' @return  TO BE EDITED.
 #' @family classification metrics
 #' @export
 prevalence <- function(y_true, y_pred) {
@@ -144,7 +144,7 @@ prevalence <- function(y_true, y_pred) {
 #'
 #' @param y_true Ground truth (correct) target values.
 #' @param y_pred Estimated target values.
-#' @  return  TO BE EDITED.
+#' @return  TO BE EDITED.
 #' @family classification metrics
 #' @export
 positive_predictive_value <- function(y_true, y_pred) {
@@ -156,7 +156,7 @@ positive_predictive_value <- function(y_true, y_pred) {
 #'
 #' @param y_true Ground truth (correct) target values.
 #' @param y_pred Estimated target values.
-#' @  return  TO BE EDITED.
+#' @return  TO BE EDITED.
 #' @family classification metrics
 #' @export
 precision <- positive_predictive_value
@@ -165,7 +165,7 @@ precision <- positive_predictive_value
 #'
 #' @param y_true Ground truth (correct) target values.
 #' @param y_pred Estimated target values.
-#' @  return  TO BE EDITED.
+#' @return  TO BE EDITED.
 #' @family classification metrics
 #' @export
 false_discovery_rate <- function(y_true, y_pred) {
@@ -177,7 +177,7 @@ false_discovery_rate <- function(y_true, y_pred) {
 #'
 #' @param y_true Ground truth (correct) target values.
 #' @param y_pred Estimated target values.
-#' @  return  TO BE EDITED.
+#' @return  TO BE EDITED.
 #' @family classification metrics
 #' @export
 negative_predictive_value <- function(y_true, y_pred) {
@@ -189,7 +189,7 @@ negative_predictive_value <- function(y_true, y_pred) {
 #'
 #' @param y_true Ground truth (correct) target values.
 #' @param y_pred Estimated target values.
-#' @  return  TO BE EDITED.
+#' @return  TO BE EDITED.
 #' @family classification metrics
 #' @export
 false_omission_rate <- function(y_true, y_pred) {
@@ -201,7 +201,7 @@ false_omission_rate <- function(y_true, y_pred) {
 #'
 #' @param y_true Ground truth (correct) target values.
 #' @param y_pred Estimated target values.
-#' @  return  TO BE EDITED.
+#' @return  TO BE EDITED.
 #' @family classification metrics
 #' @export
 true_positive_rate <- function(y_true, y_pred) {
@@ -213,7 +213,7 @@ true_positive_rate <- function(y_true, y_pred) {
 #'
 #' @param y_true Ground truth (correct) target values.
 #' @param y_pred Estimated target values.
-#' @  return  TO BE EDITED.
+#' @return  TO BE EDITED.
 #' @family classification metrics
 #' @export
 
@@ -222,7 +222,7 @@ sensitivity <- true_positive_rate
 #'
 #' @param y_true Ground truth (correct) target values.
 #' @param y_pred Estimated target values.
-#' @  return  TO BE EDITED.
+#' @return  TO BE EDITED.
 #' @family classification metrics
 #' @export
 recall <- true_positive_rate
@@ -241,7 +241,7 @@ false_negative_rate <- function(y_true, y_pred) {
 #'
 #' @param y_true Ground truth (correct) target values.
 #' @param y_pred Estimated target values.
-#' @  return  TO BE EDITED.
+#' @return  TO BE EDITED.
 #' @family classification metrics
 #' @export
 true_negative_rate <- function(y_true, y_pred) {
@@ -253,7 +253,7 @@ true_negative_rate <- function(y_true, y_pred) {
 #'
 #' @param y_true Ground truth (correct) target values.
 #' @param y_pred Estimated target values.
-#' @  return  TO BE EDITED.
+#' @return  TO BE EDITED.
 #' @family classification metrics
 #' @export
 specificity <- true_negative_rate
@@ -262,7 +262,7 @@ specificity <- true_negative_rate
 #'
 #' @param y_true Ground truth (correct) target values.
 #' @param y_pred Estimated target values.
-#' @  return  TO BE EDITED.
+#' @return  TO BE EDITED.
 #' @family classification metrics
 #' @export
 positive_likelihood_ratio <- function(y_true, y_pred) {
@@ -274,7 +274,7 @@ positive_likelihood_ratio <- function(y_true, y_pred) {
 #'
 #' @param y_true Ground truth (correct) target values.
 #' @param y_pred Estimated target values.
-#' @  return  TO BE EDITED.
+#' @return  TO BE EDITED.
 #' @family classification metrics
 #' @export
 negative_likelihood_ratio <- function(y_true, y_pred) {
@@ -286,7 +286,7 @@ negative_likelihood_ratio <- function(y_true, y_pred) {
 #'
 #' @param y_true Ground truth (correct) target values.
 #' @param y_pred Estimated target values.
-#' @  return  TO BE EDITED.
+#' @return  TO BE EDITED.
 #' @family classification metrics
 #' @export
 diagnostic_odds_ratio <- function(y_true, y_pred) {
@@ -298,7 +298,7 @@ diagnostic_odds_ratio <- function(y_true, y_pred) {
 #'
 #' @param y_true Ground truth (correct) target values.
 #' @param y_pred Estimated target values.
-#' @  return  TO BE EDITED.
+#' @return  TO BE EDITED.
 #' @family classification metrics
 #' @export
 f1_score <- function(y_true, y_pred) {
@@ -312,7 +312,7 @@ f1_score <- function(y_true, y_pred) {
 #'
 #' @param y_true Ground truth (correct) target values.
 #' @param y_pred Estimated target values.
-#' @  return  TO BE EDITED.
+#' @return  TO BE EDITED.
 #' @family classification metrics
 #' @export
 matthews_corrcoef <- function(y_true, y_pred) {

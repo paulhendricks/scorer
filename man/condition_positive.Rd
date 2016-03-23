@@ -11,6 +11,9 @@ condition_positive(y_true, y_pred)
 
 \item{y_pred}{Estimated target values.}
 }
+\value{
+TO BE EDITED.
+}
 \description{
 TO BE EDITED
 }
