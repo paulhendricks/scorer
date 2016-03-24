@@ -2,7 +2,7 @@
 % Please edit documentation in R/common.R
 \name{check_args}
 \alias{check_args}
-\title{TO BE EDITED}
+\title{Check the arguments.}
 \usage{
 check_args(y_true, y_pred)
 }
@@ -12,9 +12,9 @@ check_args(y_true, y_pred)
 \item{y_pred}{Estimated target values.}
 }
 \value{
-TO BE EDITED.
+Boolean vector of length one.
 }
 \description{
-TO BE EDITED
+Check the arguments.
 }
 

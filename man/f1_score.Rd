@@ -17,14 +17,19 @@ A numeric vector of length one.
 \description{
 TO BE EDITED
 }
+\examples{
+total_population(1:10, 10:1)
+}
 \seealso{
 Other classification metrics: \code{\link{accuracy_score}},
   \code{\link{accuracy}}, \code{\link{condition_negative}},
   \code{\link{condition_positive}},
   \code{\link{diagnostic_odds_ratio}},
   \code{\link{false_discovery_rate}},
+  \code{\link{false_negative_rate}},
   \code{\link{false_negative}},
   \code{\link{false_omission_rate}},
+  \code{\link{false_positive_rate}},
   \code{\link{false_positive}},
   \code{\link{matthews_corrcoef}},
   \code{\link{negative_likelihood_ratio}},

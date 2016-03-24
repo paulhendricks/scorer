@@ -18,6 +18,8 @@ total_population <- function(y_true, y_pred) {
 #' @param y_pred Estimated target values.
 #' @return  A numeric vector of length one.
 #' @family classification metrics
+#' @examples
+#' total_population(1:10, 10:1)
 #' @export
 true_positive <- function(y_true, y_pred) {
   check_args(y_true = y_true, y_pred = y_pred)
@@ -30,6 +32,8 @@ true_positive <- function(y_true, y_pred) {
 #' @param y_pred Estimated target values.
 #' @return  A numeric vector of length one.
 #' @family classification metrics
+#' @examples
+#' total_population(1:10, 10:1)
 #' @export
 true_negative <- function(y_true, y_pred) {
   check_args(y_true = y_true, y_pred = y_pred)
@@ -42,6 +46,8 @@ true_negative <- function(y_true, y_pred) {
 #' @param y_pred Estimated target values.
 #' @return  A numeric vector of length one.
 #' @family classification metrics
+#' @examples
+#' total_population(1:10, 10:1)
 #' @export
 false_positive <- function(y_true, y_pred) {
   check_args(y_true = y_true, y_pred = y_pred)
@@ -54,6 +60,8 @@ false_positive <- function(y_true, y_pred) {
 #' @param y_pred Estimated target values.
 #' @return  A numeric vector of length one.
 #' @family classification metrics
+#' @examples
+#' total_population(1:10, 10:1)
 #' @export
 false_negative <- function(y_true, y_pred) {
   check_args(y_true = y_true, y_pred = y_pred)
@@ -66,6 +74,8 @@ false_negative <- function(y_true, y_pred) {
 #' @param y_pred Estimated target values.
 #' @return  A numeric vector of length one.
 #' @family classification metrics
+#' @examples
+#' total_population(1:10, 10:1)
 #' @export
 condition_positive <- function(y_true, y_pred) {
   check_args(y_true = y_true, y_pred = y_pred)
@@ -78,6 +88,8 @@ condition_positive <- function(y_true, y_pred) {
 #' @param y_pred Estimated target values.
 #' @return  A numeric vector of length one.
 #' @family classification metrics
+#' @examples
+#' total_population(1:10, 10:1)
 #' @export
 condition_negative <- function(y_true, y_pred) {
   check_args(y_true = y_true, y_pred = y_pred)
@@ -90,6 +102,8 @@ condition_negative <- function(y_true, y_pred) {
 #' @param y_pred Estimated target values.
 #' @return  A numeric vector of length one.
 #' @family classification metrics
+#' @examples
+#' total_population(1:10, 10:1)
 #' @export
 predicted_condition_positive <- function(y_true, y_pred) {
   check_args(y_true = y_true, y_pred = y_pred)
@@ -102,6 +116,8 @@ predicted_condition_positive <- function(y_true, y_pred) {
 #' @param y_pred Estimated target values.
 #' @return  A numeric vector of length one.
 #' @family classification metrics
+#' @examples
+#' total_population(1:10, 10:1)
 #' @export
 predicted_condition_negative <- function(y_true, y_pred) {
   check_args(y_true = y_true, y_pred = y_pred)
@@ -114,6 +130,8 @@ predicted_condition_negative <- function(y_true, y_pred) {
 #' @param y_pred Estimated target values.
 #' @return  A numeric vector of length one.
 #' @family classification metrics
+#' @examples
+#' total_population(1:10, 10:1)
 #' @export
 accuracy_score <- function(y_true, y_pred) {
   check_args(y_true = y_true, y_pred = y_pred)
@@ -129,6 +147,8 @@ accuracy_score <- function(y_true, y_pred) {
 #' @param y_pred Estimated target values.
 #' @return  A numeric vector of length one.
 #' @family classification metrics
+#' @examples
+#' total_population(1:10, 10:1)
 #' @export
 accuracy <- accuracy_score
 
@@ -138,6 +158,8 @@ accuracy <- accuracy_score
 #' @param y_pred Estimated target values.
 #' @return  A numeric vector of length one.
 #' @family classification metrics
+#' @examples
+#' total_population(1:10, 10:1)
 #' @export
 prevalence <- function(y_true, y_pred) {
   check_args(y_true = y_true, y_pred = y_pred)
@@ -152,6 +174,8 @@ prevalence <- function(y_true, y_pred) {
 #' @param y_pred Estimated target values.
 #' @return  A numeric vector of length one.
 #' @family classification metrics
+#' @examples
+#' total_population(1:10, 10:1)
 #' @export
 positive_predictive_value <- function(y_true, y_pred) {
   check_args(y_true = y_true, y_pred = y_pred)
@@ -166,6 +190,8 @@ positive_predictive_value <- function(y_true, y_pred) {
 #' @param y_pred Estimated target values.
 #' @return  A numeric vector of length one.
 #' @family classification metrics
+#' @examples
+#' total_population(1:10, 10:1)
 #' @export
 precision <- positive_predictive_value
 
@@ -175,6 +201,8 @@ precision <- positive_predictive_value
 #' @param y_pred Estimated target values.
 #' @return  A numeric vector of length one.
 #' @family classification metrics
+#' @examples
+#' total_population(1:10, 10:1)
 #' @export
 false_discovery_rate <- function(y_true, y_pred) {
   check_args(y_true = y_true, y_pred = y_pred)
@@ -189,6 +217,8 @@ false_discovery_rate <- function(y_true, y_pred) {
 #' @param y_pred Estimated target values.
 #' @return  A numeric vector of length one.
 #' @family classification metrics
+#' @examples
+#' total_population(1:10, 10:1)
 #' @export
 negative_predictive_value <- function(y_true, y_pred) {
   check_args(y_true = y_true, y_pred = y_pred)
@@ -203,6 +233,8 @@ negative_predictive_value <- function(y_true, y_pred) {
 #' @param y_pred Estimated target values.
 #' @return  A numeric vector of length one.
 #' @family classification metrics
+#' @examples
+#' total_population(1:10, 10:1)
 #' @export
 false_omission_rate <- function(y_true, y_pred) {
   check_args(y_true = y_true, y_pred = y_pred)
@@ -217,6 +249,8 @@ false_omission_rate <- function(y_true, y_pred) {
 #' @param y_pred Estimated target values.
 #' @return  A numeric vector of length one.
 #' @family classification metrics
+#' @examples
+#' total_population(1:10, 10:1)
 #' @export
 true_positive_rate <- function(y_true, y_pred) {
   check_args(y_true = y_true, y_pred = y_pred)
@@ -231,18 +265,31 @@ true_positive_rate <- function(y_true, y_pred) {
 #' @param y_pred Estimated target values.
 #' @return  A numeric vector of length one.
 #' @family classification metrics
+#' @examples
+#' total_population(1:10, 10:1)
 #' @export
-
 sensitivity <- true_positive_rate
+
 #' TO BE EDITED
 #'
 #' @param y_true Ground truth (correct) target values.
 #' @param y_pred Estimated target values.
 #' @return  A numeric vector of length one.
 #' @family classification metrics
+#' @examples
+#' total_population(1:10, 10:1)
 #' @export
 recall <- true_positive_rate
 
+#' TO BE EDITED
+#'
+#' @param y_true Ground truth (correct) target values.
+#' @param y_pred Estimated target values.
+#' @return  A numeric vector of length one.
+#' @family classification metrics
+#' @examples
+#' total_population(1:10, 10:1)
+#' @export
 false_positive_rate <- function(y_true, y_pred) {
   check_args(y_true = y_true, y_pred = y_pred)
   fp <- false_positive(y_true = y_true, y_pred = y_pred)
@@ -250,6 +297,15 @@ false_positive_rate <- function(y_true, y_pred) {
   return(fp / cn)
 }
 
+#' TO BE EDITED
+#'
+#' @param y_true Ground truth (correct) target values.
+#' @param y_pred Estimated target values.
+#' @return  A numeric vector of length one.
+#' @family classification metrics
+#' @examples
+#' total_population(1:10, 10:1)
+#' @export
 false_negative_rate <- function(y_true, y_pred) {
   check_args(y_true = y_true, y_pred = y_pred)
   fn <- false_negative(y_true = y_true, y_pred = y_pred)
@@ -263,6 +319,8 @@ false_negative_rate <- function(y_true, y_pred) {
 #' @param y_pred Estimated target values.
 #' @return  A numeric vector of length one.
 #' @family classification metrics
+#' @examples
+#' total_population(1:10, 10:1)
 #' @export
 true_negative_rate <- function(y_true, y_pred) {
   check_args(y_true = y_true, y_pred = y_pred)
@@ -277,6 +335,8 @@ true_negative_rate <- function(y_true, y_pred) {
 #' @param y_pred Estimated target values.
 #' @return  A numeric vector of length one.
 #' @family classification metrics
+#' @examples
+#' total_population(1:10, 10:1)
 #' @export
 specificity <- true_negative_rate
 
@@ -286,6 +346,8 @@ specificity <- true_negative_rate
 #' @param y_pred Estimated target values.
 #' @return  A numeric vector of length one.
 #' @family classification metrics
+#' @examples
+#' total_population(1:10, 10:1)
 #' @export
 positive_likelihood_ratio <- function(y_true, y_pred) {
   check_args(y_true = y_true, y_pred = y_pred)
@@ -300,6 +362,8 @@ positive_likelihood_ratio <- function(y_true, y_pred) {
 #' @param y_pred Estimated target values.
 #' @return  A numeric vector of length one.
 #' @family classification metrics
+#' @examples
+#' total_population(1:10, 10:1)
 #' @export
 negative_likelihood_ratio <- function(y_true, y_pred) {
   check_args(y_true = y_true, y_pred = y_pred)
@@ -314,6 +378,8 @@ negative_likelihood_ratio <- function(y_true, y_pred) {
 #' @param y_pred Estimated target values.
 #' @return  A numeric vector of length one.
 #' @family classification metrics
+#' @examples
+#' total_population(1:10, 10:1)
 #' @export
 diagnostic_odds_ratio <- function(y_true, y_pred) {
   check_args(y_true = y_true, y_pred = y_pred)
@@ -328,6 +394,8 @@ diagnostic_odds_ratio <- function(y_true, y_pred) {
 #' @param y_pred Estimated target values.
 #' @return  A numeric vector of length one.
 #' @family classification metrics
+#' @examples
+#' total_population(1:10, 10:1)
 #' @export
 f1_score <- function(y_true, y_pred) {
   check_args(y_true = y_true, y_pred = y_pred)
@@ -345,6 +413,8 @@ f1_score <- function(y_true, y_pred) {
 #' @param y_pred Estimated target values.
 #' @return  A numeric vector of length one.
 #' @family classification metrics
+#' @examples
+#' total_population(1:10, 10:1)
 #' @export
 matthews_corrcoef <- function(y_true, y_pred) {
   check_args(y_true = y_true, y_pred = y_pred)
