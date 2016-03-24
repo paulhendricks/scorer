@@ -31,7 +31,7 @@ You can install:
 
 -   the latest development version from Github with
 
-    [![Github\_Status\_Badge](https://img.shields.io/badge/Github-0.2.0.9000-brightgreen.svg)](https://img.shields.io/badge/Github-0.2.0.9000-brightgreen.svg)
+    [![Github\_Status\_Badge](https://img.shields.io/badge/Github-0.3.0-brightgreen.svg)](https://img.shields.io/badge/Github-0.3.0-brightgreen.svg)
 
     ``` r
     if (packageVersion("devtools") < 1.6) {
@@ -53,6 +53,7 @@ News
 -   Implemented unit tests for regression metrics.
 -   Implemented unit tests for classification metrics.
 -   Changed base R dependency so it works with older versions of R.
+-   Removed deprecated functions.
 
 ### scorer 0.2.0
 
@@ -86,7 +87,7 @@ API
 ``` r
 library("scorer")
 packageVersion("scorer")
-#> [1] '0.2.0.9000'
+#> [1] '0.3.0'
 data(mtcars)
 ```
 
@@ -199,7 +200,7 @@ sessionInfo()
 #> [1] stats     graphics  grDevices utils     datasets  methods   base     
 #> 
 #> other attached packages:
-#> [1] ggplot2_2.0.0     scorer_0.2.0.9000
+#> [1] ggplot2_2.0.0 scorer_0.3.0 
 #> 
 #> loaded via a namespace (and not attached):
 #>  [1] Rcpp_0.12.3      digest_0.6.9     plyr_1.8.3       grid_3.2.3      

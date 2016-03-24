@@ -1,6 +1,6 @@
 Package: scorer
 Title: Quickly Score Models in Data Science and Machine Learning
-Version: 0.2.0.9000
+Version: 0.3.0
 Description: A set of tools for quickly scoring models in data science and
     machine learning. This toolset is written in C++ for blazing fast performance.
 Authors@R: person("Paul", "Hendricks", , "paul.hendricks.2013@owu.edu", c("aut", "cre"))
