@@ -2,7 +2,7 @@
 % Please edit documentation in R/classification.R
 \name{false_negative}
 \alias{false_negative}
-\title{TO BE EDITED}
+\title{Calculate the number of the false negatives.}
 \usage{
 false_negative(y_true, y_pred)
 }
@@ -15,7 +15,7 @@ false_negative(y_true, y_pred)
 A numeric vector of length one.
 }
 \description{
-TO BE EDITED
+Calculate the number of the false negatives.
 }
 \examples{
 total_population(c(1, 1, 0, 0), c(1, 0, 1, 0))

@@ -2,7 +2,7 @@
 % Please edit documentation in R/classification.R
 \name{total_population}
 \alias{total_population}
-\title{total_population}
+\title{Calculate the number of the total population.}
 \usage{
 total_population(y_true, y_pred)
 }
@@ -15,7 +15,7 @@ total_population(y_true, y_pred)
 A numeric vector of length one.
 }
 \description{
-total_population
+Calculate the number of the total population.
 }
 \examples{
 total_population(c(1, 1, 0, 0), c(1, 0, 1, 0))

@@ -1,4 +1,4 @@
-#' total_population
+#' Calculate the number of the total population.
 #'
 #' @param y_true Ground truth (correct) target values.
 #' @param y_pred Estimated target values.
@@ -12,7 +12,7 @@ total_population <- function(y_true, y_pred) {
   return(length(y_true))
 }
 
-#' TO BE EDITED
+#' Calculate the number of the true positivies.
 #'
 #' @param y_true Ground truth (correct) target values.
 #' @param y_pred Estimated target values.
@@ -26,7 +26,7 @@ true_positive <- function(y_true, y_pred) {
   return(sum((y_true == y_pred) & (y_true == 1)))
 }
 
-#' TO BE EDITED
+#' Calculate the number of the true negatives.
 #'
 #' @param y_true Ground truth (correct) target values.
 #' @param y_pred Estimated target values.
@@ -40,7 +40,7 @@ true_negative <- function(y_true, y_pred) {
   return(sum((y_true == y_pred) & (y_true == 0)))
 }
 
-#' TO BE EDITED
+#' Calculate the number of the false positives.
 #'
 #' @param y_true Ground truth (correct) target values.
 #' @param y_pred Estimated target values.
@@ -54,7 +54,7 @@ false_positive <- function(y_true, y_pred) {
   return(sum(!(y_true == y_pred) & (y_true == 1)))
 }
 
-#' TO BE EDITED
+#' Calculate the number of the false negatives.
 #'
 #' @param y_true Ground truth (correct) target values.
 #' @param y_pred Estimated target values.
@@ -68,7 +68,7 @@ false_negative <- function(y_true, y_pred) {
   return(sum(!(y_true == y_pred) & (y_true == 0)))
 }
 
-#' TO BE EDITED
+#' Calculate the number of the condition positives.
 #'
 #' @param y_true Ground truth (correct) target values.
 #' @param y_pred Estimated target values.
@@ -82,7 +82,7 @@ condition_positive <- function(y_true, y_pred) {
   return(sum(y_true == 1))
 }
 
-#' TO BE EDITED
+#' Calculate the number of the condition negatives.
 #'
 #' @param y_true Ground truth (correct) target values.
 #' @param y_pred Estimated target values.
@@ -96,7 +96,7 @@ condition_negative <- function(y_true, y_pred) {
   return(sum(y_true == 0))
 }
 
-#' TO BE EDITED
+#' Calculate the number of the predicted condition positives.
 #'
 #' @param y_true Ground truth (correct) target values.
 #' @param y_pred Estimated target values.
@@ -110,7 +110,7 @@ predicted_condition_positive <- function(y_true, y_pred) {
   return(sum(y_true == 1))
 }
 
-#' TO BE EDITED
+#' Calculate the number of the predicted condition negatives.
 #'
 #' @param y_true Ground truth (correct) target values.
 #' @param y_pred Estimated target values.
@@ -124,7 +124,7 @@ predicted_condition_negative <- function(y_true, y_pred) {
   return(sum(y_pred == 0))
 }
 
-#' TO BE EDITED
+#' Calculate the accuracy score.
 #'
 #' @param y_true Ground truth (correct) target values.
 #' @param y_pred Estimated target values.
@@ -141,7 +141,7 @@ accuracy_score <- function(y_true, y_pred) {
   return((tp + tn) / tot_pop)
 }
 
-#' TO BE EDITED
+#' Calculate the accuracy score.
 #'
 #' @param y_true Ground truth (correct) target values.
 #' @param y_pred Estimated target values.

@@ -2,7 +2,7 @@
 % Please edit documentation in R/classification.R
 \name{condition_positive}
 \alias{condition_positive}
-\title{TO BE EDITED}
+\title{Calculate the number of the condition positives.}
 \usage{
 condition_positive(y_true, y_pred)
 }
@@ -15,7 +15,7 @@ condition_positive(y_true, y_pred)
 A numeric vector of length one.
 }
 \description{
-TO BE EDITED
+Calculate the number of the condition positives.
 }
 \examples{
 total_population(c(1, 1, 0, 0), c(1, 0, 1, 0))

@@ -2,7 +2,7 @@
 % Please edit documentation in R/classification.R
 \name{accuracy_score}
 \alias{accuracy_score}
-\title{TO BE EDITED}
+\title{Calculate the accuracy score.}
 \usage{
 accuracy_score(y_true, y_pred)
 }
@@ -15,7 +15,7 @@ accuracy_score(y_true, y_pred)
 A numeric vector of length one.
 }
 \description{
-TO BE EDITED
+Calculate the accuracy score.
 }
 \examples{
 total_population(c(1, 1, 0, 0), c(1, 0, 1, 0))
