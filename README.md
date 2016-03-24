@@ -31,7 +31,7 @@ You can install:
 
 -   the latest development version from Github with
 
-    [![Github\_Status\_Badge](https://img.shields.io/badge/Github-0.2.0.9000-brightgreen.svg)](https://img.shields.io/badge/Github-0.2.0.9000-brightgreen.svg)
+    [![Github\_Status\_Badge](https://img.shields.io/badge/Github-0.3.0-brightgreen.svg)](https://img.shields.io/badge/Github-0.3.0-brightgreen.svg)
 
     ``` r
     if (packageVersion("devtools") < 1.6) {
@@ -53,6 +53,7 @@ News
 -   Implemented unit tests for regression metrics.
 -   Implemented unit tests for classification metrics.
 -   Changed base R dependency so it works with older versions of R.
+-   Removed deprecated functions.
 
 ### scorer 0.2.0
 

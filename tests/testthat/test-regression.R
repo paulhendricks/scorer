@@ -1,31 +1,6 @@
 library(scorer)
 context("regression")
 
-# absolute_error
-# percent_error
-# log_error
-# squared_error
-# squared_log_error
-# absolute_percent_error
-# mean_error
-# mean_absolute_error
-# median_absolute_error
-# mean_percent_error
-# median_percent_error
-# mean_squared_error
-# median_squared_error
-# mean_squared_log_error
-# median_squared_log_error
-# mean_absolute_percent_error
-# median_absolute_percent_error
-# symmetric_mean_absolute_percent_error
-# symmetric_median_absolute_percent_error
-# mean_absolute_scaled_error
-# total_variance_score
-# explained_variance_score
-# unexplained_variance_score
-# r2_score
-
 n <- 10000
 x <- 1:n
 
