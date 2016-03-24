@@ -87,7 +87,7 @@ API
 ``` r
 library("scorer")
 packageVersion("scorer")
-#> [1] '0.2.0.9000'
+#> [1] '0.3.0'
 data(mtcars)
 ```
 
@@ -200,7 +200,7 @@ sessionInfo()
 #> [1] stats     graphics  grDevices utils     datasets  methods   base     
 #> 
 #> other attached packages:
-#> [1] ggplot2_2.0.0     scorer_0.2.0.9000
+#> [1] ggplot2_2.0.0 scorer_0.3.0 
 #> 
 #> loaded via a namespace (and not attached):
 #>  [1] Rcpp_0.12.3      digest_0.6.9     plyr_1.8.3       grid_3.2.3      
