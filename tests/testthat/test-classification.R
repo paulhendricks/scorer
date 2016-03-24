@@ -1,94 +1,134 @@
 library(scorer)
-context("regression")
+context("classification")
 
-# absolute_error
-# percent_error
-# log_error
-# squared_error
-# squared_log_error
-# absolute_percent_error
-# mean_error
-# mean_absolute_error
-# median_absolute_error
-# mean_percent_error
-# median_percent_error
-# mean_squared_error
-# median_squared_error
-# mean_squared_log_error
-# median_squared_log_error
-# mean_absolute_percent_error
-# median_absolute_percent_error
-# symmetric_mean_absolute_percent_error
-# symmetric_median_absolute_percent_error
-# mean_absolute_scaled_error
-# total_variance_score
-# explained_variance_score
-# unexplained_variance_score
-# r2_score
+y_true = c(1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0)
+y_pred = c(1, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1)
 
-n <- 10000
-x <- 1:n
-
-test_that("absolute_error() produces correct output.", {
-  expect_equal(absolute_error(x, x), rep(0, n))
-  expect_equal(absolute_error(0, 1), 1)
-  expect_equal(absolute_error(1, 0), 1)
-  expect_equal(absolute_error(FALSE, TRUE), 1)
-  expect_equal(absolute_error(TRUE, FALSE), 1)
+# total_population
+test_that("", {
+  expect_equal(total_population(y_true, y_pred), 16)
 })
 
-test_that("absolute_error() produces correct output classes and types.", {
-  expect_is(absolute_error(runif(n), runif(n)), "numeric")
+# true_positive
+test_that("", {
+  expect_equal(true_positive(y_true, y_pred), 4)
 })
 
-test_that("absolute_error() raises correct messages, warnings, and errors.", {
-  expect_error(absolute_error("a", "b"))
+# true_negative
+test_that("", {
+  expect_equal(true_negative(y_true, y_pred), 4)
 })
 
-test_that("percent_error() produces correct output.", {
-  expect_equal(percent_error(x, x), rep(0, n))
-  expect_equal(percent_error(0, 1), -Inf)
-  expect_equal(percent_error(1, 0), 1)
-  expect_equal(percent_error(FALSE, TRUE), -Inf)
-  expect_equal(percent_error(TRUE, FALSE), 1)
+# false_positive
+test_that("", {
+  expect_equal(false_positive(y_true, y_pred), 4)
 })
 
-test_that("percent_error() produces correct output classes and types.", {
-  expect_is(percent_error(runif(n), runif(n)), "numeric")
+# false_negative
+test_that("", {
+  expect_equal(false_negative(y_true, y_pred), 4)
 })
 
-test_that("percent_error() raises correct messages, warnings, and errors.", {
-  expect_error(percent_error("a", "b"))
+# condition_positive
+test_that("", {
+  expect_equal(condition_positive(y_true, y_pred), 8)
 })
 
-test_that("log_error() produces correct output.", {
-  expect_equal(log_error(2 * exp(1), exp(1)), 1)
-  expect_equal(log_error(0, 1), NaN)
-  expect_equal(log_error(1, 0), 0)
-  expect_equal(log_error(FALSE, TRUE), NaN)
-  expect_equal(log_error(TRUE, FALSE), 0)
+# condition_negative
+test_that("", {
+  expect_equal(condition_negative(y_true, y_pred), 8)
 })
 
-test_that("log_error() produces correct output classes and types.", {
-  expect_is(log_error(runif(n), runif(n)), "numeric")
+# predicted_condition_positive
+test_that("", {
+  expect_equal(predicted_condition_positive(y_true, y_pred), 8)
 })
 
-test_that("log_error() raises correct messages, warnings, and errors.", {
-  expect_error(log_error("a", "b"))
+# predicted_condition_negative
+test_that("", {
+  expect_equal(predicted_condition_negative(y_true, y_pred), 8)
 })
 
-test_that("squared_error() produces correct output.", {
-  expect_equal(squared_error(x, x), rep(0, n))
-  expect_equal(squared_error(0, 1), 1)
-  expect_equal(squared_error(1, 0), 1)
-  expect_equal(squared_error(FALSE, TRUE), 1)
-  expect_equal(squared_error(TRUE, FALSE), 1)
+# accuracy_score
+# accuracy
+test_that("", {
+  expect_equal(accuracy_score(y_true, y_pred), 0.5)
+  expect_equal(accuracy(y_true, y_pred), 0.5)
 })
 
-test_that("squared_error() produces correct output classes and types.", {
-  expect_is(squared_error(runif(n), runif(n)), "numeric")
+# prevalence
+test_that("", {
+  expect_equal(accuracy(y_true, y_pred), 0.5)
 })
 
-test_that("squared_error() raises correct messages, warnings, and errors.", {
-  expect_error(squared_error("a", "b"))
+# positive_predictive_value
+# precision
+test_that("", {
+  expect_equal(positive_predictive_value(y_true, y_pred), 0.5)
+  expect_equal(precision(y_true, y_pred), 0.5)
+})
+
+# false_discovery_rate
+test_that("", {
+  expect_equal(false_discovery_rate(y_true, y_pred), 0.5)
+})
+
+# negative_predictive_value
+test_that("", {
+  expect_equal(negative_predictive_value(y_true, y_pred), 0.5)
+})
+
+# false_omission_rate
+test_that("", {
+  expect_equal(false_omission_rate(y_true, y_pred), 0.5)
+})
+
+# true_positive_rate
+# sensitivity
+# recall
+test_that("", {
+  expect_equal(positive_predictive_value(y_true, y_pred), 0.5)
+  expect_equal(precision(y_true, y_pred), 0.5)
+})
+
+# false_positive_rate
+test_that("", {
+  expect_equal(false_positive_rate(y_true, y_pred), 0.5)
+})
+
+# false_negative_rate
+test_that("", {
+  expect_equal(false_negative_rate(y_true, y_pred), 0.5)
+})
+
+# true_negative_rate
+# specificity
+test_that("", {
+  expect_equal(true_negative_rate(y_true, y_pred), 0.5)
+  expect_equal(specificity(y_true, y_pred), 0.5)
+})
+
+# positive_likelihood_ratio
+test_that("", {
+  expect_equal(positive_likelihood_ratio(y_true, y_pred), 1.0)
+})
+
+# negative_likelihood_ratio
+test_that("", {
+  expect_equal(negative_likelihood_ratio(y_true, y_pred), 1.0)
+})
+
+# diagnostic_odds_ratio
+test_that("", {
+  expect_equal(diagnostic_odds_ratio(y_true, y_pred), 1.0)
+})
+
+# f1_score
+test_that("", {
+  expect_equal(f1_score(y_true, y_pred), 0.5)
+})
+
+# matthews_corrcoef
+test_that("", {
+  expect_equal(matthews_corrcoef(y_true, y_pred), 0.0)
 })

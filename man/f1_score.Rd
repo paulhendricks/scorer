@@ -2,7 +2,7 @@
 % Please edit documentation in R/classification.R
 \name{f1_score}
 \alias{f1_score}
-\title{TO BE EDITED}
+\title{Calculate the F1 score.}
 \usage{
 f1_score(y_true, y_pred)
 }
@@ -12,26 +12,39 @@ f1_score(y_true, y_pred)
 \item{y_pred}{Estimated target values.}
 }
 \value{
-TO BE EDITED.
+A numeric vector of length one.
 }
 \description{
-TO BE EDITED
+Calculate the F1 score.
+}
+\examples{
+f1_score(c(1, 1, 0, 0), c(1, 0, 1, 0))
 }
 \seealso{
 Other classification metrics: \code{\link{accuracy_score}},
-  \code{\link{auc_score}},
-  \code{\link{average_precision_score}},
-  \code{\link{brier_score}},
-  \code{\link{classification_report}},
-  \code{\link{confusion_matrix}},
-  \code{\link{fbeta_score}}, \code{\link{hamming_loss}},
-  \code{\link{hinge_loss}},
-  \code{\link{jaccard_similarity_score}},
-  \code{\link{log_loss}}, \code{\link{matthews_corrcoef}},
-  \code{\link{precision_recall_curve}},
-  \code{\link{precision_recall_fscore_support}},
-  \code{\link{precision_score}},
-  \code{\link{recall_score}}, \code{\link{roc_auc_score}},
-  \code{\link{roc_curve}}, \code{\link{zero_one_loss}}
+  \code{\link{accuracy}}, \code{\link{condition_negative}},
+  \code{\link{condition_positive}},
+  \code{\link{diagnostic_odds_ratio}},
+  \code{\link{false_discovery_rate}},
+  \code{\link{false_negative_rate}},
+  \code{\link{false_negative}},
+  \code{\link{false_omission_rate}},
+  \code{\link{false_positive_rate}},
+  \code{\link{false_positive}},
+  \code{\link{matthews_corrcoef}},
+  \code{\link{negative_likelihood_ratio}},
+  \code{\link{negative_predictive_value}},
+  \code{\link{positive_likelihood_ratio}},
+  \code{\link{positive_predictive_value}},
+  \code{\link{precision}},
+  \code{\link{predicted_condition_negative}},
+  \code{\link{predicted_condition_positive}},
+  \code{\link{prevalence}}, \code{\link{recall}},
+  \code{\link{sensitivity}}, \code{\link{specificity}},
+  \code{\link{total_population}},
+  \code{\link{true_negative_rate}},
+  \code{\link{true_negative}},
+  \code{\link{true_positive_rate}},
+  \code{\link{true_positive}}
 }
 
