@@ -8,6 +8,7 @@
 #' absolute_error(1:10, 10:1)
 #' @export
 absolute_error <- function(y_true, y_pred) {
+  check_args(y_true = y_true, y_pred = y_pred)
   return(absolute_error_rcpp(y_true = y_true, y_pred = y_pred))
 }
 
@@ -21,6 +22,7 @@ absolute_error <- function(y_true, y_pred) {
 #' percent_error(1:10, 10:1)
 #' @export
 percent_error <- function(y_true, y_pred) {
+  check_args(y_true = y_true, y_pred = y_pred)
   return(percent_error_rcpp(y_true = y_true, y_pred = y_pred))
 }
 
@@ -34,6 +36,7 @@ percent_error <- function(y_true, y_pred) {
 #' log_error(1:10, 10:1)
 #' @export
 log_error <- function(y_true, y_pred) {
+  check_args(y_true = y_true, y_pred = y_pred)
   return(log_error_rcpp(y_true = y_true, y_pred = y_pred))
 }
 
@@ -47,6 +50,7 @@ log_error <- function(y_true, y_pred) {
 #' squared_error(1:10, 10:1)
 #' @export
 squared_error <- function(y_true, y_pred) {
+  check_args(y_true = y_true, y_pred = y_pred)
   return(squared_error_rcpp(y_true = y_true, y_pred = y_pred))
 }
 
@@ -60,6 +64,7 @@ squared_error <- function(y_true, y_pred) {
 #' squared_log_error(1:10, 10:1)
 #' @export
 squared_log_error <- function(y_true, y_pred) {
+  check_args(y_true = y_true, y_pred = y_pred)
   return(squared_log_error_rcpp(y_true = y_true, y_pred = y_pred))
 }
 
@@ -73,6 +78,7 @@ squared_log_error <- function(y_true, y_pred) {
 #' absolute_percent_error(1:10, 10:1)
 #' @export
 absolute_percent_error <- function(y_true, y_pred) {
+  check_args(y_true = y_true, y_pred = y_pred)
   return(absolute_percent_error_rcpp(y_true = y_true, y_pred = y_pred))
 }
 
@@ -86,6 +92,7 @@ absolute_percent_error <- function(y_true, y_pred) {
 #' mean_error(1:10, 10:1)
 #' @export
 mean_error <- function(y_true, y_pred) {
+  check_args(y_true = y_true, y_pred = y_pred)
   return(mean_error_rcpp(y_true = y_true, y_pred = y_pred))
 }
 
@@ -99,6 +106,7 @@ mean_error <- function(y_true, y_pred) {
 #' mean_absolute_error(1:10, 10:1)
 #' @export
 mean_absolute_error <- function(y_true, y_pred) {
+  check_args(y_true = y_true, y_pred = y_pred)
   return(mean_absolute_error_rcpp(y_true = y_true, y_pred = y_pred))
 }
 
@@ -112,6 +120,7 @@ mean_absolute_error <- function(y_true, y_pred) {
 #' median_absolute_error(1:10, 10:1)
 #' @export
 median_absolute_error <- function(y_true, y_pred) {
+  check_args(y_true = y_true, y_pred = y_pred)
   return(median_absolute_error_rcpp(y_true = y_true, y_pred = y_pred))
 }
 
@@ -125,6 +134,7 @@ median_absolute_error <- function(y_true, y_pred) {
 #' mean_percent_error(1:10, 10:1)
 #' @export
 mean_percent_error <- function(y_true, y_pred) {
+  check_args(y_true = y_true, y_pred = y_pred)
   return(mean_percent_error_rcpp(y_true = y_true, y_pred = y_pred))
 }
 
@@ -138,6 +148,7 @@ mean_percent_error <- function(y_true, y_pred) {
 #' median_percent_error(1:10, 10:1)
 #' @export
 median_percent_error <- function(y_true, y_pred) {
+  check_args(y_true = y_true, y_pred = y_pred)
   return(median_percent_error_rcpp(y_true = y_true, y_pred = y_pred))
 }
 
@@ -151,6 +162,7 @@ median_percent_error <- function(y_true, y_pred) {
 #' mean_squared_error(1:10, 10:1)
 #' @export
 mean_squared_error <- function(y_true, y_pred) {
+  check_args(y_true = y_true, y_pred = y_pred)
   return(mean_squared_error_rcpp(y_true = y_true, y_pred = y_pred))
 }
 
@@ -164,6 +176,7 @@ mean_squared_error <- function(y_true, y_pred) {
 #' median_squared_error(1:10, 10:1)
 #' @export
 median_squared_error <- function(y_true, y_pred) {
+  check_args(y_true = y_true, y_pred = y_pred)
   return(median_squared_error_rcpp(y_true = y_true, y_pred = y_pred))
 }
 
@@ -177,6 +190,7 @@ median_squared_error <- function(y_true, y_pred) {
 #' mean_squared_log_error(1:10, 10:1)
 #' @export
 mean_squared_log_error <- function(y_true, y_pred) {
+  check_args(y_true = y_true, y_pred = y_pred)
   return(mean_squared_log_error_rcpp(y_true = y_true, y_pred = y_pred))
 }
 
@@ -190,6 +204,7 @@ mean_squared_log_error <- function(y_true, y_pred) {
 #' median_squared_log_error(1:10, 10:1)
 #' @export
 median_squared_log_error <- function(y_true, y_pred) {
+  check_args(y_true = y_true, y_pred = y_pred)
   return(median_squared_log_error_rcpp(y_true = y_true, y_pred = y_pred))
 }
 
@@ -203,6 +218,7 @@ median_squared_log_error <- function(y_true, y_pred) {
 #' mean_absolute_percent_error(1:10, 10:1)
 #' @export
 mean_absolute_percent_error <- function(y_true, y_pred) {
+  check_args(y_true = y_true, y_pred = y_pred)
   return(mean_absolute_percent_error_rcpp(y_true = y_true, y_pred = y_pred))
 }
 
@@ -216,6 +232,7 @@ mean_absolute_percent_error <- function(y_true, y_pred) {
 #' median_absolute_percent_error(1:10, 10:1)
 #' @export
 median_absolute_percent_error <- function(y_true, y_pred) {
+  check_args(y_true = y_true, y_pred = y_pred)
   return(median_absolute_percent_error_rcpp(y_true = y_true, y_pred = y_pred))
 }
 
@@ -229,6 +246,7 @@ median_absolute_percent_error <- function(y_true, y_pred) {
 #' symmetric_mean_absolute_percent_error(1:10, 10:1)
 #' @export
 symmetric_mean_absolute_percent_error <- function(y_true, y_pred) {
+  check_args(y_true = y_true, y_pred = y_pred)
   return(mean(abs(y_pred - y_true) / ((abs(y_true) + abs(y_pred)) / 2)))
 }
 
@@ -242,7 +260,10 @@ symmetric_mean_absolute_percent_error <- function(y_true, y_pred) {
 #' symmetric_median_absolute_percent_error(1:10, 10:1)
 #' @export
 symmetric_median_absolute_percent_error <- function(y_true, y_pred) {
-  return(stats::median(abs(y_pred - y_true) / ((abs(y_true) + abs(y_pred)) / 2)))
+  check_args(y_true = y_true, y_pred = y_pred)
+  numerator <- stats::median(abs(y_pred - y_true))
+  denominator <- ((abs(y_true) + abs(y_pred)) / 2)
+  return(numerator / denominator)
 }
 
 #' Calculate mean absolute scaled error regression loss.
@@ -255,6 +276,7 @@ symmetric_median_absolute_percent_error <- function(y_true, y_pred) {
 #' mean_absolute_scaled_error(1:10, 10:1)
 #' @export
 mean_absolute_scaled_error <- function(y_true, y_pred) {
+  check_args(y_true = y_true, y_pred = y_pred)
   n <- max(length(y_true), length(y_pred))
   numerator <- sum(abs(y_true - y_pred))
   denominator <- (n / (n - 1)) * sum(abs(y_true[2:n] - y_pred[1:(n-1)]))
@@ -271,6 +293,7 @@ mean_absolute_scaled_error <- function(y_true, y_pred) {
 #' total_variance_score(1:10, 10:1)
 #' @export
 total_variance_score <- function(y_true, y_pred) {
+  check_args(y_true = y_true, y_pred = y_pred)
   return(sum((y_true - mean(y_true)) ^ 2))
 }
 
@@ -284,6 +307,7 @@ total_variance_score <- function(y_true, y_pred) {
 #' explained_variance_score(1:10, 10:1)
 #' @export
 explained_variance_score <- function(y_true, y_pred) {
+  check_args(y_true = y_true, y_pred = y_pred)
   return(sum((y_pred - mean(y_true)) ^ 2))
 }
 
@@ -297,6 +321,7 @@ explained_variance_score <- function(y_true, y_pred) {
 #' unexplained_variance_score(1:10, 10:1)
 #' @export
 unexplained_variance_score <- function(y_true, y_pred) {
+  check_args(y_true = y_true, y_pred = y_pred)
   return(sum((y_true - y_pred) ^ 2))
 }
 
@@ -310,5 +335,8 @@ unexplained_variance_score <- function(y_true, y_pred) {
 #' r2_score(1:10, 10:1)
 #' @export
 r2_score <- function(y_true, y_pred) {
-  return(explained_variance_score(y_true = y_true, y_pred = y_pred) / total_variance_score(y_true = y_true, y_pred = y_pred))
+  check_args(y_true = y_true, y_pred = y_pred)
+  evs <- explained_variance_score(y_true = y_true, y_pred = y_pred)
+  tvs <- total_variance_score(y_true = y_true, y_pred = y_pred)
+  return(evs / tvs)
 }

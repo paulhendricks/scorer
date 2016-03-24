@@ -2,19 +2,19 @@
 scorer
 ======
 
-[![Project Status: Active - The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/0.1.0/active.svg)](http://www.repostatus.org/#active) [![R Version 3.2.3+](https://img.shields.io/badge/R%20Version-3.2.3+-blue.svg)](https://img.shields.io/badge/R%20Version-3.2.3+-blue.svg) [![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/scorer)](http://cran.r-project.org/package=scorer) [![Downloads from the RStudio CRAN mirror](http://cranlogs.r-pkg.org/badges/scorer)](http://cran.rstudio.com/package=scorer) [![Build Status](https://travis-ci.org/paulhendricks/scorer.png?branch=master)](https://travis-ci.org/paulhendricks/scorer) [![Build status](https://ci.appveyor.com/api/projects/status/vuumrc0607xa44q9/branch/master?svg=true)](https://ci.appveyor.com/project/paulhendricks/scorer/branch/master) [![codecov.io](http://codecov.io/github/paulhendricks/scorer/coverage.svg?branch=master)](http://codecov.io/github/paulhendricks/scorer?branch=master)
+[![Project Status: Active - The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/0.1.0/active.svg)](http://www.repostatus.org/#active) [![R Version 3.1.2+](https://img.shields.io/badge/R%20Version-3.1.2+-blue.svg)](https://img.shields.io/badge/R%20Version-3.1.2+-blue.svg) [![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/scorer)](http://cran.r-project.org/package=scorer) [![Downloads from the RStudio CRAN mirror](http://cranlogs.r-pkg.org/badges/scorer)](http://cran.rstudio.com/package=scorer) [![Build Status](https://travis-ci.org/paulhendricks/scorer.png?branch=master)](https://travis-ci.org/paulhendricks/scorer) [![Build status](https://ci.appveyor.com/api/projects/status/vuumrc0607xa44q9/branch/master?svg=true)](https://ci.appveyor.com/project/paulhendricks/scorer/branch/master) [![codecov.io](http://codecov.io/github/paulhendricks/scorer/coverage.svg?branch=master)](http://codecov.io/github/paulhendricks/scorer?branch=master)
 
-`scorer` is a set of tools for quickly scoring models in data science and machine learning. This toolset is written in C++, where possible, for blazing fast performance. This toolset's API follows that of [sklearn.metrics](http://scikit-learn.org/stable/modules/classes.html#sklearn-metrics-metrics) as closely as possible so one can easily switch back and forth between the two languages without too much cognitive dissonance. The following types of metrics are currently implemented in `scorer`:
+`scorer` is a set of tools for quickly scoring models in data science and machine learning. This toolset is written in C++, where possible, for blazing fast performance. This toolset's API follows that of Python's [sklearn.metrics](http://scikit-learn.org/stable/modules/classes.html#sklearn-metrics-metrics) as closely as possible so one can easily switch back and forth between R and Python without too much cognitive dissonance. The following types of metrics are currently implemented in `scorer`:
 
 -   Regression metrics (implemented in 0.2.0)
+-   Classification metrics (implemented in 0.3.0)
 
 The following types of metrics are soon to be implemented in `scorer`:
 
--   Classification metrics (to be implemented in 0.3.0)
--   Multilabel ranking metrics (to be implemented in 0.3.0)
--   Clustering metrics (to be implemented in 0.3.0)
--   Biclustering metrics (to be implemented in 0.3.0)
--   Pairwise metrics (to be implemented in 0.3.0)
+-   Multilabel ranking metrics (to be implemented in 0.4.0)
+-   Clustering metrics (to be implemented in 0.4.0)
+-   Biclustering metrics (to be implemented in 0.4.0)
+-   Pairwise metrics (to be implemented in 0.4.0)
 
 Installation
 ------------
@@ -44,6 +44,15 @@ If you encounter a clear bug, please file a minimal reproducible example on [Git
 
 News
 ----
+
+### scorer 0.3.0
+
+#### Improvements
+
+-   Implemented functions for classification metrics.
+-   Implemented unit tests for regression metrics.
+-   Implemented unit tests for classification metrics.
+-   Changed base R dependency so it works with older versions of R.
 
 ### scorer 0.2.0
 
