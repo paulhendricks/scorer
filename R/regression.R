@@ -261,7 +261,9 @@ symmetric_mean_absolute_percent_error <- function(y_true, y_pred) {
 #' @export
 symmetric_median_absolute_percent_error <- function(y_true, y_pred) {
   check_args(y_true = y_true, y_pred = y_pred)
-  return(stats::median(abs(y_pred - y_true) / ((abs(y_true) + abs(y_pred)) / 2)))
+  numerator <- stats::median(abs(y_pred - y_true))
+  denominator <- ((abs(y_true) + abs(y_pred)) / 2)
+  return(numerator / denominator)
 }
 
 #' Calculate mean absolute scaled error regression loss.
@@ -334,5 +336,7 @@ unexplained_variance_score <- function(y_true, y_pred) {
 #' @export
 r2_score <- function(y_true, y_pred) {
   check_args(y_true = y_true, y_pred = y_pred)
-  return(explained_variance_score(y_true = y_true, y_pred = y_pred) / total_variance_score(y_true = y_true, y_pred = y_pred))
+  evs <- explained_variance_score(y_true = y_true, y_pred = y_pred)
+  tvs <- total_variance_score(y_true = y_true, y_pred = y_pred)
+  return(evs / tvs)
 }
