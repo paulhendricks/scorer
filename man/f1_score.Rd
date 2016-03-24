@@ -2,7 +2,7 @@
 % Please edit documentation in R/classification.R
 \name{f1_score}
 \alias{f1_score}
-\title{TO BE EDITED}
+\title{Calculate the F1 score.}
 \usage{
 f1_score(y_true, y_pred)
 }
@@ -15,10 +15,10 @@ f1_score(y_true, y_pred)
 A numeric vector of length one.
 }
 \description{
-TO BE EDITED
+Calculate the F1 score.
 }
 \examples{
-total_population(c(1, 1, 0, 0), c(1, 0, 1, 0))
+f1_score(c(1, 1, 0, 0), c(1, 0, 1, 0))
 }
 \seealso{
 Other classification metrics: \code{\link{accuracy_score}},

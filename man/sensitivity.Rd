@@ -2,7 +2,7 @@
 % Please edit documentation in R/classification.R
 \name{sensitivity}
 \alias{sensitivity}
-\title{TO BE EDITED}
+\title{Calculate the true positive rate.}
 \usage{
 sensitivity(y_true, y_pred)
 }
@@ -15,10 +15,10 @@ sensitivity(y_true, y_pred)
 A numeric vector of length one.
 }
 \description{
-TO BE EDITED
+Calculate the true positive rate.
 }
 \examples{
-total_population(c(1, 1, 0, 0), c(1, 0, 1, 0))
+sensitivity(c(1, 1, 0, 0), c(1, 0, 1, 0))
 }
 \seealso{
 Other classification metrics: \code{\link{accuracy_score}},

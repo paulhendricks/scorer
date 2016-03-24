@@ -2,7 +2,7 @@
 % Please edit documentation in R/classification.R
 \name{diagnostic_odds_ratio}
 \alias{diagnostic_odds_ratio}
-\title{TO BE EDITED}
+\title{Calculate the diagnostic odds ratio.}
 \usage{
 diagnostic_odds_ratio(y_true, y_pred)
 }
@@ -15,10 +15,10 @@ diagnostic_odds_ratio(y_true, y_pred)
 A numeric vector of length one.
 }
 \description{
-TO BE EDITED
+Calculate the diagnostic odds ratio.
 }
 \examples{
-total_population(c(1, 1, 0, 0), c(1, 0, 1, 0))
+diagnostic_odds_ratio(c(1, 1, 0, 0), c(1, 0, 1, 0))
 }
 \seealso{
 Other classification metrics: \code{\link{accuracy_score}},

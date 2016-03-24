@@ -2,7 +2,7 @@
 % Please edit documentation in R/classification.R
 \name{false_positive_rate}
 \alias{false_positive_rate}
-\title{TO BE EDITED}
+\title{Calculate the false positive rate.}
 \usage{
 false_positive_rate(y_true, y_pred)
 }
@@ -15,10 +15,10 @@ false_positive_rate(y_true, y_pred)
 A numeric vector of length one.
 }
 \description{
-TO BE EDITED
+Calculate the false positive rate.
 }
 \examples{
-total_population(c(1, 1, 0, 0), c(1, 0, 1, 0))
+false_positive_rate(c(1, 1, 0, 0), c(1, 0, 1, 0))
 }
 \seealso{
 Other classification metrics: \code{\link{accuracy_score}},

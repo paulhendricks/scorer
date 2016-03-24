@@ -2,7 +2,7 @@
 % Please edit documentation in R/classification.R
 \name{negative_predictive_value}
 \alias{negative_predictive_value}
-\title{TO BE EDITED}
+\title{Calculate the negative predictive value.}
 \usage{
 negative_predictive_value(y_true, y_pred)
 }
@@ -15,10 +15,10 @@ negative_predictive_value(y_true, y_pred)
 A numeric vector of length one.
 }
 \description{
-TO BE EDITED
+Calculate the negative predictive value.
 }
 \examples{
-total_population(c(1, 1, 0, 0), c(1, 0, 1, 0))
+negative_predictive_value(c(1, 1, 0, 0), c(1, 0, 1, 0))
 }
 \seealso{
 Other classification metrics: \code{\link{accuracy_score}},

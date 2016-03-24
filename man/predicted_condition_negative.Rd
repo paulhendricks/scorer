@@ -18,7 +18,7 @@ A numeric vector of length one.
 Calculate the number of the predicted condition negatives.
 }
 \examples{
-total_population(c(1, 1, 0, 0), c(1, 0, 1, 0))
+predicted_condition_negative(c(1, 1, 0, 0), c(1, 0, 1, 0))
 }
 \seealso{
 Other classification metrics: \code{\link{accuracy_score}},

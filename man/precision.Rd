@@ -2,7 +2,7 @@
 % Please edit documentation in R/classification.R
 \name{precision}
 \alias{precision}
-\title{TO BE EDITED}
+\title{Calculate the precision.}
 \usage{
 precision(y_true, y_pred)
 }
@@ -15,10 +15,10 @@ precision(y_true, y_pred)
 A numeric vector of length one.
 }
 \description{
-TO BE EDITED
+Calculate the precision.
 }
 \examples{
-total_population(c(1, 1, 0, 0), c(1, 0, 1, 0))
+precision(c(1, 1, 0, 0), c(1, 0, 1, 0))
 }
 \seealso{
 Other classification metrics: \code{\link{accuracy_score}},

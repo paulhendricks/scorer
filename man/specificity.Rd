@@ -2,7 +2,7 @@
 % Please edit documentation in R/classification.R
 \name{specificity}
 \alias{specificity}
-\title{TO BE EDITED}
+\title{Calculate the true negative rate.}
 \usage{
 specificity(y_true, y_pred)
 }
@@ -15,10 +15,10 @@ specificity(y_true, y_pred)
 A numeric vector of length one.
 }
 \description{
-TO BE EDITED
+Calculate the true negative rate.
 }
 \examples{
-total_population(c(1, 1, 0, 0), c(1, 0, 1, 0))
+specificity(c(1, 1, 0, 0), c(1, 0, 1, 0))
 }
 \seealso{
 Other classification metrics: \code{\link{accuracy_score}},

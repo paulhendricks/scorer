@@ -2,7 +2,7 @@
 % Please edit documentation in R/classification.R
 \name{true_positive}
 \alias{true_positive}
-\title{Calculate the number of the true positivies.}
+\title{Calculate the number of the true positives.}
 \usage{
 true_positive(y_true, y_pred)
 }
@@ -15,10 +15,10 @@ true_positive(y_true, y_pred)
 A numeric vector of length one.
 }
 \description{
-Calculate the number of the true positivies.
+Calculate the number of the true positives.
 }
 \examples{
-total_population(c(1, 1, 0, 0), c(1, 0, 1, 0))
+true_positive(c(1, 1, 0, 0), c(1, 0, 1, 0))
 }
 \seealso{
 Other classification metrics: \code{\link{accuracy_score}},

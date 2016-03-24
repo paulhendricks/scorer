@@ -18,7 +18,7 @@ A numeric vector of length one.
 Calculate the accuracy score.
 }
 \examples{
-total_population(c(1, 1, 0, 0), c(1, 0, 1, 0))
+accuracy_score(c(1, 1, 0, 0), c(1, 0, 1, 0))
 }
 \seealso{
 Other classification metrics: \code{\link{accuracy}},

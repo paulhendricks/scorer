@@ -2,7 +2,7 @@
 % Please edit documentation in R/classification.R
 \name{matthews_corrcoef}
 \alias{matthews_corrcoef}
-\title{TO BE EDITED}
+\title{Calculate Matthew's correlation coefficient.}
 \usage{
 matthews_corrcoef(y_true, y_pred)
 }
@@ -15,10 +15,10 @@ matthews_corrcoef(y_true, y_pred)
 A numeric vector of length one.
 }
 \description{
-TO BE EDITED
+Calculate Matthew's correlation coefficient.
 }
 \examples{
-total_population(c(1, 1, 0, 0), c(1, 0, 1, 0))
+matthews_corrcoef(c(1, 1, 0, 0), c(1, 0, 1, 0))
 }
 \seealso{
 Other classification metrics: \code{\link{accuracy_score}},

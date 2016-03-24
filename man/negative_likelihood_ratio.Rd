@@ -2,7 +2,7 @@
 % Please edit documentation in R/classification.R
 \name{negative_likelihood_ratio}
 \alias{negative_likelihood_ratio}
-\title{TO BE EDITED}
+\title{Calculate the negative likelihood ratio.}
 \usage{
 negative_likelihood_ratio(y_true, y_pred)
 }
@@ -15,10 +15,10 @@ negative_likelihood_ratio(y_true, y_pred)
 A numeric vector of length one.
 }
 \description{
-TO BE EDITED
+Calculate the negative likelihood ratio.
 }
 \examples{
-total_population(c(1, 1, 0, 0), c(1, 0, 1, 0))
+negative_likelihood_ratio(c(1, 1, 0, 0), c(1, 0, 1, 0))
 }
 \seealso{
 Other classification metrics: \code{\link{accuracy_score}},

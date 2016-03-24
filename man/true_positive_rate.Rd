@@ -2,7 +2,7 @@
 % Please edit documentation in R/classification.R
 \name{true_positive_rate}
 \alias{true_positive_rate}
-\title{TO BE EDITED}
+\title{Calculate the true positive rate.}
 \usage{
 true_positive_rate(y_true, y_pred)
 }
@@ -15,10 +15,10 @@ true_positive_rate(y_true, y_pred)
 A numeric vector of length one.
 }
 \description{
-TO BE EDITED
+Calculate the true positive rate.
 }
 \examples{
-total_population(c(1, 1, 0, 0), c(1, 0, 1, 0))
+true_positive_rate(c(1, 1, 0, 0), c(1, 0, 1, 0))
 }
 \seealso{
 Other classification metrics: \code{\link{accuracy_score}},

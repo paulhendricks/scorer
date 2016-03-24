@@ -18,7 +18,7 @@ A numeric vector of length one.
 Calculate the number of the condition positives.
 }
 \examples{
-total_population(c(1, 1, 0, 0), c(1, 0, 1, 0))
+condition_positive(c(1, 1, 0, 0), c(1, 0, 1, 0))
 }
 \seealso{
 Other classification metrics: \code{\link{accuracy_score}},
