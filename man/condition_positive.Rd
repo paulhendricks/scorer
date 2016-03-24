@@ -12,7 +12,7 @@ condition_positive(y_true, y_pred)
 \item{y_pred}{Estimated target values.}
 }
 \value{
-TO BE EDITED.
+A numeric vector of length one.
 }
 \description{
 TO BE EDITED

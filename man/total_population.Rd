@@ -2,7 +2,7 @@
 % Please edit documentation in R/classification.R
 \name{total_population}
 \alias{total_population}
-\title{TO BE EDITED}
+\title{total_population}
 \usage{
 total_population(y_true, y_pred)
 }
@@ -12,10 +12,13 @@ total_population(y_true, y_pred)
 \item{y_pred}{Estimated target values.}
 }
 \value{
-TO BE EDITED.
+A numeric vector of length one.
 }
 \description{
-TO BE EDITED
+total_population
+}
+\examples{
+total_population(1:10, 10:1)
 }
 \seealso{
 Other classification metrics: \code{\link{accuracy_score}},

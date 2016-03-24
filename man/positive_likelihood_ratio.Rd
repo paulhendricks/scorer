@@ -12,7 +12,7 @@ positive_likelihood_ratio(y_true, y_pred)
 \item{y_pred}{Estimated target values.}
 }
 \value{
-TO BE EDITED.
+A numeric vector of length one.
 }
 \description{
 TO BE EDITED
