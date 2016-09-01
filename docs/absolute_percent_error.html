@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<title>absolute_percent_error. scorer 0.3.0</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="">
+
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/bootstrap-responsive.css" rel="stylesheet">
+<link href="css/highlight.css" rel="stylesheet">
+<link href="css/staticdocs.css" rel="stylesheet">
+
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+  </head>
+
+  <body>
+    <div class="navbar">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand" href="index.html">scorer 0.3.0</a>
+      <div class="nav">
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="reference.html">Reference</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <div class="container">
+      <header>
+        
+      </header>
+      
+      <h1>Calculate absolute percent error regression loss.</h1>
+
+<div class="row">
+  <div class="span8">
+    <h2>Usage</h2>
+    <pre><span class="functioncall"><a href='absolute_percent_error.html'>absolute_percent_error</a></span><span class="keyword">(</span><span class="symbol">y_true</span><span class="keyword">,</span> <span class="symbol">y_pred</span><span class="keyword">)</span></pre>
+    
+    <h2>Arguments</h2>
+    <dl>
+      <dt>y_true</dt>
+      <dd>Ground truth (correct) target values.</dd>
+      <dt>y_pred</dt>
+      <dd>Estimated target values.</dd>
+    </dl>
+    
+    <div class="Value">
+      <h2>Value</h2>
+
+      <p><dl>
+A numeric vector of length equal to <code>max(length(y_true), length(y_pred))</code>.
+</dl></p>
+
+    </div>
+
+    <div class="Description">
+      <h2>Description</h2>
+
+      <p>Calculate absolute percent error regression loss.</p>
+
+    </div>
+    
+    <h2 id="examples">Examples</h2>
+    <pre class="examples"><div class='input'><span class="functioncall"><a href='absolute_percent_error.html'>absolute_percent_error</a></span><span class="keyword">(</span><span class="number">1</span><span class="keyword">:</span><span class="number">10</span><span class="keyword">,</span> <span class="number">10</span><span class="keyword">:</span><span class="number">1</span><span class="keyword">)</span></div>
+<div class='output'> [1] 9.0000000 3.5000000 1.6666667 0.7500000 0.2000000 0.1666667 0.4285714 0.6250000 0.7777778 0.9000000
+</div></pre>
+  </div>
+  <div class="span4 sidebar">
+    <!-- <ul>
+      <li>absolute_percent_error</li>
+    </ul>
+    <ul>
+      
+    </ul> -->
+
+    <h2>See also</h2>
+      <p>Other regression metrics: <code><a href='absolute_error.html'>absolute_error</a></code>,
+  <code><a href='explained_variance_score.html'>explained_variance_score</a></code>,
+  <code><a href='log_error.html'>log_error</a></code>,
+  <code><a href='mean_absolute_error.html'>mean_absolute_error</a></code>,
+  <code><a href='mean_absolute_percent_error.html'>mean_absolute_percent_error</a></code>,
+  <code><a href='mean_absolute_scaled_error.html'>mean_absolute_scaled_error</a></code>,
+  <code><a href='mean_error.html'>mean_error</a></code>,
+  <code><a href='mean_percent_error.html'>mean_percent_error</a></code>,
+  <code><a href='mean_squared_error.html'>mean_squared_error</a></code>,
+  <code><a href='mean_squared_log_error.html'>mean_squared_log_error</a></code>,
+  <code><a href='median_absolute_error.html'>median_absolute_error</a></code>,
+  <code><a href='median_absolute_percent_error.html'>median_absolute_percent_error</a></code>,
+  <code><a href='median_percent_error.html'>median_percent_error</a></code>,
+  <code><a href='median_squared_error.html'>median_squared_error</a></code>,
+  <code><a href='median_squared_log_error.html'>median_squared_log_error</a></code>,
+  <code><a href='percent_error.html'>percent_error</a></code>, <code><a href='r2_score.html'>r2_score</a></code>,
+  <code><a href='squared_error.html'>squared_error</a></code>,
+  <code><a href='squared_log_error.html'>squared_log_error</a></code>,
+  <code><a href='symmetric_mean_absolute_percent_error.html'>symmetric_mean_absolute_percent_error</a></code>,
+  <code><a href='symmetric_median_absolute_percent_error.html'>symmetric_median_absolute_percent_error</a></code>,
+  <code><a href='total_variance_score.html'>total_variance_score</a></code>,
+  <code><a href='unexplained_variance_score.html'>unexplained_variance_score</a></code></p>
+
+    
+
+
+  </div>
+</div>
+      
+      <footer>
+      <p class="pull-right"><a href="#">Back to top</a></p>
+<p>Built by <a href="https://github.com/hadley/staticdocs">staticdocs</a>. Styled with <a href="https://getbootstrap.com/2.0.4/">bootstrap</a>.</p>
+      </footer>
+    </div>
+  </body>
+</html>

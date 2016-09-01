@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<title>false_discovery_rate. scorer 0.3.0</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="">
+
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/bootstrap-responsive.css" rel="stylesheet">
+<link href="css/highlight.css" rel="stylesheet">
+<link href="css/staticdocs.css" rel="stylesheet">
+
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+  </head>
+
+  <body>
+    <div class="navbar">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand" href="index.html">scorer 0.3.0</a>
+      <div class="nav">
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="reference.html">Reference</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <div class="container">
+      <header>
+        
+      </header>
+      
+      <h1>Calculate the false discovery rate.</h1>
+
+<div class="row">
+  <div class="span8">
+    <h2>Usage</h2>
+    <pre><span class="functioncall"><a href='false_discovery_rate.html'>false_discovery_rate</a></span><span class="keyword">(</span><span class="symbol">y_true</span><span class="keyword">,</span> <span class="symbol">y_pred</span><span class="keyword">)</span></pre>
+    
+    <h2>Arguments</h2>
+    <dl>
+      <dt>y_true</dt>
+      <dd>Ground truth (correct) target values.</dd>
+      <dt>y_pred</dt>
+      <dd>Estimated target values.</dd>
+    </dl>
+    
+    <div class="Value">
+      <h2>Value</h2>
+
+      <p><dl>
+A numeric vector of length one.
+</dl></p>
+
+    </div>
+
+    <div class="Description">
+      <h2>Description</h2>
+
+      <p>Calculate the false discovery rate.</p>
+
+    </div>
+    
+    <h2 id="examples">Examples</h2>
+    <pre class="examples"><div class='input'><span class="functioncall"><a href='false_discovery_rate.html'>false_discovery_rate</a></span><span class="keyword">(</span><span class="functioncall"><a href='http://www.rdocumentation.org/packages/base/topics/c'>c</a></span><span class="keyword">(</span><span class="number">1</span><span class="keyword">,</span> <span class="number">1</span><span class="keyword">,</span> <span class="number">0</span><span class="keyword">,</span> <span class="number">0</span><span class="keyword">)</span><span class="keyword">,</span> <span class="functioncall"><a href='http://www.rdocumentation.org/packages/base/topics/c'>c</a></span><span class="keyword">(</span><span class="number">1</span><span class="keyword">,</span> <span class="number">0</span><span class="keyword">,</span> <span class="number">1</span><span class="keyword">,</span> <span class="number">0</span><span class="keyword">)</span><span class="keyword">)</span></div>
+<div class='output'>[1] 0.5
+</div></pre>
+  </div>
+  <div class="span4 sidebar">
+    <!-- <ul>
+      <li>false_discovery_rate</li>
+    </ul>
+    <ul>
+      
+    </ul> -->
+
+    <h2>See also</h2>
+      <p>Other classification metrics: <code><a href='accuracy_score.html'>accuracy_score</a></code>,
+  <code><a href='accuracy.html'>accuracy</a></code>, <code><a href='condition_negative.html'>condition_negative</a></code>,
+  <code><a href='condition_positive.html'>condition_positive</a></code>,
+  <code><a href='diagnostic_odds_ratio.html'>diagnostic_odds_ratio</a></code>,
+  <code><a href='f1_score.html'>f1_score</a></code>,
+  <code><a href='false_negative_rate.html'>false_negative_rate</a></code>,
+  <code><a href='false_negative.html'>false_negative</a></code>,
+  <code><a href='false_omission_rate.html'>false_omission_rate</a></code>,
+  <code><a href='false_positive_rate.html'>false_positive_rate</a></code>,
+  <code><a href='false_positive.html'>false_positive</a></code>,
+  <code><a href='matthews_corrcoef.html'>matthews_corrcoef</a></code>,
+  <code><a href='negative_likelihood_ratio.html'>negative_likelihood_ratio</a></code>,
+  <code><a href='negative_predictive_value.html'>negative_predictive_value</a></code>,
+  <code><a href='positive_likelihood_ratio.html'>positive_likelihood_ratio</a></code>,
+  <code><a href='positive_predictive_value.html'>positive_predictive_value</a></code>,
+  <code><a href='precision.html'>precision</a></code>,
+  <code><a href='predicted_condition_negative.html'>predicted_condition_negative</a></code>,
+  <code><a href='predicted_condition_positive.html'>predicted_condition_positive</a></code>,
+  <code><a href='prevalence.html'>prevalence</a></code>, <code><a href='recall.html'>recall</a></code>,
+  <code><a href='sensitivity.html'>sensitivity</a></code>, <code><a href='specificity.html'>specificity</a></code>,
+  <code><a href='total_population.html'>total_population</a></code>,
+  <code><a href='true_negative_rate.html'>true_negative_rate</a></code>,
+  <code><a href='true_negative.html'>true_negative</a></code>,
+  <code><a href='true_positive_rate.html'>true_positive_rate</a></code>,
+  <code><a href='true_positive.html'>true_positive</a></code></p>
+
+    
+
+
+  </div>
+</div>
+      
+      <footer>
+      <p class="pull-right"><a href="#">Back to top</a></p>
+<p>Built by <a href="https://github.com/hadley/staticdocs">staticdocs</a>. Styled with <a href="https://getbootstrap.com/2.0.4/">bootstrap</a>.</p>
+      </footer>
+    </div>
+  </body>
+</html>
