@@ -129,7 +129,7 @@ scorer::r2_score(mtcars[, "mpg"], mtcars[, "predicted_mpg"])
 Citation
 --------
 
-To cite package ‘anonymizer’ in publications use:
+To cite package ‘scorer’ in publications use:
 
     Paul Hendricks (2016). scorer: Quickly Score Models in Data Science and Machine Learning. R package version 0.2.0. https://CRAN.R-project.org/package=scorer
 
