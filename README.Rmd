@@ -1,7 +1,6 @@
 ---
 output:
-  md_document:
-    variant: markdown_github
+  github_document
 ---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
@@ -16,13 +15,12 @@ knitr::opts_chunk$set(
 
 # scorer
 
-[![Project Status: Active - The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/0.1.0/active.svg)](http://www.repostatus.org/#active)
-[![R Version 3.1.2+](https://img.shields.io/badge/R%20Version-3.1.2+-blue.svg)](https://img.shields.io/badge/R%20Version-3.1.2+-blue.svg)
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/scorer)](http://cran.r-project.org/package=scorer)
 [![Downloads from the RStudio CRAN mirror](http://cranlogs.r-pkg.org/badges/scorer)](https://cran.rstudio.com/web/packages/scorer/index.html)
 [![Build Status](https://travis-ci.org/paulhendricks/scorer.png?branch=master)](https://travis-ci.org/paulhendricks/scorer)
 [![Build status](https://ci.appveyor.com/api/projects/status/vuumrc0607xa44q9/branch/master?svg=true)](https://ci.appveyor.com/project/paulhendricks/scorer/branch/master)
 [![codecov.io](http://codecov.io/github/paulhendricks/scorer/coverage.svg?branch=master)](http://codecov.io/github/paulhendricks/scorer?branch=master)
+[![Project Status: Active - The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/0.1.0/active.svg)](http://www.repostatus.org/#active)
 
 `scorer` is a set of tools for quickly scoring models in data science and machine learning. This toolset is written in C++, where possible, for blazing fast performance. This toolset's API follows that of Python's [sklearn.metrics](http://scikit-learn.org/stable/modules/classes.html#sklearn-metrics-metrics) as closely as possible so one can easily switch back and forth between R and Python without too much cognitive dissonance. The following types of metrics are currently implemented in `scorer`:
 
@@ -38,62 +36,24 @@ The following types of metrics are soon to be implemented in `scorer`:
 
 ## Installation
 
-You can install:
+You can install the latest development version from CRAN:
 
-* the latest released version from CRAN with
+```R
+install.packages("scorer")
+````
 
-    [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/scorer)](http://cran.r-project.org/package=scorer)
-    ```R
-    install.packages("scorer")
-    ````
+Or from GitHub with:
 
-* the latest development version from Github with
-    
-    [![Github_Status_Badge](https://img.shields.io/badge/Github-0.3.0-brightgreen.svg)](https://img.shields.io/badge/Github-0.3.0-brightgreen.svg)
-    ```R
-    if (packageVersion("devtools") < 1.6) {
-      install.packages("devtools")
-    }
-    devtools::install_github("paulhendricks/scorer", ref = "dev")
-    ```
+```R
+if (packageVersion("devtools") < 1.6) {
+  install.packages("devtools")
+}
+devtools::install_github("paulhendricks/scorer")
+```
 
-If you encounter a clear bug, please file a minimal reproducible example on [Github](https://github.com/paulhendricks/scorer/issues).
+If you encounter a clear bug, please file a [minimal reproducible example](http://stackoverflow.com/questions/5963269/how-to-make-a-great-r-reproducible-example) on [GitHub](https://github.com/paulhendricks/scorer/issues).
 
-## News
-
-### scorer 0.3.0
-
-#### Improvements
-
-* Implemented functions for classification metrics.
-* Implemented unit tests for regression metrics.
-* Implemented unit tests for classification metrics.
-* Changed base R dependency so it works with older versions of R.
-* Removed deprecated functions.
-
-### scorer 0.2.0
-
-#### Improvements
-
-* All functions from scorer 0.1.0 have been deprecated in favor of a new API that mirrors the API of [sklearn.metrics](http://scikit-learn.org/stable/modules/classes.html#sklearn-metrics-metrics). These functions will be removed in 1.0.0.
-* Added more functions!
-* Nearly all functions implemented in C++ for blazing fast speed!
-* Additional features such as sample weighting for some error metrics have been identified and placed on a backburner for future releases.
-* Implemented unit tests for base functions.
-
-### scorer 0.1.0
-
-#### Improvements
-
-* Implemented several functions for estimating errors.
-* Implemented unit tests for nearly all functions.
-* First minor version release to CRAN!
-  
-#### Bug fixes
-
-* Fixed minor error in passing multiple arguments to `mae()`.
-
-## API
+## Examples
 
 ### Regression metrics
 
@@ -172,24 +132,22 @@ scorer::total_variance_score(mtcars[, "mpg"], mtcars[, "predicted_mpg"])
 scorer::r2_score(mtcars[, "mpg"], mtcars[, "predicted_mpg"])
 ```
 
-### Classification metrics
+## Citation
 
-```{r}
-# TO BE UPDATED
+To cite package ‘anonymizer’ in publications use:
+
+```
+Paul Hendricks (2016). scorer: Quickly Score Models in Data Science and Machine Learning. R package version 0.2.0. https://CRAN.R-project.org/package=scorer
 ```
 
-## People
+A BibTeX entry for LaTeX users is
 
-* The original author of `scorer` is [@Paul Hendricks](https://github.com/paulhendricks). [![Gratipay](https://img.shields.io/gratipay/JSFiddle.svg)](https://gratipay.com/~paulhendricks/)
-
-* The lead maintainer of `scorer` is [@Paul Hendricks](https://github.com/paulhendricks).  [![Gratipay](https://img.shields.io/gratipay/JSFiddle.svg)](https://gratipay.com/~paulhendricks/)
-
-## License
-
-[![License](http://img.shields.io/:license-MIT-blue.svg)](https://github.com/paulhendricks/scorer/blob/master/LICENSE)
-
-## Session Information
-
-```{r}
-sessionInfo()
+```
+@Manual{,
+  title = {scorer: Quickly Score Models in Data Science and Machine Learning},
+  author = {Paul Hendricks},
+  year = {2016},
+  note = {R package version 0.2.0},
+  url = {https://CRAN.R-project.org/package=scorer},
+}
 ```
